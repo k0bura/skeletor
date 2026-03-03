@@ -10,6 +10,9 @@ GRiDCASE 1520. Rugged 286 from 1988, magnesium alloy case, red gas plasma displa
 
 Built mine from parts across three separate 1520 units. First mainboard refused to see the CF adapter. Second had a Dallas CMOS/RTC replacement that developed write errors. Third -- early revision with a separate RTC battery -- was the one that worked. Case from a dual-floppy unit in great condition, plasma screen from another donor. Frankenstein's laptop, best organs of its fallen siblings.
 
+![RAM SIMMs](../../assets/images/gridcase-1520/overview/01-memory.jpg)
+![Ribbon cables inside the chassis](../../assets/images/gridcase-1520/overview/02-ribbon-cables.jpg)
+
 ## Machine Specifications
 
 | Component | Original | Restored |

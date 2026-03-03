@@ -42,12 +42,32 @@ import cpu05 from '../assets/images/compaq-486c/cpu-upgrade/05-chkcpu.jpg';
 
 import kb01 from '../assets/images/compaq-486c/keyboard/01-keyboard-disassembled.jpg';
 
+import os01 from '../assets/images/compaq-486c/options-slot/01-connector.jpg';
+import os02 from '../assets/images/compaq-486c/options-slot/02-connector-on-board.jpg';
+import os03 from '../assets/images/compaq-486c/options-slot/03-connector-slot.jpg';
+
 import gc01 from '../assets/images/gridcase-1520/finished/01-closed.jpg';
 import gc02 from '../assets/images/gridcase-1520/finished/02-bios-post.jpg';
 import gc03 from '../assets/images/gridcase-1520/finished/03-wimodem.jpg';
 import gc04 from '../assets/images/gridcase-1520/finished/04-grid-splash.jpg';
 import gc05 from '../assets/images/gridcase-1520/finished/05-gotek-closeup.jpg';
 import gc06 from '../assets/images/gridcase-1520/finished/06-rogue.jpg';
+
+import gcov01 from '../assets/images/gridcase-1520/overview/01-memory.jpg';
+import gcov02 from '../assets/images/gridcase-1520/overview/02-ribbon-cables.jpg';
+import gcrtc01 from '../assets/images/gridcase-1520/rtc/01-donor-mb-with-rtc-battery.jpg';
+import gcrtc02 from '../assets/images/gridcase-1520/rtc/02-new-rtc-battery.jpg';
+import gcrtc03 from '../assets/images/gridcase-1520/rtc/03-dallas-rtc-motherboard.jpg';
+import gcbios01 from '../assets/images/gridcase-1520/bios/01-original-bios-chips.jpg';
+import gccf01 from '../assets/images/gridcase-1520/cf-ide/01-original-hdd.jpg';
+import gccf02 from '../assets/images/gridcase-1520/cf-ide/02-original-hdd-open.jpg';
+import gccf03 from '../assets/images/gridcase-1520/cf-ide/03-broken-hdd-pin.jpg';
+import gccf04 from '../assets/images/gridcase-1520/cf-ide/04-floppy-hdd-connector.jpg';
+import gccf05 from '../assets/images/gridcase-1520/cf-ide/05-cf-ide-adapter.jpg';
+import gcgtk01 from '../assets/images/gridcase-1520/gotek/01-gotek-and-cf-ide.jpg';
+
+import wm01 from '../assets/images/compaq-wifimodem/01-options-slot.jpg';
+import wm02 from '../assets/images/compaq-wifimodem/02-prototype-board.jpg';
 ---
 
 <Base title="Photo Archive - sych0net" description="Photo archive">
@@ -111,6 +131,15 @@ import gc06 from '../assets/images/gridcase-1520/finished/06-rogue.jpg';
       { src: ov05, alt: "Keyboard restored with retrobrighted keycaps" },
     ]} />
 
+    <h2 id="compaq-wifimodem">ESP32 WiFi Modem</h2>
+    <Gallery images={[
+      { src: wm01, alt: "Enhanced Options Slot on system I/O board" },
+      { src: wm02, alt: "Prototype board in options slot" },
+      { src: os01, alt: "50-pin connector closeup" },
+      { src: os02, alt: "Connector side profile" },
+      { src: os03, alt: "Connector slot on system I/O board" },
+    ]} />
+
     <h2 id="gridcase-1520">GRiDCASE 1520</h2>
     <Gallery images={[
       { src: gc04, alt: "GRiD splash screen on plasma display" },
@@ -119,6 +148,34 @@ import gc06 from '../assets/images/gridcase-1520/finished/06-rogue.jpg';
       { src: gc03, alt: "WiModem232 Pro on serial port" },
       { src: gc05, alt: "Gotek floppy emulator closeup" },
       { src: gc06, alt: "Rogue running on plasma display" },
+      { src: gcov01, alt: "RAM SIMMs" },
+      { src: gcov02, alt: "Ribbon cables inside chassis" },
+    ]} />
+
+    <h3>RTC Replacement</h3>
+    <Gallery images={[
+      { src: gcrtc03, alt: "Motherboard with potted Dallas RTC" },
+      { src: gcrtc01, alt: "Donor motherboard with separate RTC battery" },
+      { src: gcrtc02, alt: "New RTC battery installed" },
+    ]} />
+
+    <h3>Custom BIOS</h3>
+    <Gallery images={[
+      { src: gcbios01, alt: "Original BIOS ROM chips -- EVEN and ODD" },
+    ]} />
+
+    <h3>CF-IDE Adapter</h3>
+    <Gallery images={[
+      { src: gccf01, alt: "Original Conner hard drive" },
+      { src: gccf02, alt: "Original hard drive opened" },
+      { src: gccf03, alt: "Broken pin on HDD connector" },
+      { src: gccf04, alt: "Floppy/HDD backplane connector" },
+      { src: gccf05, alt: "StarTech CF-IDE adapter installed" },
+    ]} />
+
+    <h3>Gotek Floppy Replacement</h3>
+    <Gallery images={[
+      { src: gcgtk01, alt: "Gotek floppy emulator with CF-IDE" },
     ]} />
   </article>
 

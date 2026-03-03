@@ -94,6 +94,12 @@ Previously had a Xircom RealPort Ethernet 10/100 (RE-100) but it hogged both slo
 ![Wolfenstein 3D running](../../assets/images/compaq-486c/overview/09-wolfenstein3d.jpg)
 ![MSD system info -- memory](../../assets/images/compaq-486c/overview/08-sysinfo-memory.jpg)
 
+### ESP32 WiFi Modem (Enhanced Options Slot)
+
+Building a custom ESP32-based WiFi modem card for the proprietary 50-pin Enhanced Options Slot. Emulates a Hayes-compatible modem over WiFi -- no PCMCIA slot or external serial cable needed.
+
+**[Full WiFi modem project -->](/projects/compaq-wifimodem/)**
+
 ---
 
 ## Datasheets
