@@ -1,0 +1,410 @@
+---
+import { createHighlighter, type Highlighter } from 'shiki';
+import themeJson from '../themes/sychonet.json';
+
+// Singleton highlighter cache
+const cache: { instance?: Highlighter; langs: Set<string> } =
+  (globalThis as any).__shikiCache ??= { langs: new Set<string>() };
+
+interface Props {
+  file: string;
+  lang: string;
+  src: string;
+  lines?: number;
+}
+
+const { file, lang, src, lines = 30 } = Astro.props;
+
+// Read source file at build time
+const modules = import.meta.glob('/worker/**/*', { query: '?raw', import: 'default' });
+const allSrc = import.meta.glob('/src/**/*', { query: '?raw', import: 'default' });
+const lookup: Record<string, () => Promise<unknown>> = { ...modules, ...allSrc };
+
+const loader = lookup[src];
+if (!loader) throw new Error(`SourceView: file not found: ${src}`);
+const raw = (await loader()) as string;
+const codeLines = raw.split('\n');
+const totalLines = codeLines.length;
+
+// Reuse singleton highlighter, load new langs as needed
+if (!cache.instance) {
+  cache.instance = await createHighlighter({
+    themes: [themeJson as any],
+    langs: [lang],
+  });
+  cache.langs.add(lang);
+} else if (!cache.langs.has(lang)) {
+  await cache.instance.loadLanguage(lang as any);
+  cache.langs.add(lang);
+}
+
+const highlighted = cache.instance.codeToHtml(raw, {
+  lang,
+  theme: 'sychonet',
+});
+
+// Extract just the code lines from Shiki output (strip wrapper pre/code tags)
+// We need the inner HTML of the <code> element
+const codeMatch = highlighted.match(/<code[^>]*>([\s\S]*?)<\/code>/);
+const innerHtml = codeMatch ? codeMatch[1] : raw;
+
+// Split into lines - Shiki wraps each line in a <span class="line">
+const htmlLines = innerHtml.split('\n');
+
+const uid = `sv-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<div class="source-view" id={uid} tabindex="0" data-lines={lines} data-total={totalLines}>
+  <div class="sv-header" style="display:none;">
+    <span class="sv-file">FILE: {file}</span>
+    <span class="sv-meta">{totalLines} lines │{lang.toUpperCase()}</span>
+  </div>
+  <div class="sv-body" style="display:none;">
+    <div class="sv-scroll">
+      <pre class="sv-pre"><code set:html={htmlLines.map((line, i) => {
+        const num = String(i + 1).padStart(String(totalLines).length, ' ');
+        return `<span class="sv-line" data-ln="${num}│">${line}</span>`;
+      }).join('')} /></pre>
+    </div>
+  </div>
+  <div class="sv-footer" style="display:none;">
+    <span class="sv-status">-- MORE -- (0%)</span>
+    <span class="sv-controls">
+      <button class="sv-btn sv-space" title="Next page">[SPACE]</button>
+      <span class="sv-dot">·</span>
+      <button class="sv-btn sv-copy" title="Copy source">[C]OPY</button>
+      <span class="sv-dot">·</span>
+      <button class="sv-btn sv-quit" title="Collapse viewer">[Q]UIT</button>
+    </span>
+  </div>
+  <div class="sv-collapsed-bar">
+    <button class="sv-btn sv-open" title="Reopen viewer">FILE: {file} -- {totalLines} lines -- [ENTER] to view</button>
+  </div>
+</div>
+
+<script define:vars={{ uid, totalLines, rawCode: raw }}>
+  const root = document.getElementById(uid);
+  if (root) {
+    const body = root.querySelector('.sv-body');
+    const scroll = root.querySelector('.sv-scroll');
+    const status = root.querySelector('.sv-status');
+    const footer = root.querySelector('.sv-footer');
+    const collapsedBar = root.querySelector('.sv-collapsed-bar');
+    const visibleLines = parseInt(root.dataset.lines || '20', 10);
+    const pre = root.querySelector('.sv-pre');
+
+    // Calculate line height after render
+    let lineH = 0;
+    let viewH = 0;
+
+    function measure() {
+      const firstLine = pre.querySelector('.sv-line');
+      if (firstLine) {
+        lineH = firstLine.getBoundingClientRect().height;
+      } else {
+        lineH = parseFloat(getComputedStyle(pre).lineHeight) || 19;
+      }
+      viewH = lineH * visibleLines;
+      scroll.style.maxHeight = viewH + 'px';
+      scroll.style.overflow = 'hidden';
+    }
+
+    // Defer measurement to after fonts load
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(measure);
+    } else {
+      requestAnimationFrame(measure);
+    }
+
+    function updateStatus() {
+      const maxScroll = scroll.scrollHeight - scroll.clientHeight;
+      if (maxScroll <= 0) {
+        status.textContent = '-- END --';
+        return;
+      }
+      const pct = Math.round((scroll.scrollTop / maxScroll) * 100);
+      if (pct >= 100) {
+        status.textContent = '-- END --';
+        // Swap SPACE for TOP
+        const spaceBtn = root.querySelector('.sv-space');
+        spaceBtn.textContent = '[TOP]';
+        spaceBtn.title = 'Back to top';
+      } else {
+        status.textContent = `-- MORE -- (${pct}%)`;
+        const spaceBtn = root.querySelector('.sv-space');
+        spaceBtn.textContent = '[SPACE]';
+        spaceBtn.title = 'Next page';
+      }
+    }
+
+    function pageDown() {
+      const maxScroll = scroll.scrollHeight - scroll.clientHeight;
+      if (scroll.scrollTop >= maxScroll - 1) {
+        scroll.scrollTop = 0;
+        const spaceBtn = root.querySelector('.sv-space');
+        spaceBtn.textContent = '[SPACE]';
+        spaceBtn.title = 'Next page';
+      } else {
+        scroll.scrollTop += scroll.clientHeight;
+      }
+      updateStatus();
+    }
+
+    function collapse() {
+      body.style.display = 'none';
+      footer.style.display = 'none';
+      root.querySelector('.sv-header').style.display = 'none';
+      collapsedBar.style.display = 'flex';
+    }
+
+    function expand() {
+      body.style.display = 'block';
+      footer.style.display = 'flex';
+      root.querySelector('.sv-header').style.display = 'flex';
+      collapsedBar.style.display = 'none';
+      measure();
+      updateStatus();
+    }
+
+    function copySource() {
+      navigator.clipboard.writeText(rawCode).then(() => {
+        const btn = root.querySelector('.sv-copy');
+        const orig = btn.textContent;
+        btn.textContent = '[COPIED]';
+        setTimeout(() => { btn.textContent = orig; }, 1500);
+      });
+    }
+
+    // Click handlers
+    root.querySelector('.sv-space').addEventListener('click', (e) => {
+      e.preventDefault();
+      pageDown();
+      root.focus();
+    });
+
+    root.querySelector('.sv-copy').addEventListener('click', (e) => {
+      e.preventDefault();
+      copySource();
+      root.focus();
+    });
+
+    root.querySelector('.sv-quit').addEventListener('click', (e) => {
+      e.preventDefault();
+      collapse();
+    });
+
+    root.querySelector('.sv-open').addEventListener('click', (e) => {
+      e.preventDefault();
+      expand();
+      root.focus();
+    });
+
+    // Keyboard handler - only when focused
+    root.addEventListener('keydown', (e) => {
+      // Don't interfere if collapsed
+      if (collapsedBar.style.display !== 'none') {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          expand();
+        }
+        return;
+      }
+
+      if (e.key === ' ') {
+        e.preventDefault();
+        pageDown();
+      } else if (e.key === 'c' || e.key === 'C') {
+        e.preventDefault();
+        copySource();
+      } else if (e.key === 'q' || e.key === 'Q') {
+        e.preventDefault();
+        collapse();
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        scroll.scrollTop += lineH;
+        updateStatus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        scroll.scrollTop -= lineH;
+        updateStatus();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        scroll.scrollTop = 0;
+        updateStatus();
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        scroll.scrollTop = scroll.scrollHeight;
+        updateStatus();
+      }
+    });
+
+    // Mouse wheel scrolling
+    scroll.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      scroll.scrollTop += e.deltaY;
+      updateStatus();
+    }, { passive: false });
+
+    // Initial status
+    requestAnimationFrame(() => {
+      measure();
+      updateStatus();
+    });
+  }
+</script>
+
+<style>
+  .source-view {
+    border: none;
+    margin: 1.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85em;
+    outline: none;
+  }
+
+  .source-view:focus {
+    outline: none;
+  }
+
+  .source-view:focus .sv-footer {
+    border-color: #665200;
+  }
+
+  .sv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    background: #1a1a1a;
+    border: 1px solid #332b00;
+    border-bottom: none;
+  }
+  .sv-file {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+
+  .sv-meta {
+    color: #665200;
+  }
+
+  .sv-body {
+    border-left: 1px solid #332b00;
+    border-right: 1px solid #332b00;
+  }
+
+  .sv-scroll {
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sv-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sv-pre {
+    margin: 0;
+    padding: 0.4rem 0;
+    background: #111 !important;
+    border: none;
+    line-height: 1.5;
+    overflow-x: auto;
+  }
+
+  .sv-pre code {
+    background: none;
+    padding: 0;
+  }
+
+  .sv-pre :global(.sv-line) {
+    display: block;
+    padding: 0 0.6rem;
+  }
+
+  .sv-pre :global(.sv-line:hover) {
+    background: #1a1a1a;
+  }
+
+  .sv-pre :global(.sv-line)::before {
+    content: attr(data-ln);
+    color: #665200;
+    user-select: none;
+    pointer-events: none;
+    margin-right: 0.4rem;
+  }
+
+  .sv-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    background: #1a1a1a;
+    border: 1px solid #332b00;
+    border-top: 1px solid #332b00;
+  }
+
+  .sv-status {
+    color: #ffcc00;
+  }
+
+  .sv-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .sv-dot {
+    color: #332b00;
+  }
+
+  .sv-btn {
+    background: none;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .sv-space,
+  .sv-open {
+    color: #88cc88;
+  }
+
+  .sv-space:hover,
+  .sv-open:hover {
+    color: #111;
+    background: #88cc88;
+  }
+
+  .sv-copy {
+    color: #7799cc;
+  }
+
+  .sv-copy:hover {
+    color: #111;
+    background: #7799cc;
+  }
+
+  .sv-quit {
+    color: #ff4444;
+  }
+
+  .sv-quit:hover {
+    color: #111;
+    background: #ff4444;
+  }
+
+  .sv-collapsed-bar {
+    display: flex;
+    padding: 0.3rem 0.6rem;
+    background: #1a1a1a;
+    border: 1px solid #332b00;
+  }
+
+  .sv-collapsed-bar .sv-open {
+    width: 100%;
+    text-align: left;
+  }
+</style>

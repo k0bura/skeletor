@@ -20,7 +20,7 @@ const hardware = defineCollection({
 });
 
 const bulletin = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/bulletin' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/bulletin' }),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),

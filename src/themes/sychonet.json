@@ -1,0 +1,100 @@
+{
+  "name": "sychonet",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1a1a1a",
+    "editor.foreground": "#c0c0c0"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#665200", "fontStyle": "italic" }
+    },
+    {
+      "scope": ["string", "string.quoted", "string.template"],
+      "settings": { "foreground": "#88cc88" }
+    },
+    {
+      "scope": ["constant.numeric", "constant.language"],
+      "settings": { "foreground": "#ff4444" }
+    },
+    {
+      "scope": [
+        "keyword",
+        "keyword.control",
+        "keyword.operator.expression",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": { "foreground": "#ffcc00" }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "meta.function-call"
+      ],
+      "settings": { "foreground": "#7799cc" }
+    },
+    {
+      "scope": [
+        "entity.name.type",
+        "support.type",
+        "entity.name.class",
+        "support.class"
+      ],
+      "settings": { "foreground": "#cc9900" }
+    },
+    {
+      "scope": ["variable", "variable.other"],
+      "settings": { "foreground": "#c0c0c0" }
+    },
+    {
+      "scope": ["variable.parameter"],
+      "settings": { "foreground": "#c0c0c0" }
+    },
+    {
+      "scope": [
+        "punctuation",
+        "meta.brace",
+        "punctuation.definition.block",
+        "punctuation.separator"
+      ],
+      "settings": { "foreground": "#c0c0c0" }
+    },
+    {
+      "scope": ["keyword.operator", "keyword.operator.assignment"],
+      "settings": { "foreground": "#cc9900" }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "punctuation.definition.tag"
+      ],
+      "settings": { "foreground": "#ffcc00" }
+    },
+    {
+      "scope": ["entity.other.attribute-name"],
+      "settings": { "foreground": "#cc9900" }
+    },
+    {
+      "scope": ["support.type.property-name"],
+      "settings": { "foreground": "#7799cc" }
+    },
+    {
+      "scope": ["meta.object-literal.key"],
+      "settings": { "foreground": "#c0c0c0" }
+    },
+    {
+      "scope": [
+        "variable.other.property",
+        "support.variable.property"
+      ],
+      "settings": { "foreground": "#c0c0c0" }
+    },
+    {
+      "scope": ["entity.name.type.interface", "entity.name.type.alias"],
+      "settings": { "foreground": "#cc9900" }
+    }
+  ]
+}

@@ -16,3 +16,7 @@ it started with the actual unix fortune databases but most of those are just quo
 **computing history**, short facts about things that happened. the morris worm, the first email, why unix timestamps start in 1970. context for the machines here I like.
 
 The client picks one at random, caches it in localStorage for 24 hours, and shows it on the homepage. no server involved. if the fetch fails you get `NO CARRIER` which feels appropriate.
+
+import SourceView from '../../components/SourceView.astro';
+
+<SourceView file="motd.ts" lang="typescript" src="/src/scripts/motd.ts" />

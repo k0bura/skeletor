@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import sychonetTheme from './src/themes/sychonet.json' with { type: 'json' };
 
 function rehypeSmallImages() {
   return (tree) => {
@@ -23,5 +24,8 @@ export default defineConfig({
   },
   markdown: {
     rehypePlugins: [rehypeSmallImages],
+    shikiConfig: {
+      theme: sychonetTheme,
+    },
   },
 });
