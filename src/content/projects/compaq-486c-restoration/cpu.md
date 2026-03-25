@@ -46,15 +46,17 @@ AMD never released a 160 MHz part -- feared it would cannibalize their upcoming 
 
 ### Enabling the 4x Multiplier -- CLKMUL Pin R17
 
-Socket 3 only supported 2x and 3x multipliers. AMD made the Am5x86 reinterpret 2x as 4x internally. Controlled by **CLKMUL pin R-17** on the 168-pin PGA:
+Socket 3 has a single multiplier pin, **CLKMUL at position R-17** on the 168-pin PGA. Two states, high or low, and different CPUs interpret them differently. On a DX4, low means 2x and high means 3x. AMD remapped those states on the Am5x86 so that low means 4x instead of 2x. Socket 3 was never designed for 4x, AMD just hijacked the existing pin. You can find this in the [AM5x86 Datasheet (PDF)](/docs/compaq-486c/AM5x86_Datasheet.pdf), Section 3 Pin Descriptions under CLKMUL. The pin has an internal pull-up to Vcc, so it defaults high if left floating. CLKMUL is at R-17 on the pin grid -- bottom right corner, second from the edge:
 
-| CLKMUL (R17) State | Multiplier |
-|---------------------|-----------|
-| High (Vcc) or floating | 3x (99 MHz on 33 MHz bus) |
-| Low (Vss / ground) | 4x (133 MHz on 33 MHz bus) |
+![Am5x86 168-pin PGA pinout diagram from AMD datasheet -- CLKMUL at R-17](../../../assets/images/compaq-486c/cpu-upgrade/06-am5x86-pga-pinout.png)
 
-On boards with a multiplier jumper, set it to "2x" and pin R17 gets grounded -- Am5x86 quadruples instead. **My Compaq has no multiplier jumper.** Pin floats, CPU defaults to 3x (99 MHz).
+| CLKMUL (R17) State | DX4 | Am5x86 |
+|---------------------|-----|--------|
+| High (Vcc) or1 floating | 3x | 3x (99 MHz on 33 MHz bus) |
+| Low (Vss / ground) | 2x | 4x (133 MHz on 33 MHz bus) |
 
-Fix: **manually ground pin R17.** Soldered a thin wire from R17 to a nearby Vss pin on the chip. Without this the CPU boots fine but only runs at 99 MHz. Spent a while confused about the benchmarks before I figured it out.
+On boards with a multiplier jumper, set it to "2x", that grounds CLKMUL, and the Am5x86 quadruples instead. **My Compaq has no multiplier jumper.** Pin floats, internal pull-up holds it high, CPU defaults to 3x (99 MHz).
+
+Fix: **manually ground pin R17.** Soldered a thin wire from R17 to a nearby Vss pin on the chip. The datasheet says for 133 MHz processors this pin must always be connected to Vss. Without this the CPU boots fine but only runs at 99 MHz. Spent a while confused about the benchmarks before I figured it out.
 
 **TODO:** Add photo of the R17 pin ground mod.
