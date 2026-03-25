@@ -1,8 +1,8 @@
-misbug: misbug [MIT; rare (like its referent)] An unintended property of a
+misbug: [MIT; rare (like its referent)] An unintended property of a
 program that turns out to be useful; something that should have been a bug
 but turns out to be a feature. Compare green lightning. See miswart.
 %
-Venus flytrap: Venus flytrap [after the insect-eating plant] See firewall
+Venus flytrap: [after the insect-eating plant] See firewall
 machine.
 %
 pig-tail: [radio hams] A short piece of cable with two connectors on each
@@ -10,57 +10,57 @@ end for converting between one connector type and another. Common pig-tails
 are 9-to-25-pin serial-port converters and cables to connect PCMCIA network
 cards to an RJ-45 network cable.
 %
-tee: tee n.,vt. [Purdue] A carbon copy of an electronic transmission. "Oh,
+tee: n.,vt. [Purdue] A carbon copy of an electronic transmission. "Oh,
 you're sending him the bits to that? Slap on a tee for me." From the Unix
 command tee(1), itself named after a pipe fitting (see plumbing). Can also
 mean save one for me', as in "Tee a slice for me!" Also spelled T'.
 %
-AIDS: AIDS Short for A* Infected Disk Syndrome (A*' is a glob pattern that
+AIDS: Short for A* Infected Disk Syndrome (A*' is a glob pattern that
 matches, but is not limited to, Apple or Amiga), this condition is quite
 often the result of practicing unsafe SEX. See virus, worm, Trojan horse,
 virgin.
 %
-B5: B5 // [common] Abbreviation for "Babylon 5", a science-fiction TV series
+B5: // [common] Abbreviation for "Babylon 5", a science-fiction TV series
 as revered among hackers as was the original Star Trek.
 %
-beige toaster: beige toaster A Macintosh. See toaster; compare Macintrash,
+beige toaster: A Macintosh. See toaster; compare Macintrash,
 maggotbox.
 %
-store: store [prob. from techspeak main store'] In some varieties of
+store: [prob. from techspeak main store'] In some varieties of
 Commonwealth hackish, the preferred synonym for core. Thus, bringing a
 program into store' means not that one is returning shrink-wrapped software
 but that a program is being swapped in.
 %
-lag: lag [MUD, IRC; very common] When used without qualification this is
+lag: [MUD, IRC; very common] When used without qualification this is
 synomous with netlag. Curiously, people will often complain "I'm really
 lagged" when in fact it is their server or network connection that is
 lagging.
 %
-clover key: clover key [Mac users] See feature key.
+clover key: [Mac users] See feature key.
 %
-touristic: touristic Having the quality of a tourist. Often used as a
+touristic: Having the quality of a tourist. Often used as a
 pejorative, as in losing touristic scum'. Often spelled turistic' or
 turistik', so that phrase might be more properly rendered lusing turistic
 scum'.
 %
-cobweb site: cobweb site A World Wide Web Site that hasn't been updated so
+cobweb site: A World Wide Web Site that hasn't been updated so
 long it has figuratively grown cobwebs.
 %
-main loop: main loop The top-level control flow construct in an input- or
+main loop: The top-level control flow construct in an input- or
 event-driven program, the one which receives and acts or dispatches on the
 program's input. See also driver.
 %
-black magic: black magic [common] A technique that works, though nobody
+black magic: [common] A technique that works, though nobody
 really understands why. More obscure than voodoo programming, which may be
 done by cookbook. Compare also black art, deep magic, and magic number
 (sense 2).
 %
-nano: nano [CMU: from nanosecond'] A brief period of time. "Be with you in a
+nano: [CMU: from nanosecond'] A brief period of time. "Be with you in a
 nano" means you really will be free shortly, i.e., implies what mainstream
 people mean by "in a jiffy" (whereas the hackish use of jiffy' is quite
 different -- see jiffy).
 %
-drugged: drugged (also on drugs') 1. Conspicuously stupid, heading toward
+drugged: (also on drugs') 1. Conspicuously stupid, heading toward
 brain-damaged. Often accompanied by a pantomime of toking a joint. 2. Of
 hardware, very slow relative to normal performance.
 %
@@ -71,15 +71,15 @@ blammo.
 %
 For more serious network debugging, wireshark, tshark, or ngrep.
 %
-mobo: mobo Written and (rarely) spoken contraction of "motherboard"
+mobo: Written and (rarely) spoken contraction of "motherboard"
 %
-face time: face time [common] Time spent interacting with somebody face- to-
+face time: [common] Time spent interacting with somebody face- to-
 face (as opposed to via electronic links). "Oh, yeah, I spent some face time
 with him at the last Usenix."
 %
 Learn and use a version control management system, such as git.
 %
-defined as: defined as In the role of, usually in an organization- chart
+defined as: In the role of, usually in an organization- chart
 sense. "Pete is currently defined as bug prioritizer." Compare logical.
 %
 TCB: [IBM] 1. Trouble Came Back. An intermittent or difficult-to- reproduce
@@ -87,7 +87,7 @@ problem that has failed to respond to neglect or shotgun debugging. Compare
 heisenbug. Not to be confused with: 2. Trusted Computing Base, an official'
 jargon term from the Orange Book.
 %
-broadcast storm: broadcast storm [common] An incorrect packet broadcast on a
+broadcast storm: [common] An incorrect packet broadcast on a
 network that causes most hosts to respond all at once, typically with wrong
 answers that start the process over again. See network meltdown; compare
 mail storm.
@@ -96,7 +96,7 @@ For editing long commands, after setting your editor (for example export
 EDITOR=vim), ctrl-x ctrl-e will open the current command in an editor for
 multi-line editing. Or in vi style, escape-v.
 %
-crank: crank [from automotive slang] Verb used to describe the performance
+crank: [from automotive slang] Verb used to describe the performance
 of a machine, especially sustained performance. "This box cranks (or, cranks
 at) about 6 megaflops, with a burst mode of twice that on vectorized
 operations."
@@ -109,34 +109,34 @@ Pretty-print two JSON files, normalizing their syntax, then coloring and
 paginating the result: ``` diff <(jq --sort-keys . < file1.json) <(jq
 --sort-keys . < file2.json) | colordiff | less -R ```
 %
-BWQ: BWQ [IBM: abbreviation, Buzz Word Quotient'] The percentage of
+BWQ: [IBM: abbreviation, Buzz Word Quotient'] The percentage of
 buzzwords in a speech or documents. Usually roughly proportional to
 bogosity. See TLA.
 %
-NSP: NSP Common abbreviation for Network Service Provider', one of the big
+NSP: Common abbreviation for Network Service Provider', one of the big
 national or regional companies that maintains a portion of the Internet
 backbone and resells connectivity to ISPs. In 1996, major NSPs include ANS,
 MCI, UUNET, and Sprint. An Internet wholesaler.
 %
-home box: home box A hacker's personal machine, especially one he or she
+home box: A hacker's personal machine, especially one he or she
 owns. "Yeah? Well, my home box runs a full 4.4 BSD, so there!"
 %
-dinosaur pen: dinosaur pen A traditional mainframe computer room complete
+dinosaur pen: A traditional mainframe computer room complete
 with raised flooring, special power, its own ultra-heavy-duty air
 conditioning, and a side order of Halon fire extinguishers. See boa.
 %
-programming fluid: programming fluid 1. Coffee. 2. Cola. 3. Any
+programming fluid: 1. Coffee. 2. Cola. 3. Any
 caffeinacious stimulant. Many hackers consider these essential for those
 all-night hacking runs. See wirewater.
 %
 Run cygstart to open an arbitrary file through its registered application.
 %
-win win: win win excl. Expresses pleasure at a win.
+win win: excl. Expresses pleasure at a win.
 %
-memory farts: memory farts The flatulent sounds that some DOS box BIOSes
+memory farts: The flatulent sounds that some DOS box BIOSes
 (most notably AMI's) make when checking memory on bootup.
 %
-spamvertize: spamvertize To advertise using spam. Pejorative.
+spamvertize: To advertise using spam. Pejorative.
 %
 To find which socket or process is using bandwidth, try iftop or nethogs.
 %
@@ -147,32 +147,32 @@ jaws biting pieces of it off.
 echo: [FidoNet] A topic group on FidoNet's echomail system. Compare
 newsgroup.
 %
-twink: twink 1. [Berkeley] A clue-repellant user; the next step beyond a
+twink: 1. [Berkeley] A clue-repellant user; the next step beyond a
 clueless one. 2. [UCSC] A read-only user. Also reported on the Usenet group
 soc.motss; may derive from gay slang for a cute young thing with nothing
 upstairs (compare mainstream chick').
 %
-Telerat: Telerat obs. Unflattering hackerism for Teleray', a now-extinct
+Telerat: obs. Unflattering hackerism for Teleray', a now-extinct
 line of extremely losing terminals. Compare AIDX, Macintrash Nominal
 Semidestructor, ScumOS, sun-stools, HP-SUX, Slowlaris.
 %
-dark-side hacker: dark-side hacker A criminal or malicious hacker; a
+dark-side hacker: A criminal or malicious hacker; a
 cracker. From George Lucas's Darth Vader, "seduced by the dark side of the
 Force". The implication that hackers form a sort of elite of technological
 Jedi Knights is intended. Oppose samurai.
 %
-weeble: weeble interj. [Cambridge] Used to denote frustration, usually at
+weeble: interj. [Cambridge] Used to denote frustration, usually at
 amazing stupidity. "I stuck the disk in upside down." "Weeble...." Compare
 gurfle.
 %
-polygon pusher: polygon pusher A chip designer who spends most of his or her
+polygon pusher: A chip designer who spends most of his or her
 time at the physical layout level (which requires drawing lots of multi-
 colored polygons). Also rectangle slinger'.
 %
-geef: geef [ostensibly from gefingerpoken'] vt. Syn. mung. See also
+geef: [ostensibly from gefingerpoken'] vt. Syn. mung. See also
 blinkenlights.
 %
-notwork: notwork A network, when it is acting flaky or is down. Compare
+notwork: A network, when it is acting flaky or is down. Compare
 nyetwork. Said at IBM to have originally referred to a particular period of
 flakiness on IBM's VNET corporate network ca. 1988; but there are
 independent reports of the term from elsewhere.
@@ -180,17 +180,17 @@ independent reports of the term from elsewhere.
 The C programming language was created in 1972. It was named C because it
 succeeded a language called B. B succeeded BCPL. Nobody asks about A.
 %
-feeper: feeper The device in a terminal or workstation (usually a
+feeper: The device in a terminal or workstation (usually a
 loudspeaker of some kind) that makes the feep sound.
 %
-C&C: C&C // [common, esp. on news.admin.net-abuse.email] Contraction of
+C&C: // [common, esp. on news.admin.net-abuse.email] Contraction of
 "Coffee & Cats". This frequently occurs as a warning label on USENET posts
 that are likely to cause you to snarf coffee onto your keyboard and startle
 the cat off your lap.
 %
-1TBS: 1TBS // The "One True Brace Style"; see indent style.
+1TBS: // The "One True Brace Style"; see indent style.
 %
-garply: garply [Stanford] Another metasyntactic variable (see foo); once
+garply: [Stanford] Another metasyntactic variable (see foo); once
 popular among SAIL hackers.
 %
 The source code for the Apollo Guidance Computer was released on GitHub in
@@ -201,12 +201,12 @@ required to accomplish a task. Like grovel, but more random and humorous. "I
 had to silly-walk through half the /usr directories to find the maps file."
 2. Syn. fandango on core.
 %
--ware: -ware suff. [from software'] Commonly used to form jargon terms for
+-ware: suff. [from software'] Commonly used to form jargon terms for
 classes of software. For examples, see annoyware, careware, crippleware,
 crudware, freeware, fritterware, guiltware, liveware, meatware, payware,
 psychedelicware, shareware, shelfware, vaporware, wetware.
 %
-tickle a bug: tickle a bug To cause a normally hidden bug to manifest itself
+tickle a bug: To cause a normally hidden bug to manifest itself
 through some known series of inputs or operations. "You can tickle the bug
 in the Paradise VGA card's highlight handling by trying to set bright yellow
 reverse video."
@@ -216,11 +216,11 @@ speed run'] A hack session extended long outside normal working times,
 especially one longer than 12 hours. May cause you to change phase the hard
 way' (see phase).
 %
-lord high fixer: lord high fixer [primarily British, from Gilbert &
+lord high fixer: [primarily British, from Gilbert &
 Sullivan's lord high executioner'] The person in an organization who knows
 the most about some aspect of a system. See wizard.
 %
-prestidigitization: prestidigitization 1. The act of putting something into
+prestidigitization: 1. The act of putting something into
 digital notation via sleight of hand. 2. Data entry through legerdemain.
 %
 VR: programming, Up:= V = VR // [MUD] On-line abbrev for virtual reality, as
@@ -229,23 +229,23 @@ opposed to RL.
 megapenny: $10,000 (1 cent * 10^6). Used semi-humorously as a unit in
 comparing computer cost and performance figures.
 %
-hired gun: hired gun A contract programmer, as opposed to a full-time staff
+hired gun: A contract programmer, as opposed to a full-time staff
 member. All the connotations of this term suggested by innumerable spaghetti
 Westerns are intentional.
 %
-voice: voice To phone someone, as opposed to emailing them or connecting in
+voice: To phone someone, as opposed to emailing them or connecting in
 talk mode. "I'm busy now; I'll voice you later."
 %
 File attributes are settable via chattr and offer a lower-level alternative
 to file permissions. For example, to protect against accidental file
 deletion the immutable flag: sudo chattr +i directory file
 %
-manged: manged [probably from the French manger' or Italian mangiare', to
+manged: [probably from the French manger' or Italian mangiare', to
 eat; perhaps influenced by English mange', mangy'] adj. Refers to anything
 that is mangled or damaged, usually beyond repair. "The disk was manged
 after the electrical storm." Compare mung.
 %
-trash: trash To destroy the contents of (said of a data structure). The most
+trash: To destroy the contents of (said of a data structure). The most
 common of the family of near-synonyms including mung, mangle, and scribble.
 %
 lsblk: list block devices: a tree view of your disks and disk partitions
@@ -255,7 +255,7 @@ McDonald's fast-food chain; the variant big hack attack' is reported] Nearly
 synonymous with hacking run, though the latter more strongly implies an all-
 nighter.
 %
-gorp: gorp [CMU: perhaps from the canonical hiker's food, Good Old Raisins
+gorp: [CMU: perhaps from the canonical hiker's food, Good Old Raisins
 and Peanuts] Another metasyntactic variable, like foo and bar.
 %
 'Snooze: [FidoNet] Fidonews, the weekly official on- line newsletter of
@@ -263,7 +263,7 @@ FidoNet. As the editorial policy of Fidonews is "anything that arrives, we
 print", there are often large articles completely unrelated to FidoNet,
 which in turn tend to elicit flamage in subsequent issues.
 %
-DP: DP 1. Data Processing. Listed here because, according to hackers, use of
+DP: 1. Data Processing. Listed here because, according to hackers, use of
 the term marks one immediately as a suit. See DPer. 2. Common abbrev for
 Dissociated Press.
 %
@@ -275,10 +275,10 @@ earliest users.
 FORTRAN, the first high-level programming language, was released in 1957. It
 stood for FORmula TRANslation. Scientists loved it.
 %
-treeware: treeware Printouts, books, and other information media made from
+treeware: Printouts, books, and other information media made from
 pulped dead trees. Compare tree-killer, see documentation.
 %
-rice box: rice box [from ham radio slang] Any Asian-made commodity computer,
+rice box: [from ham radio slang] Any Asian-made commodity computer,
 esp. an 80x86-based machine built to IBM PC-compatible ISA or EISA-bus
 standards.
 %
@@ -287,11 +287,11 @@ python interpreter. For example, ``` >>> 2+3 5 ```
 %
 For JSON, use jq. For interactive use, also see jid and jiq.
 %
-vgrep: vgrep v.,n. Visual grep. The operation of finding patterns in a file
+vgrep: v.,n. Visual grep. The operation of finding patterns in a file
 optically rather than digitally (also called an optical grep'). See grep;
 compare vdiff.
 %
-OSU: OSU obs. [TMRC] Acronym for Officially Sanctioned User; a user who is
+OSU: obs. [TMRC] Acronym for Officially Sanctioned User; a user who is
 recognized as such by the computer authorities and allowed to use the
 computer above the objections of the security monitor.
 %
@@ -299,31 +299,31 @@ playte: bits, by analogy with nybble and byte. Usage: rare and extremely
 silly. See also dynner and crumb. General discussion of such terms is under
 nybble.
 %
-mouso: mouso [by analogy with typo'] An error in mouse usage resulting in an
+mouso: [by analogy with typo'] An error in mouse usage resulting in an
 inappropriate selection or graphic garbage on the screen. Compare thinko,
 braino.
 %
 rehi: dancing, Up:= R = rehi [IRC, MUD] "Hello again." Very commonly used to
 greet people upon returning to an IRC channel after channel hopping.
 %
-confuser: confuser Common soundalike slang for computer'. Usually
+confuser: Common soundalike slang for computer'. Usually
 encountered in compounds such as confuser room', personal confuser',
 confuser guru'. Usage: silly.
 %
-pretzel key: pretzel key [Mac users] See feature key.
+pretzel key: [Mac users] See feature key.
 %
-softcopy: softcopy [by analogy with hardcopy'] A machine- readable form of
+softcopy: [by analogy with hardcopy'] A machine- readable form of
 corresponding hardcopy. See bits, machinable.
 %
-big win: big win 1. [common] Major success. 2. [MIT] Serendipity. "Yes,
+big win: 1. [common] Major success. 2. [MIT] Serendipity. "Yes,
 those two physicists discovered high-temperature superconductivity in a
 batch of ceramic that had been prepared incorrectly according to their
 experimental schedule. Small mistake; big win!" See win big.
 %
-flamer: flamer [common] One who habitually flames. Said esp. of obnoxious
+flamer: [common] One who habitually flames. Said esp. of obnoxious
 Usenet personalities.
 %
-net.personality: net.personality Someone who has made a name for him or
+net.personality: Someone who has made a name for him or
 herself on Usenet, through either longevity or attention-getting posts, but
 doesn't meet the other requirements of net.godhood.
 %
@@ -331,7 +331,7 @@ dub dub dub: syndrome, Up:= D = dub dub dub [common] Spoken-only shorthand
 for the "www" (double-u double-u double-u) in many web host names. Nothing
 to do with the style of reggae music called dub'.
 %
-POPJ: POPJ n.,v. [from a PDP-10 return-from-subroutine instruction] To
+POPJ: n.,v. [from a PDP-10 return-from-subroutine instruction] To
 return from a digression. By verb doubling, "Popj, popj" means roughly "Now
 let's see, where were we?" See RTI.
 %
@@ -344,18 +344,18 @@ To know memory status, run and understand the output of free and vmstat. In
 particular, be aware the "cached" value is memory held by the Linux kernel
 as file cache, so effectively counts toward the "free" value.
 %
-newsfroup: newsfroup // [Usenet] Silly synonym for newsgroup, originally a
+newsfroup: // [Usenet] Silly synonym for newsgroup, originally a
 typo but now in regular use on Usenet's talk.bizarre, and other lunatic-
 fringe groups. Compare hing, grilf, pr0n and filk.
 %
-GPV: GPV Abbrev. for General Public Virus in widespread use.
+GPV: Abbrev. for General Public Virus in widespread use.
 %
-rotary debugger: rotary debugger [Commodore] Essential equipment for those
+rotary debugger: [Commodore] Essential equipment for those
 late-night or early-morning debugging sessions. Mainly used as sustenance
 for the hacker. Comes in many decorator colors, such as Sausage, Pepperoni,
 and Garbage. See ANSI standard pizza.
 %
-seggie: seggie [Unix] Shorthand for segmentation fault reported from
+seggie: [Unix] Shorthand for segmentation fault reported from
 Britain.
 %
 low-bandwidth: I/O, Up:= L = low-bandwidth [from communication theory] Used
@@ -370,46 +370,46 @@ glue: blocks. For example, Blue Glue is IBM's SNA protocol, and hardware
 designers call anything used to connect large VLSI's or circuit blocks glue
 logic'.
 %
-gonkulator: gonkulator [common; from the 1960s "Hogan's Heroes" TV series] A
+gonkulator: [common; from the 1960s "Hogan's Heroes" TV series] A
 pretentious piece of equipment that actually serves no useful purpose.
 Usually used to describe one's least favorite piece of computer hardware.
 See gonk.
 %
-EOL: EOL [End Of Line] Syn. for newline, derived perhaps from the original
+EOL: [End Of Line] Syn. for newline, derived perhaps from the original
 CDC6600 Pascal. Now rare, but widely recognized and occasionally used for
 brevity. Used in the example entry under BNF. See also EOF.
 %
-VAXen: VAXen [from oxen', perhaps influenced by vixen'] (alt. vaxen') The
+VAXen: [from oxen', perhaps influenced by vixen'] (alt. vaxen') The
 plural canonically used among hackers for the DEC VAX computers. "Our
 installation has four PDP-10s and twenty vaxen." See boxen.
 %
-stir-fried random: stir-fried random (alt. stir-fried mumble') Term used for
+stir-fried random: (alt. stir-fried mumble') Term used for
 the best dish of many of those hackers who can cook. Consists of random
 fresh veggies and meat wokked with random spices. Tasty and economical. See
 random, great-wall, ravs, laser chicken, oriental food; see also mumble.
 %
-blow away: blow away To remove (files and directories) from permanent
+blow away: To remove (files and directories) from permanent
 storage, generally by accident. "He reformatted the wrong partition and blew
 away last night's netnews." Oppose nuke.
 %
-FAQ list: FAQ list or [common; Usenet] Syn FAQ, sense 2.
+FAQ list: or [common; Usenet] Syn FAQ, sense 2.
 %
 netnews: 1. The software that makes Usenet run. 2. The content of Usenet. "I
 read netnews right after my mail most mornings."
 %
-Marginal Hacks: Marginal Hacks Margaret Jacks Hall, a building into which
+Marginal Hacks: Margaret Jacks Hall, a building into which
 the Stanford AI Lab was moved near the beginning of the 1980s (from the D.
 C. Power Lab).
 %
-unwind-protect: unwind-protect [MIT: from the name of a LISP operator] A
+unwind-protect: [MIT: from the name of a LISP operator] A
 task you must remember to perform before you leave a place or finish a
 project. "I have an unwind-protect to call my advisor."
 %
-raster burn: raster burn Eyestrain brought on by too many hours of looking
+raster burn: Eyestrain brought on by too many hours of looking
 at low-res, poorly tuned, or glare-ridden monitors, esp. graphics monitors.
 See terminal illness.
 %
-VAXectomy: VAXectomy [by analogy with vasectomy'] A VAX removal. DEC's
+VAXectomy: [by analogy with vasectomy'] A VAX removal. DEC's
 Microvaxen, especially, are much slower than newer RISC-based workstations
 such as the SPARC. Thus, if one knows one has a replacement coming, VAX
 removal can be cause for celebration.
@@ -417,16 +417,16 @@ removal can be cause for celebration.
 twilight zone: // [IRC] Notionally, the area of cyberspace where IRC
 operators live. An op is said to have a "connection to the twilight zone".
 %
-P-mail: P-mail [rare] Physical mail, as opposed to email. Synonymous with
+P-mail: [rare] Physical mail, as opposed to email. Synonymous with
 snail-mail, but much less common.
 %
-frotz: frotz 1. See frobnitz. 2. mumble frotz': An interjection of mildest
+frotz: 1. See frobnitz. 2. mumble frotz': An interjection of mildest
 disgust.
 %
-sys-frog: sys-frog [the PLATO system] Playful variant of sysprog', which is
+sys-frog: [the PLATO system] Playful variant of sysprog', which is
 in turn short for systems programmer'.
 %
-wugga wugga: wugga wugga Imaginary sound that a computer program makes as it
+wugga wugga: Imaginary sound that a computer program makes as it
 labors with a tedious or difficult task.grind (sense 4).
 %
 Use man ascii for a good ASCII table, with hex and decimal values. For
@@ -435,7 +435,7 @@ general encoding info, man unicode, man utf-8, and man latin1 are helpful.
 vaxherd: obs. [from oxherd'] A VAX operator. The image is reinforced because
 VAXen actually did tend to come in herds, technically known as clusters'.
 %
-bodysurf code: bodysurf code A program or segment of code written quickly in
+bodysurf code: A program or segment of code written quickly in
 the heat of inspiration without the benefit of formal design or deep
 thought. Like its namesake sport, the result is too often a wipeout that
 leaves the programmer eating sand.
@@ -451,7 +451,7 @@ snarf.
 Ken Thompson and Dennis Ritchie created Unix in 1969 at Bell Labs on a PDP-7
 they found in a closet. The rest is history.
 %
-pink wire: pink wire [from the pink PTFE wire used in military equipment] As
+pink wire: [from the pink PTFE wire used in military equipment] As
 blue wire, but used in military applications. 2. vi. To add a pink wire to a
 board.
 %
@@ -462,7 +462,7 @@ board: 1. In-context synonym for bboard; sometimes used even for Usenet
 newsgroups (but see usage note under bboard, sense 1). 2. An electronic
 circuit board.
 %
-bible: bible 1. One of a small number of fundamental source books such as
+bible: 1. One of a small number of fundamental source books such as
 Knuth, K&R, or the Camel Book. 2. The most detailed and authoritative
 reference for a particular language, operating system, or other complex
 software system.
@@ -470,15 +470,15 @@ software system.
 fortune, ddate, and sl: um, well, it depends on whether you consider steam
 locomotives and Zippy quotations "useful"
 %
-spoiler space: spoiler space [also spoiler spoo'] A screenful of blank lines
+spoiler space: [also spoiler spoo'] A screenful of blank lines
 (and, often, form-feeds) deliberately inserted in a message following a
 spoiler warning, so the actual spoiler can't be seen without hitting a key.
 %
-octal forty: octal forty Hackish way of saying "I'm drawing a blank." Octal
+octal forty: Hackish way of saying "I'm drawing a blank." Octal
 40 is the ASCII space character, 0100000; by an odd coincidence, hex 40
 (01000000) is the EBCDIC space character. See wall.
 %
-hack together: hack together [common] To throw something together so it will
+hack together: [common] To throw something together so it will
 work. Unlike kluge together' or cruft together, this does not necessarily
 have negative connotations.
 %
@@ -488,42 +488,42 @@ be ignored.
 RL: // [MUD community] Real Life. "Firiss laughs in RL" means that Firiss's
 player is laughing. Compare meatspace; oppose VR.
 %
-hack up: hack up To hack, but generally implies that the result is a hack in
+hack up: To hack, but generally implies that the result is a hack in
 sense 1 (a quick hack). Contrast this with hack on. To hack up on' implies a
 quick-and-dirty modification to an existing system. Contrast hacked up;
 compare kluge up, monkey up, cruft together.
 %
-CI$: CI$ // Hackerism for CIS', CompuServe Information Service. The dollar
+CI$: // Hackerism for CIS', CompuServe Information Service. The dollar
 sign refers to CompuServe's rather steep line charges. Often used in sig
 blocks just before a CompuServe address. Syn. Compu$erve.
 %
-meatware: meatware Synonym for wetware. Less common.
+meatware: Synonym for wetware. Less common.
 %
 BAD: combatability, Up:= B = BAD [IBM: acronym, Broken As Designed'] Said of
 a program that is bogus because of bad design and misfeatures rather than
 because of bugginess. See working as designed.
 %
-toor: toor The Bourne-Again Super-user. An alternate account with UID of 0,
+toor: The Bourne-Again Super-user. An alternate account with UID of 0,
 created on Unix machines where the root user has an inconvenient choice of
 shell. Compare avatar.
 %
-snail: snail To snail-mail something. "Snail me a copy of those graphics,
+snail: To snail-mail something. "Snail me a copy of those graphics,
 will you?"
 %
-nanofortnight: nanofortnight [Adelaide University] 1 fortnight * 10^(-9), or
+nanofortnight: [Adelaide University] 1 fortnight * 10^(-9), or
 about 1.2 msec. This unit was used largely by students doing undergraduate
 practicals. See microfortnight, attoparsec, and micro-.
 %
-lose lose: lose lose interj. A reply to or comment on an undesirable
+lose lose: interj. A reply to or comment on an undesirable
 situation. "I accidentally deleted all my files!" "Lose, lose."
 %
 Use alias to create shortcuts for commonly used commands. For example, alias
 ll='ls -latr' creates a new alias ll.
 %
-psychedelicware: psychedelicware [UK] Syn. display hack. See also smoking
+psychedelicware: [UK] Syn. display hack. See also smoking
 clover.
 %
-cubing: cubing [parallel with tubing'] 1. Hacking on an IPSC (Intel Personal
+cubing: [parallel with tubing'] 1. Hacking on an IPSC (Intel Personal
 SuperComputer) hypercube. "Louella's gone cubing again!!" 2. Hacking Rubik's
 Cube or related puzzles, either physically or mathematically. 3. An
 indescribable form of self-torture (see sense 1 or 2).
@@ -533,11 +533,11 @@ Pejorative term for ugly ASCII art, especially as found in sig blocks. For
 some reason, mutations of the head of Bart Simpson are particularly common
 in the least imaginative sig blocks. See warlording.
 %
-die: die Syn. crash. Unlike crash, which is used primarily of hardware, this
+die: Syn. crash. Unlike crash, which is used primarily of hardware, this
 verb is used of both hardware and software. See also go flatline, casters-up
 mode.
 %
-crudware: crudware Pejorative term for the hundreds of megabytes of low-
+crudware: Pejorative term for the hundreds of megabytes of low-
 quality freeware circulated by user's groups and BBS systems in the micro-
 hobbyist world. "Yet another set of disk catalog utilities for MS-DOS? What
 crudware!"
@@ -546,7 +546,7 @@ macro-: pref. Large. Opposite of micro-. In the mainstream and among other
 technical cultures (for example, medical people) this competes with the
 prefix mega-, but hackers tend to restrict the latter to quantification.
 %
-XXX: XXX A marker that attention is needed. Commonly used in program
+XXX: A marker that attention is needed. Commonly used in program
 comments to indicate areas that are kluged up or need to be. Some hackers
 liken XXX' to the notional heavy-porn movie rating. Compare FIXME.
 %
@@ -554,18 +554,18 @@ crapplet: [portmanteau, crap + applet] A worthless applet, esp. a Java
 widget attached to a web page that doesn't work or even crashes your
 browser. Also spelled craplet'.
 %
-parent message: parent message What a followup follows up.
+parent message: What a followup follows up.
 %
-scag: scag To destroy the data on a disk, either by corrupting the
+scag: To destroy the data on a disk, either by corrupting the
 filesystem or by causing media damage. "That last power hit scagged the
 system disk." Compare scrog, roach.
 %
-user-obsequious: user-obsequious Emphatic form of user-friendly. Connotes a
+user-obsequious: Emphatic form of user-friendly. Connotes a
 system so verbose, inflexible, and determinedly simple-minded that it is
 nearly unusable. "Design a system any fool can use and only a fool will want
 to use it." See WIMP environment, Macintrash.
 %
-nickle: nickle [from nickel', common name for the U.S. 5-cent coin] A nybble
+nickle: [from nickel', common name for the U.S. 5-cent coin] A nybble
 + 1; 5 bits. Reported among developers for Mattel's GI 1600 (the
 Intellivision games processor), a chip with 16-bit-wide RAM but 10-bit- wide
 ROM. See also deckle, and nybble for names of other bit units.
@@ -574,11 +574,11 @@ two-to-the-N: quant. An amount much larger than N but smaller than infinity.
 "I have 2-to-the-N things to do before I can go out for lunch" means you
 probably won't show up.
 %
-asbestos: asbestos [common] Used as a modifier to anything intended to
+asbestos: [common] Used as a modifier to anything intended to
 protect one from flames; also in other highly flame-suggestive usages. See,
 for example, asbestos longjohns and asbestos cork award.
 %
-square tape: square tape Mainframe magnetic tape cartridges for use with IBM
+square tape: Mainframe magnetic tape cartridges for use with IBM
 3480 or compatible tape drives; or QIC tapes used on workstations and
 micros. The term comes from the square (actually rectangular) shape of the
 cartridges; contrast round tape.
@@ -587,37 +587,37 @@ Know that some commands are not executables, but Bash builtins, and that you
 can get help on them with help and help -d. You can find out whether a
 command is an executable, shell builtin or an alias by using type command.
 %
-sagan: sagan [from Carl Sagan's TV series "Cosmos"; think "billions and
+sagan: [from Carl Sagan's TV series "Cosmos"; think "billions and
 billions"] A large quantity of anything. "There's a sagan different ways to
 tweak EMACS." "The U.S. Government spends sagans on bombs and welfare --
 hard to say which is more destructive."
 %
-vaston: vaston [Durham, UK] The unit of load average'. A measure of how much
+vaston: [Durham, UK] The unit of load average'. A measure of how much
 work a computer is doing. A meter displaying this as a function of time is
 known as a vastometer'. First used during a computing practical in December
 1996.
 %
 stroke: (/', ASCII 0101111) character. See ASCII for other synonyms.
 %
-lase: lase To print a given document via a laser printer. "OK, let's lase
+lase: To print a given document via a laser printer. "OK, let's lase
 that sucker and see if all those graphics-macro calls did the right things."
 %
-nick: nick [IRC; very common] Short for nickname. On IRC, every user must
+nick: [IRC; very common] Short for nickname. On IRC, every user must
 pick a nick, which is sometimes the same as the user's real name or login
 name, but is often more fanciful. Compare handle, screen name.
 %
-Code of the Geeks: Code of the Geeks see geek code.
+Code of the Geeks: see geek code.
 %
 meltdown network: = meltdown, network See network meltdown.
 %
 spin: buzz. More common among C and Unix programmers. See the discussion of
 spinlock' under busy-wait.
 %
-corge: corge [originally, the name of a cat] Yet another metasyntactic
+corge: [originally, the name of a cat] Yet another metasyntactic
 variable, invented by Mike Gallaher and propagated by the GOSMACS
 documentation. See grault.
 %
-disk farm: disk farm (also laundromat) A large room or rooms filled with
+disk farm: (also laundromat) A large room or rooms filled with
 disk drives (esp. washing machines).
 %
 To continuously monitor changes, use watch, e.g. check changes to files in a
@@ -627,7 +627,7 @@ troubleshooting your wifi settings with watch -d -n 2 ifconfig.
 ifdef out: you want X you know where to find it., Up:= I = ifdef out Syn.
 for condition out, specific to C.
 %
-dispress: dispress [contraction of Dissociated Press' due to eight-
+dispress: [contraction of Dissociated Press' due to eight-
 character MS-DOS filenames] To apply the Dissociated Press algorithm to a
 block of text. The resultant output is also referred to as a 'dispression'.
 %
@@ -636,34 +636,34 @@ Note that a C:\ Windows drive path becomes c under Cygwin, and that Cygwin's
 style file paths with cygpath. This is most useful in scripts that invoke
 Windows programs.
 %
-marginally: marginally Slightly. "The ravs here are only marginally better
+marginally: Slightly. "The ravs here are only marginally better
 than at Small Eating Place." See epsilon.
 %
-120 reset: 120 reset [from 120 volts, U.S. wall voltage] To cycle power on a
+120 reset: [from 120 volts, U.S. wall voltage] To cycle power on a
 machine in order to reset or unjam it. Compare Big Red Switch, power cycle.
 %
-Lintel: Lintel The emerging Linux/Intel alliance. This term began to be used
+Lintel: The emerging Linux/Intel alliance. This term began to be used
 in early 1999 after it became clear that the Wintel alliance was under
 increasing strain and Intel started taking stakes in Linux companies.
 %
-pod: pod [allegedly from abbreviation POD for Prince Of Darkness'] A Diablo
+pod: [allegedly from abbreviation POD for Prince Of Darkness'] A Diablo
 630 (or, latterly, any letter-quality impact printer). From the DEC-10
 PODTYPE program used to feed formatted text to it. Not to be confused with
 P.O.D..
 %
-golden: golden [prob. from folklore's golden egg'] When used to describe a
+golden: [prob. from folklore's golden egg'] When used to describe a
 magnetic medium (e.g., golden disk', golden tape'), describes one containing
 a tested, up-to-spec, ready-to-ship software version. Compare platinum-
 iridium.
 %
-barfulation: barfulation interj. Variation of barf used around the Stanford
+barfulation: interj. Variation of barf used around the Stanford
 area. An exclamation, expressing disgust. On seeing some particularly bad
 code one might exclaim, "Barfulation! Who wrote this, Quux?"
 %
-round tape: round tape Industry-standard 1/2-inch magnetic tape (7- or
+round tape: Industry-standard 1/2-inch magnetic tape (7- or
 9-track) on traditional circular reels. See macrotape, oppose square tape.
 %
-BI: BI // Common written abbreviation for Breidbart Index.
+BI: // Common written abbreviation for Breidbart Index.
 %
 For binary files, use hd, hexdump or xxd for simple hex dumps and bvi,
 hexedit or biew for binary editing.
@@ -671,16 +671,16 @@ hexedit or biew for binary editing.
 The term 'byte' was coined by Werner Buchholz in 1956 during the design of
 the IBM Stretch computer. He deliberately misspelled 'bite'.
 %
-PHB: PHB [Usenet; common; rarely spoken] Abbreviation, "Pointy- Haired
+PHB: [Usenet; common; rarely spoken] Abbreviation, "Pointy- Haired
 Boss". From the Dilbert character, the archetypal halfwitted middle-
 management type. See also pointy-haired.
 %
-poser: poser A wannabee; not hacker slang, but used among crackers, phreaks
+poser: A wannabee; not hacker slang, but used among crackers, phreaks
 and warez d00dz. Not as negative as lamer or leech. Probably derives from a
 similar usage among punk-rockers and metalheads, putting down those who
 "talk the talk but don't walk the walk".
 %
-logic bomb: logic bomb Code surreptitiously inserted into an application or
+logic bomb: Code surreptitiously inserted into an application or
 OS that causes it to perform some destructive or security-compromising
 activity whenever specified conditions are met. Compare back door.
 %
@@ -688,16 +688,16 @@ HTH: // [Usenet: very common] Abbreviation: Hope This Helps (e.g. following
 a response to a technical question). Often used just before HAND. See also
 YHBT.
 %
-pseudosuit: pseudosuit A suit wannabee; a hacker who has decided that he
+pseudosuit: A suit wannabee; a hacker who has decided that he
 wants to be in management or administration and begins wearing ties, sport
 coats, and (shudder!) suits voluntarily. It's his funeral. See also
 lobotomy.
 %
-creep: creep To advance, grow, or multiply inexorably. In hackish usage this
+creep: To advance, grow, or multiply inexorably. In hackish usage this
 verb has overtones of menace and silliness, evoking the creeping horrors of
 low-budget monster movies.
 %
-LER: LER 1. [TMRC, from Light-Emitting Diode'] A light- emitting resistor
+LER: 1. [TMRC, from Light-Emitting Diode'] A light- emitting resistor
 (that is, one in the process of burning up). Ohm's law was broken. See also
 SED. 2. An incandescent light bulb (the filament emits light because it's
 resistively heated).
@@ -705,21 +705,21 @@ resistively heated).
 To replace all occurrences of a string in place, in one or more files: ```sh
 perl -pi.bak -e 's new-string/g' my-files-*.txt ```
 %
-egosurf: egosurf To search the net for your name or links to your web pages.
+egosurf: To search the net for your name or links to your web pages.
 Perhaps connected to long-established SF-fan slang egoscan', to search for
 one's name in a fanzine.
 %
 friode: [TMRC] A reversible (that is, fused or blown) diode. Compare fried;
 see also SED, LER.
 %
-erotics: erotics [Helsinki University of Technology, Finland] n. English-
+erotics: [Helsinki University of Technology, Finland] n. English-
 language university slang for electronics. Often used by hackers in
 Helsinki, maybe because good electronics excites them and makes them warm.
 %
 tree: display directories and subdirectories as a nesting tree; like ls but
 recursive
 %
-file signature: file signature A magic number, sense 3.
+file signature: A magic number, sense 3.
 %
 Purple Book: 1. The "System V Interface Definition". The covers of the first
 editions were an amazingly nauseating shade of off- lavender. 2. Syn. Wizard
@@ -735,18 +735,18 @@ box.
 %
 If you must handle XML, xmlstarlet is old but good.
 %
-gurfle: gurfle interj. An expression of shocked disbelief. "He said we have
+gurfle: interj. An expression of shocked disbelief. "He said we have
 to recode this thing in FORTRAN by next week. Gurfle!" Compare weeble.
 %
-snarf down: snarf down To snarf, with the connotation of absorbing,
+snarf down: To snarf, with the connotation of absorbing,
 processing, or understanding. "I'll snarf down the latest version of the
 nethack user's guide -- it's been a while since I played last and I don't
 know what's changed recently."
 %
-nailed to the wall: nailed to the wall [like a trophy] Said of a bug finally
+nailed to the wall: [like a trophy] Said of a bug finally
 eliminated after protracted, and even heroic, effort.
 %
-pipe: pipe [common] Idiomatically, one's connection to the Internet; in
+pipe: [common] Idiomatically, one's connection to the Internet; in
 context, the expansion "bit pipe" is understood. A "fat pipe" is a line with
 T1 or higher capacity. A person with a 28.8 modem might be heard to complain
 "I need a bigger pipe".
@@ -755,14 +755,14 @@ Learn about redirection of output and input using > and < and pipes using |.
 Know > overwrites the output file and >> appends. Learn about stdout and
 stderr.
 %
-parm: parm Further-compressed form of param. This term is an IBMism, and
+parm: Further-compressed form of param. This term is an IBMism, and
 written use is almost unknown outside IBM shops; spoken is more widely
 distributed, but the synonym arg is favored among hackers. Compare arg, var.
 %
-SED: SED [TMRC, from Light-Emitting Diode'] Smoke-emitting diode. A friode
+SED: [TMRC, from Light-Emitting Diode'] Smoke-emitting diode. A friode
 that lost the war. See also LER.
 %
-alpha geek: alpha geek [from animal ethologists' alpha male'] The most
+alpha geek: [from animal ethologists' alpha male'] The most
 technically accomplished or skillful person in some implied context. "Ask
 Larry, he's the alpha geek here."
 %
@@ -792,15 +792,15 @@ HAND: // [Usenet: very common] Abbreviation: Have A Nice Day. Typically used
 to close a Usenet posting, but also used to informally close emails; often
 preceded by HTH.
 %
-mickey: mickey The resolution unit of mouse movement. It has been suggested
+mickey: The resolution unit of mouse movement. It has been suggested
 that the disney' will become a benchmark unit for animation graphics
 performance.
 %
-dup killer: dup killer [FidoNet] Software that is supposed to detect and
+dup killer: [FidoNet] Software that is supposed to detect and
 delete duplicates of a message that may have reached the FidoNet system via
 different routes.
 %
-showstopper: showstopper A hardware or (especially) software bug that makes
+showstopper: A hardware or (especially) software bug that makes
 an implementation effectively unusable; one that absolutely has to be fixed
 before development can go on. Opposite in connotation from its original
 theatrical use, which refers to something stunningly good.
@@ -809,7 +809,7 @@ doorstop: so, especially obsolete equipment kept around for political
 reasons or ostensibly as a backup. "When we get another Wyse-50 in here,
 that ADM 3 will turn into a doorstop." Compare boat anchor.
 %
-sniff: sniff v.,n. 1. To watch IP packets traversing a local network. Most
+sniff: v.,n. 1. To watch IP packets traversing a local network. Most
 often in the phrase packet sniffer', a program for doing same. 2.Synonym for
 poll.
 %
@@ -817,7 +817,7 @@ lsmod and modinfo: List and show details of kernel modules.
 %
 hand cruft: [pun on hand craft'] See cruft, sense 3.
 %
-inc: inc Verbal (and only rarely written) shorthand for increment, i.e.
+inc: Verbal (and only rarely written) shorthand for increment, i.e.
 increase by one'. Especially used by assembly programmers, as many assembly
 languages have an inc mnemonic. Antonym: dec (see DEC).
 %
@@ -826,11 +826,11 @@ hackishness: hack. This term is considered mildly silly. Syn. hackitude.
 The first computer virus for MS-DOS was Brain, written in 1986 by two
 brothers in Pakistan. It even included their phone number.
 %
-flame on: flame on vi.,interj. 1. To begin to flame. The punning reference
+flame on: vi.,interj. 1. To begin to flame. The punning reference
 to Marvel Comics's Human Torch is no longer widely recognized. 2. To
 continue to flame. See rave, burble.
 %
-phage: phage A program that modifies other programs or databases in
+phage: A program that modifies other programs or databases in
 unauthorized ways; esp. one that propagates a virus or Trojan horse. See
 also worm, mockingbird. The analogy, of course, is with phage viruses in
 biology.
@@ -838,9 +838,9 @@ biology.
 To see sizes/dates on a tree of files, this is like a recursive ls -l but is
 easier to read than ls -lR: ```sh find . -type f -ls ```
 %
-zipperhead: zipperhead [IBM] A person with a closed mind.
+zipperhead: [IBM] A person with a closed mind.
 %
-neat hack: neat hack [very common] 1. A clever technique. 2. A brilliant
+neat hack: [very common] 1. A clever technique. 2. A brilliant
 practical joke, where neatness is correlated with cleverness, harmlessness,
 and surprise value. Example: the Caltech Rose Bowl card display switch (see
 Appendix A for discussion). See also hack.
@@ -853,26 +853,26 @@ this term comes from the fact that it's also in mainstream use to describe a
 solarium, and all those Sun workstations clustered together give off an
 amazing amount of heat.
 %
-doc: doc Common spoken and written shorthand for documentation'. Often used
+doc: Common spoken and written shorthand for documentation'. Often used
 in the plural docs' and in the construction doc file' (i.e., documentation
 available on-line).
 %
 expand and unexpand: convert between tabs and spaces
 %
-RE: RE Common spoken and written shorthand for regexp.
+RE: Common spoken and written shorthand for regexp.
 %
-Hackintosh: Hackintosh 1. An Apple Lisa that has been hacked into emulating
+Hackintosh: 1. An Apple Lisa that has been hacked into emulating
 a Macintosh (also called a Mac XL'). 2. A Macintosh assembled from parts
 theoretically belonging to different models in the line.
 %
-netter: netter 1. Loosely, anyone with a network address. 2. More
+netter: 1. Loosely, anyone with a network address. 2. More
 specifically, a Usenet regular. Most often found in the plural. "If you post
 that in a technical group, you're going to be flamed by angry netters for
 the rest of time!"
 %
-excl: excl Abbreviation for exclamation point'. See bang, shriek, ASCII.
+excl: Abbreviation for exclamation point'. See bang, shriek, ASCII.
 %
-barfmail: barfmail Multiple bounce messages accumulating to the level of
+barfmail: Multiple bounce messages accumulating to the level of
 serious annoyance, or worse. The sort of thing that happens when an inter-
 network mail gateway goes down or wonky.
 %
@@ -881,15 +881,15 @@ Helvetica). Legal boilerplate is usually printed in Flyspeck 3.
 %
 Use mtr as a better traceroute, to identify network issues.
 %
-pretty pictures: pretty pictures [scientific computation] The next step up
+pretty pictures: [scientific computation] The next step up
 from numbers. Interesting graphical output from a program that may not have
 any sensible relationship to the system the program is intended to model.
 Good for showing to management.
 %
-scanno: scanno An error in a document caused by a scanner glitch, analogous
+scanno: An error in a document caused by a scanner glitch, analogous
 to a typo or thinko.
 %
-YKYBHTLW: YKYBHTLW // abbrev. Abbreviation of You know you've been hacking
+YKYBHTLW: // abbrev. Abbreviation of You know you've been hacking
 too long when...', which became established on the Usenet group
 alt.folklore.computers during extended discussion of the indicated entry in
 the Jargon File.
@@ -898,19 +898,19 @@ shelfware: (by an individual user) or in accordance with policy (by a
 corporation or government agency), but not actually required for any
 particular use. Therefore, it often ends up on some shelf.
 %
-Camel Book: Camel Book Universally recognized nickname for the book
+Camel Book: Universally recognized nickname for the book
 "Programming Perl", by Larry Wall and Randal L. Schwartz, O'Reilly and
 Associates 1991, ISBN 0-937175-64-1 (second edition 1996, ISBN
 1-56592-149-6). The definitive reference on Perl.
 %
-banner ad: banner ad Any of the annoying graphical advertisements that span
+banner ad: Any of the annoying graphical advertisements that span
 the tops of way too many Web pages.
 %
-short card: short card A half-length IBM XT expansion card or adapter that
+short card: A half-length IBM XT expansion card or adapter that
 will fit in one of the two short slots located towards the right rear of a
 standard chassis (tucked behind the floppy disk drives). See also tall card.
 %
-branch to Fishkill: branch to Fishkill [IBM: from the location of one of the
+branch to Fishkill: [IBM: from the location of one of the
 corporation's facilities] Any unexpected jump in a program that produces
 catastrophic or just plain weird results. See jump off into never-never
 land, hyperspace.
@@ -922,7 +922,7 @@ anyone. See JEDR.
 BSD Unix was born at UC Berkeley in 1977. Its TCP/IP stack became the
 foundation for most Internet infrastructure still in use today.
 %
-linearithmic: linearithmic Of an algorithm, having running time that is O(N
+linearithmic: Of an algorithm, having running time that is O(N
 log N). Coined as a portmanteau of linear' and logarithmic' in "Algorithms
 In C" by Robert Sedgewick (Addison-Wesley 1990, ISBN 0-201-51425-7).
 %
@@ -936,26 +936,26 @@ each line is paired with the filename), or head -100 (so each file has a
 heading). This can be useful for directories filled with config settings
 like those in proc, /etc.
 %
-ANSI standard pizza: ANSI standard pizza [CMU] Pepperoni and mushroom pizza.
+ANSI standard pizza: [CMU] Pepperoni and mushroom pizza.
 Coined allegedly because most pizzas ordered by CMU hackers during some
 period leading up to mid-1990 were of that flavor. See also rotary debugger;
 compare ISO standard cup of tea.
 %
-faulty: faulty Non-functional; buggy. Same denotation as bletcherous,
+faulty: Non-functional; buggy. Same denotation as bletcherous,
 losing, q.v., but the connotation is much milder.
 %
-barney: barney In Commonwealth hackish, barney' is to fred (sense #1) as bar
+barney: In Commonwealth hackish, barney' is to fred (sense #1) as bar
 is to foo. That is, people who commonly use fred' as their first
 metasyntactic variable will often use barney' second. The reference is, of
 course, to Fred Flintstone and Barney Rubble in the Flintstones cartoons.
 %
-AUP: AUP Abbreviation, "Acceptable Use Policy". The policy of a given ISP
+AUP: Abbreviation, "Acceptable Use Policy". The policy of a given ISP
 which sets out what the ISP considers to be (un)acceptable uses of its
 Internet resources.
 %
 socat: socket relay and tcp port forwarder (similar to netcat)
 %
-greenbar: greenbar A style of fanfolded continuous-feed paper with
+greenbar: A style of fanfolded continuous-feed paper with
 alternating green and white bars on it, especially used in old-style line
 printers. This slang almost certainly dates way back to mainframe days.
 %
@@ -966,7 +966,7 @@ Save aliases, shell settings, and functions you commonly use in ~/.bashrc,
 and arrange for login shells to source it. This will make your setup
 available in all your shell sessions.
 %
-real: real Not simulated. Often used as a specific antonym to virtual in any
+real: Not simulated. Often used as a specific antonym to virtual in any
 of its jargon senses.
 %
 PBD: [abbrev. of Programmer Brain Damage'] Applied to bug reports revealing
@@ -979,7 +979,7 @@ groups and refraining from commercial pluggery outside the biz groups.
 %
 rectangle slinger: world, Up:= R = rectangle slinger See polygon pusher.
 %
-glassfet: glassfet [by analogy with MOSFET, the acronym for Metal-Oxide-
+glassfet: [by analogy with MOSFET, the acronym for Metal-Oxide-
 Semiconductor Field-Effect Transistor'] Syn. firebottle, a humorous way to
 refer to a vacuum tube.
 %
@@ -992,7 +992,7 @@ If you delete a file and it doesn't free up expected disk space as reported
 by du, check whether the file is in use by a process: lsof | grep deleted |
 grep "filename-of-my-big-file"
 %
-fortune cookie: fortune cookie [WAITS, via Unix; common] A random quote,
+fortune cookie: [WAITS, via Unix; common] A random quote,
 item of trivia, joke, or maxim printed to the user's tty at login time or
 (less commonly) at logout time. Items from this lexicon have often been used
 as fortune cookies. See cookie file.
@@ -1004,27 +1004,27 @@ in the extreme: Of The Net Predicted!, Up:= I = in the extreme A preferred
 superlative suffix for many hackish terms. See, for example, obscure in the
 extreme' under obscure, and compare highly.
 %
-cookie file: cookie file A collection of fortune cookies in a format that
+cookie file: A collection of fortune cookies in a format that
 facilitates retrieval by a fortune program. There are several different
 cookie files in public distribution, and site admins often assemble their
 own from various sources including this lexicon.
 %
-Exon: Exon excl. A generic obscenity that quickly entered wide use on the
+Exon: excl. A generic obscenity that quickly entered wide use on the
 Internet and Usenet after Black Thursday. From the last name of Senator
 James Exon (Democrat-Nebraska), primary author of the CDA.
 %
-bogometer: bogometer A notional instrument for measuring bogosity. Compare
+bogometer: A notional instrument for measuring bogosity. Compare
 the Troll-O-Meter and the wankometer' described in the wank entry; see also
 bogus.
 %
-fd leak: fd leak A kind of programming bug analogous to a core leak, in
+fd leak: A kind of programming bug analogous to a core leak, in
 which a program fails to close file descriptors (fd's) after file operations
 are completed, and thus eventually runs out of them. See leak.
 %
 units: unit conversions and calculations; converts furlongs per fortnight to
 twips per blink (see also share definitions.units)
 %
-smash case: smash case To lose or obliterate the uppercase/lowercase
+smash case: To lose or obliterate the uppercase/lowercase
 distinction in text input. "MS-DOS will automatically smash case in the
 names of all the files you create." Compare fold case.
 %
@@ -1033,10 +1033,10 @@ Any computer program that is made up of or otherwise contains proglets. 3.
 Any computer program that is large enough to be normally distributed as an
 RPM or tarball.
 %
-digit: digit n.,obs. An employee of Digital Equipment Corporation. See also
+digit: n.,obs. An employee of Digital Equipment Corporation. See also
 VAX, VMS, PDP-10, TOPS-10, field circus.
 %
-grunge: grunge 1. That which is grungy, or that which makes it so. 2.
+grunge: 1. That which is grungy, or that which makes it so. 2.
 [Cambridge] Code which is inaccessible due to changes in other parts of the
 program. The preferred term in North America is dead code.
 %
@@ -1049,7 +1049,7 @@ See inotifywait and entr as well.
 Be familiar with Bash job management: &, ctrl-z, ctrl-c, jobs, fg, bg, kill,
 etc.
 %
-copy protection: copy protection A class of methods for preventing
+copy protection: A class of methods for preventing
 incompetent pirates from stealing software and legitimate customers from
 using it. Considered silly.
 %
@@ -1057,12 +1057,12 @@ To go back to the previous working directory: cd -.
 %
 lockfile: create semaphore file that can only be removed by rm -f
 %
-puff: puff To decompress data that has been crunched by Huffman coding. At
+puff: To decompress data that has been crunched by Huffman coding. At
 least one widely distributed Huffman decoder program was actually named
 PUFF', but these days it is usually packaged with the encoder. Oppose huff,
 see inflate.
 %
-mumblage: mumblage The topic of one's mumbling (see mumble). "All that
+mumblage: The topic of one's mumbling (see mumble). "All that
 mumblage" is used like "all that stuff" when it is not quite clear how the
 subject of discussion works, or like "all that crap" when mumble' is being
 used as an implicit replacement for pejoratives.
@@ -1070,37 +1070,37 @@ used as an implicit replacement for pejoratives.
 Native command-line Windows networking tools you may find useful include
 ping, ipconfig, tracert, and netstat.
 %
-UBE: UBE // [abbrev., Unsoliclited Bulk Email] A widespread, more formal
+UBE: // [abbrev., Unsoliclited Bulk Email] A widespread, more formal
 term for email spam. Compare UCE. The UBE term recognizes that spam is
 uttered by nonprofit and advocacy groups whose motives are not commercial.
 %
-zombie: zombie [Unix] A process that has died but has not yet relinquished
+zombie: [Unix] A process that has died but has not yet relinquished
 its process table slot (because the parent process hasn't executed a wait(2)
 for it yet). These can be seen in ps(1) listings occasionally. Compare
 orphan.
 %
-FIXME: FIXME imp. [common] A standard tag often put in C comments near a
+FIXME: imp. [common] A standard tag often put in C comments near a
 piece of code that needs work. The point of doing so is that a grep or a
 similar pattern-matching tool can find all such places quickly. Compare XXX.
 %
-AI: AI Abbreviation for Artificial Intelligence', so common that the full
+AI: Abbreviation for Artificial Intelligence', so common that the full
 form is almost never written or spoken among hackers.
 %
-Devil Book: Devil Book See daemon book, the term preferred by its authors.
+Devil Book: See daemon book, the term preferred by its authors.
 %
-wizardly: wizardly Pertaining to wizards. A wizardly feature is one that
+wizardly: Pertaining to wizards. A wizardly feature is one that
 only a wizard could understand or use properly.
 %
-hammer: hammer Commonwealth hackish syn. for bang on.
+hammer: Commonwealth hackish syn. for bang on.
 %
-winged comments: winged comments Comments set on the same line as code, as
+winged comments: Comments set on the same line as code, as
 opposed to boxed comments. In C, for example: d = sqrt(x*x + y*y); Generally
 these refer only to the action(s) taken on that line.
 %
-M$: M$ Common net abbreviation for Microsoft, everybody's least favorite
+M$: Common net abbreviation for Microsoft, everybody's least favorite
 monopoly.
 %
-GNUMACS: GNUMACS [contraction of GNU EMACS'] Often- heard abbreviated name
+GNUMACS: [contraction of GNU EMACS'] Often- heard abbreviated name
 for the GNU project's flagship tool, EMACS. Used esp. in contrast with
 GOSMACS.
 %
@@ -1111,74 +1111,74 @@ audio jargon, the word refers to the treble speaker(s) on a hi- fi.
 timeout: execute a command for specified amount of time and stop the process
 when the specified amount of time completes.
 %
-abbrev: abbrev , Common abbreviation for abbreviation'.
+abbrev: , Common abbreviation for abbreviation'.
 %
 multician: [coined at Honeywell, ca. 1970] Competent user of Multics.
 Perhaps oddly, no one has ever promoted the analogous Unician'.
 %
-toy program: toy program 1. One that can be readily comprehended; hence, a
+toy program: 1. One that can be readily comprehended; hence, a
 trivial program (compare noddy). 2. One for which the effort of initial
 coding dominates the costs through its life cycle. See also noddy.
 %
-mouse around: mouse around To explore public portions of a large system,
+mouse around: To explore public portions of a large system,
 esp. a network such as Internet via FTP or TELNET, looking for interesting
 stuff to snarf.
 %
-Macintoy: Macintoy The Apple Macintosh, considered as a toy. Less pejorative
+Macintoy: The Apple Macintosh, considered as a toy. Less pejorative
 than Macintrash.
 %
-AI koans: AI koans pl.n. A series of pastiches of Zen teaching riddles
+AI koans: pl.n. A series of pastiches of Zen teaching riddles
 created by Danny Hillis at the MIT AI Lab around various major figures of
 the Lab's culture (several are included under Some AI Koans in Appendix A).
 See also ha ha only serious, mu, and hacker humor.
 %
-IIRC: IIRC // Common abbreviation for "If I Recall Correctly".
+IIRC: // Common abbreviation for "If I Recall Correctly".
 %
-offline: offline Not now or not here. "Let's take this discussion offline."
+offline: Not now or not here. "Let's take this discussion offline."
 Specifically used on Usenet to suggest that a discussion be moved off a
 public newsgroup to email.
 %
-LDB: LDB [from the PDP-10 instruction set] To extract from the middle. "LDB
+LDB: [from the PDP-10 instruction set] To extract from the middle. "LDB
 me a slice of cake, please." This usage has been kept alive by Common LISP's
 function of the same name. Considered silly. See also DPB.
 %
-read-only user: read-only user Describes a luser who uses computers almost
+read-only user: Describes a luser who uses computers almost
 exclusively for reading Usenet, bulletin boards, and/or email, rather than
 writing code or purveying useful information. See twink, terminal junkie,
 lurker.
 %
-toad: toad [MUD] 1. Notionally, to change a MUD player into a toad. 2. To
+toad: [MUD] 1. Notionally, to change a MUD player into a toad. 2. To
 permanently and totally exile a player from the MUD. A very serious action,
 which can only be done by a MUD wizard; often involves a lot of debate among
 the other characters first. See also frog, FOD.
 %
-chug: chug To run slowly; to grind or grovel. "The disk is chugging like
+chug: To run slowly; to grind or grovel. "The disk is chugging like
 crazy."
 %
-copper: copper Conventional electron-carrying network cable with a core
+copper: Conventional electron-carrying network cable with a core
 conductor of copper -- or aluminum! Opposed to light pipe or, say, a short-
 range microwave link.
 %
 snivitz: software; a small, transient problem of unknown origin (less
 serious than a snark). Compare glitch.
 %
-rave on!: rave on! imp. Sarcastic invitation to continue a rave, often by
+rave on!: imp. Sarcastic invitation to continue a rave, often by
 someone who wishes the raver would get a clue but realizes this is unlikely.
 %
-liveware: liveware 1. Synonym for wetware. Less common. 2. [Cambridge]
+liveware: 1. Synonym for wetware. Less common. 2. [Cambridge]
 Vermin. "Waiter, there's some liveware in my salad..."
 %
-card walloper: card walloper An EDP programmer who grinds out batch programs
+card walloper: An EDP programmer who grinds out batch programs
 that do stupid things like print people's paychecks. Compare code grinder.
 See also punched card, eighty-column mind.
 %
-Yow!: Yow! interj. [from "Zippy the Pinhead" comix] A favored hacker
+Yow!: interj. [from "Zippy the Pinhead" comix] A favored hacker
 expression of humorous surprise or emphasis. "Yow! Check out what happens
 when you twiddle the foo option on this display hack!" Compare gurfle.
 %
 AFAIK: // [Usenet] Abbrev. for "As Far As I Know".
 %
-rasterbation: rasterbation [portmanteau: raster + masturbation] The
+rasterbation: [portmanteau: raster + masturbation] The
 gratuituous use of comuputer generated images and effects in movies and
 graphic art which would have been better without them. Especially employed
 as a term of abuse by Photoshop/GIMP users and graphic artists.
@@ -1191,7 +1191,7 @@ Syn. charityware; compare crippleware, sense 2.
 Know about sort and uniq, including uniq's -u and -d options -- see one-
 liners below. See also comm.
 %
-voice-net: voice-net Hackish way of referring to the telephone system,
+voice-net: Hackish way of referring to the telephone system,
 analogizing it to a digital network. Usenet sig blocks not uncommonly
 include the sender's phone next to a "Voice:" or "Voice-Net:" header; common
 variants of this are "Voicenet" and "V-Net". Compare paper-net, snail-mail.
@@ -1199,7 +1199,7 @@ variants of this are "Voicenet" and "V-Net". Compare paper-net, snail-mail.
 flavorful: (sense 2); esthetically pleasing. See random and losing for
 antonyms. See also the entries for taste and elegant.
 %
-qux: qux The fourth of the standard metasyntactic variable, after baz and
+qux: The fourth of the standard metasyntactic variable, after baz and
 before the quu(u...)x series. See foo, bar, baz, quux. This appears to be a
 recent mutation from quux, and many versions (especially older versions) of
 the standard series just run foo, bar, baz, quux, ....
@@ -1207,11 +1207,11 @@ the standard series just run foo, bar, baz, quux, ....
 TINLC: program, Up:= T = TINLC // Abbreviation: "There Is No Lumber Cartel".
 See Lumber Cartel. TINLC is a takeoff on TINC.
 %
-rabbit job: rabbit job [Cambridge] A batch job that does little, if any,
+rabbit job: [Cambridge] A batch job that does little, if any,
 real work, but creates one or more copies of itself, breeding like rabbits.
 Compare wabbit, fork bomb.
 %
-clustergeeking: clustergeeking [CMU] Spending more time at a computer
+clustergeeking: [CMU] Spending more time at a computer
 cluster doing CS homework than most people spend breathing.
 %
 awesome-osx-command-line: A more in-depth guide for the macOS command line.
@@ -1225,15 +1225,15 @@ This is written for Linux, with the exception of the "macOS only" and
 "Windows only" sections. Many of the other items apply or can be installed
 on other Unices or macOS (or even Cygwin).
 %
-FITNR: FITNR // [Thinking Machines, Inc.] Fixed In The Next Release. A
+FITNR: // [Thinking Machines, Inc.] Fixed In The Next Release. A
 written-only notation attached to bug reports. Often wishful thinking.
 %
-ping storm: ping storm A form of DoS attack consisting of a flood of ping
+ping storm: A form of DoS attack consisting of a flood of ping
 requests (normally used to check network conditions) designed to disrupt the
 normal activity of a system. This act is sometimes called ping lashing' or
 ping flood'. Compare mail storm, broadcast storm.
 %
-microserf: microserf [popularized, though not originated, by Douglas
+microserf: [popularized, though not originated, by Douglas
 Copeland's book "Microserfs"] A programmer at Microsoft, especially a low-
 level coder with little chance of fame or fortune. Compare MicroDroid.
 %
@@ -1242,11 +1242,11 @@ man lists the section numbers, e.g. 1 is "regular" commands, 5 is
 files/conventions, and 8 are for administration). Find man pages with
 apropos.
 %
-hardwarily: hardwarily In a way pertaining to hardware. "The system is
+hardwarily: In a way pertaining to hardware. "The system is
 hardwarily unreliable." The adjective hardwary' is not traditionally used,
 though it has recently been reported from the U.K. See softwarily.
 %
-bogon filter: bogon filter Any device, software or hardware, that limits or
+bogon filter: Any device, software or hardware, that limits or
 suppresses the flow and/or emission of bogons. "Engineering hacked a bogon
 filter between the Cray and the VAXen, and now we're getting fewer dropped
 packets." See also bogosity, bogus.
@@ -1254,10 +1254,10 @@ packets." See also bogosity, bogus.
 Filenames and Pathnames in Shell: The sadly complex minutiae on how to
 handle filenames correctly in shell scripts.
 %
-cowboy: cowboy [Sun, from William Gibson's cyberpunk SF] Synonym for hacker.
+cowboy: [Sun, from William Gibson's cyberpunk SF] Synonym for hacker.
 It is reported that at Sun this word is often said with reverence.
 %
-tits on a keyboard: tits on a keyboard Small bumps on certain keycaps to
+tits on a keyboard: Small bumps on certain keycaps to
 keep touch-typists registered. Usually on the 5 of a numeric keypad, and on
 the F and J of a QWERTY keyboard; but older Macs, perverse as usual, had
 them on the D and K keys (this changed in 1999).
@@ -1267,17 +1267,17 @@ requiring a disproportionate amount of diskspace and memory. Especially used
 for application and OS upgrades. This term is very common in the Windows/NT
 world. So is its cause.
 %
-thinko: thinko [by analogy with typo'] A momentary, correctable glitch in
+thinko: [by analogy with typo'] A momentary, correctable glitch in
 mental processing, especially one involving recall of information learned by
 rote; a bubble in the stream of consciousness. Syn. braino; see also brain
 fart. Compare mouso.
 %
-mickey mouse program: mickey mouse program North American equivalent of a
+mickey mouse program: North American equivalent of a
 noddy (that is, trivial) program. Doesn't necessarily have the belittling
 connotations of mainstream slang "Oh, that's just mickey mouse stuff!";
 sometimes trivial programs can be very useful.
 %
-tube time: tube time Time spent at a terminal or console. More inclusive
+tube time: Time spent at a terminal or console. More inclusive
 than hacking time; commonly used in discussions of what parts of one's
 environment one uses most heavily. "I find I'm spending too much of my tube
 time reading mail since I started this revision."
@@ -1291,31 +1291,31 @@ frotzed: problems. Compare fried. A machine that is merely frotzed may be
 fixable without replacing parts, but a fried machine is more seriously
 damaged.
 %
-shotgun debugging: shotgun debugging The software equivalent of Easter
+shotgun debugging: The software equivalent of Easter
 egging; the making of relatively undirected changes to software in the hope
 that a bug will be perturbed out of existence. This almost never works, and
 usually introduces more bugs.
 %
-Black Thursday: Black Thursday February 8th, 1996 - the day of the signing
+Black Thursday: February 8th, 1996 - the day of the signing
 into law of the CDA, so called by analogy with the catastrophic "Black
 Friday" in 1929 that began the Great Depression.
 %
-weasel: weasel [Cambridge] A naive user, one who deliberately or
+weasel: [Cambridge] A naive user, one who deliberately or
 accidentally does things that are stupid or ill-advised. Roughly synonymous
 with loser.
 %
-flame war: flame war [common] (var. flamewar') An acrimonious dispute,
+flame war: [common] (var. flamewar') An acrimonious dispute,
 especially when conducted on a public electronic forum such as Usenet.
 %
-YAUN: YAUN [Acronym for Yet Another Unix Nerd'] Reported from the San Diego
+YAUN: [Acronym for Yet Another Unix Nerd'] Reported from the San Diego
 Computer Society (predominantly a microcomputer users' group) as a good-
 natured punning insult aimed at Unix zealots.
 %
-dumbass attack: dumbass attack [Purdue] Notional cause of a novice's mistake
+dumbass attack: [Purdue] Notional cause of a novice's mistake
 made by the experienced, especially one made while running as root under
 Unix, e.g., typing rm -r * or mkfs on a mounted file system. Compare adger.
 %
-ambimouseterous: ambimouseterous or [modeled on ambidextrous] Able to use a
+ambimouseterous: or [modeled on ambidextrous] Able to use a
 mouse with either hand.
 %
 For web debugging, curl and curl -I are handy, or their wget equivalents, or
@@ -1326,7 +1326,7 @@ subdirs), available to anyone on your network, use: python -m
 SimpleHTTPServer 7777 (for port 7777 and Python 2) and python -m http.server
 7777 (for port 7777 and Python 3).
 %
-red wire: red wire [IBM] Patch wires installed by programmers who have no
+red wire: [IBM] Patch wires installed by programmers who have no
 business mucking with the hardware. It is said that the only thing more
 dangerous than a hardware guy with a code patch is a softy with a soldering
 iron.... Compare blue wire, yellow wire, purple wire.
@@ -1337,7 +1337,7 @@ example, to convert a Markdown document to Word format: pandoc README.md
 %
 iftop or nethogs: network utilization by socket or process
 %
-cancelbot: cancelbot [Usenet: compound, cancel + robot] 1. Mythically, a
+cancelbot: [Usenet: compound, cancel + robot] 1. Mythically, a
 robocanceller 2. In reality, most cancelbots are manually operated by being
 fed lists of spam message IDs.
 %
@@ -1348,15 +1348,15 @@ sponge: read all input before writing it, useful for reading from then
 writing to the same file, e.g., grep -v something some-file | sponge some-
 file
 %
-vaxism: vaxism A piece of code that exhibits vaxocentrism in critical areas.
+vaxism: A piece of code that exhibits vaxocentrism in critical areas.
 Compare PC-ism, unixism.
 %
-shebang: shebang The character sequence "#!" that frequently begins
+shebang: The character sequence "#!" that frequently begins
 executable shell scripts under Unix. Probably derived from "shell bang"
 under the influence of American slang "the whole shebang" (everything, the
 works).
 %
-POM: POM Common abbreviation for phase of the moon. Usage: usually in the
+POM: Common abbreviation for phase of the moon. Usage: usually in the
 phrase POM-dependent', which means flaky.
 %
 chomper: chomping; a loser. See loser, bagbiter, chomp.
@@ -1365,7 +1365,7 @@ Know about the 128K limit on command lines. This "Argument list too long"
 error is common when wildcard matching large numbers of files. (When this
 happens alternatives like find and xargs may help.)
 %
-meeces: meeces [TMRC] Occasional furry visitors who are not urchins. [That
+meeces: [TMRC] Occasional furry visitors who are not urchins. [That
 is, mice. This may no longer be in live use; it clearly derives from the
 refrain of the early-1960s cartoon character Mr. Jinx: "I hate meeces to
 pieces!" -- ESR]
@@ -1374,12 +1374,12 @@ sneaker: security; analogous to tiger team. Compare samurai.
 %
 For network connection details, use netstat and ss.
 %
-IBM discount: IBM discount A price increase. Outside IBM, this derives from
+IBM discount: A price increase. Outside IBM, this derives from
 the common perception that IBM products are generally overpriced (see
 clone); inside, it is said to spring from a belief that large numbers of IBM
 employees living in an area cause prices to rise.
 %
-ten-finger interface: ten-finger interface The interface between two
+ten-finger interface: The interface between two
 networks that cannot be directly connected for security reasons; refers to
 the practice of placing two terminals side by side and having an operator
 read from one and type into the other.
@@ -1388,17 +1388,17 @@ Summing all numbers in the third column of a text file (this is probably 3X
 faster and 3X less code than equivalent Python): ```sh awk '{ x += $3 } END
 { print x }' myfile ```
 %
-mutter: mutter To quietly enter a command not meant for the ears, eyes, or
+mutter: To quietly enter a command not meant for the ears, eyes, or
 fingers of ordinary mortals. Often used in mutter an incantation'. See also
 wizard.
 %
-real hack: real hack A crock. This is sometimes used affectionately; see
+real hack: A crock. This is sometimes used affectionately; see
 hack.
 %
-broken: broken 1. Not working properly (of programs). 2. Behaving strangely;
+broken: 1. Not working properly (of programs). 2. Behaving strangely;
 especially (when used of people) exhibiting extreme depression.
 %
-nanocomputer: nanocomputer A computer with molecular-sized switching
+nanocomputer: A computer with molecular-sized switching
 elements. Designs for mechanical nanocomputers which use single-molecule
 sliding rods for their logic have been proposed. The controller for a
 nanobot would be a nanocomputer.
@@ -1407,20 +1407,20 @@ If you ever need to write a tab literal in a command line in Bash (e.g. for
 the -t argument to sort), press ctrl-v [Tab] or write $'\t' (the latter is
 better as you can copy/paste it).
 %
-drain: drain [IBM] Syn. for flush (sense 2). Has a connotation of finality
+drain: [IBM] Syn. for flush (sense 2). Has a connotation of finality
 about it; one speaks of draining a device before taking it offline.
 %
-DPer: DPer Data Processor. Hackers are absolutely amazed that suits use this
+DPer: Data Processor. Hackers are absolutely amazed that suits use this
 term self-referentially. Computers process data, not people! See DP.
 %
 For interactive selection of values from the output of another command, use
 percol or fzf.
 %
-hackish: hackish (also hackishness n.) 1. Said of something that is or
+hackish: (also hackishness n.) 1. Said of something that is or
 involves a hack. 2. Of or pertaining to hackers or the hacker subculture.
 See also true-hacker.
 %
-wirewater: wirewater Syn. programming fluid. This melds the mainstream slang
+wirewater: Syn. programming fluid. This melds the mainstream slang
 adjective wired' (stimulated, up, hyperactive) with firewater'; however, it
 refers to caffeinacious rather than alcoholic beverages.
 %
@@ -1440,27 +1440,27 @@ of the original. Usually written rather than spoken; often appears as a
 pseudo-tag or ellipsis in the body of the reply, as "[deletia]" or
 "<deletia>".
 %
-verbage: verbage A deliberate misspelling and mispronunciation of verbiage
+verbage: A deliberate misspelling and mispronunciation of verbiage
 that assimilates it to the word garbage'. Compare content-free. More
 pejorative than verbiage'.
 %
-nagware: nagware [Usenet] The variety of shareware that displays a large
+nagware: [Usenet] The variety of shareware that displays a large
 screen at the beginning or end reminding you to register, typically
 requiring some sort of keystroke to continue so that you can't use the
 software in batch mode. Compare annoyware, crippleware.
 %
-munching: munching Exploration of security holes of someone else's computer
+munching: Exploration of security holes of someone else's computer
 for thrills, notoriety, or to annoy the system manager. Compare cracker. See
 also hacked off.
 %
-monstrosity: monstrosity 1. A ridiculously elephantine program or system,
+monstrosity: 1. A ridiculously elephantine program or system,
 esp. one that is buggy or only marginally functional. 2. adj. The quality of
 being monstrous (see Overgeneralization' in the discussion of
 jargonification). See also baroque.
 %
-selvage: selvage [from sewing and weaving] See chad (sense 1).
+selvage: [from sewing and weaving] See chad (sense 1).
 %
-lunatic fringe: lunatic fringe [IBM] Customers who can be relied upon to
+lunatic fringe: [IBM] Customers who can be relied upon to
 accept release 1 versions of software. Compare heatseeker.
 %
 To open a file with a desktop app, use open or open -a Whatever.app.
@@ -1469,35 +1469,35 @@ To get the permissions on a file in octal form, which is useful for system
 configuration but not available in ls and easy to bungle, use something like
 ```sh stat -c '%A %a %n' timezone ```
 %
-var: var or Short for variable'. Compare arg, param.
+var: or Short for variable'. Compare arg, param.
 %
 Use pgrep and pkill to find or signal processes by name (-f is helpful).
 %
-beep: beep n.,v. Syn. feep. This term is techspeak under MS-DOS and OS/2,
+beep: n.,v. Syn. feep. This term is techspeak under MS-DOS and OS/2,
 and seems to be generally preferred among micro hobbyists.
 %
 Use shuf to shuffle or select random lines from a file.
 %
-sunspots: sunspots 1. Notional cause of an odd error. "Why did the program
+sunspots: 1. Notional cause of an odd error. "Why did the program
 suddenly turn the screen blue?" "Sunspots, I guess." 2. Also the cause of
 bit rot -- from the myth that sunspots will increase cosmic rays, which can
 flip single bits in memory. See also phase of the moon.
 %
-UDP: UDP v.,n. [Usenet] Abbreviation for Usenet Death Penalty. Common
+UDP: v.,n. [Usenet] Abbreviation for Usenet Death Penalty. Common
 (probably now more so than the full form), and frequently verbed. Compare
 IDP.
 %
-fiber-seeking backhoe: fiber-seeking backhoe [common among backbone ISP
+fiber-seeking backhoe: [common among backbone ISP
 personnel] Any of a genus of large, disruptive machines which routinely cut
 critical backbone links, creating Internet outages and packet over air
 problems.
 %
-PPN: PPN , obs. [from Project-Programmer Number'] A user- ID under TOPS-10
+PPN: , obs. [from Project-Programmer Number'] A user- ID under TOPS-10
 and its various mutant progeny at SAIL, BBN, CompuServe, and elsewhere. Old-
 time hackers from the PDP-10 era sometimes use this to refer to user IDs on
 other systems as well.
 %
-silo: silo The FIFO input-character buffer in an RS-232 line card. So called
+silo: The FIFO input-character buffer in an RS-232 line card. So called
 from DEC terminology used on DH and DZ line cards for the VAX and PDP-11,
 presumably because it was a storage space for fungible stuff that went in at
 the top and came out at the bottom.
@@ -1507,7 +1507,7 @@ difficulty in communicating their requirements and/or in using the resulting
 software. Extreme case of luser. An especially senior or high- ranking
 womble is referred to as Great-Uncle Bulgaria.
 %
-hungus: hungus [perhaps related to slang humongous'] Large, unwieldy,
+hungus: [perhaps related to slang humongous'] Large, unwieldy,
 usually unmanageable. "TCP is a hungus piece of code." "This is a hungus set
 of modifications." The Infocom text adventure game "Beyond Zork" included
 two monsters called hunguses.
@@ -1515,7 +1515,7 @@ two monsters called hunguses.
 MOTAS: [Usenet: Member Of The Appropriate Sex, after MOTOS and MOTSS] A
 potential or (less often) actual sex partner. See also SO.
 %
-purple wire: purple wire [IBM] Wire installed by Field Engineers to work
+purple wire: [IBM] Wire installed by Field Engineers to work
 around problems discovered during testing or debugging. These are called
 purple wires' even when (as is frequently the case) their actual physical
 color is yellow.... Compare blue wire, yellow wire, and red wire.
@@ -1530,7 +1530,7 @@ Learn to use apt-get, yum, dnf or pacman (depending on distro) to find and
 install packages. And make sure you have pip to install Python-based
 command-line tools (a few below are easiest to install via pip).
 %
-nroff: nroff [Unix, from "new roff" (see troff)] A companion program to the
+nroff: [Unix, from "new roff" (see troff)] A companion program to the
 Unix typesetter troff, accepting identical input but preparing output for
 terminals and line printers.
 %
@@ -1539,51 +1539,51 @@ The latter with "-" gets an environment as if another user just logged in.
 Omitting the username defaults to root. You will be asked for the password
 _of the user you are switching to_.
 %
-BSOD: BSOD Very commmon abbreviation for Blue Screen of Death. Both spoken
+BSOD: Very commmon abbreviation for Blue Screen of Death. Both spoken
 and written.
 %
-brain fart: brain fart The actual result of a braino, as opposed to the
+brain fart: The actual result of a braino, as opposed to the
 mental glitch that is the braino itself. E.g., typing dir on a Unix box
 after a session with DOS.
 %
 core cancer: [rare] A process that exhibits a slow but inexorable resource
 leak -- like a cancer, it kills by crowding out productive tissue'.
 %
-White Book: White Book 1. Syn. K&R. 2. Adobe's fourth book in the PostScript
+White Book: 1. Syn. K&R. 2. Adobe's fourth book in the PostScript
 series, describing the previously-secret format of Type 1 fonts; "Adobe Type
 1 Font Format, version 1.1", (Addison-Wesley, 1990, ISBN 0-201-57044-0). See
 also Red Book, Green Book, Blue Book.
 %
-GIFs at 11: GIFs at 11 [Fidonet] Fidonet alternative to film at 11,
+GIFs at 11: [Fidonet] Fidonet alternative to film at 11,
 especially in echoes (Fidonet topic areas) where uuencoded GIFs are
 permitted. Other formats, especially JPEG and MPEG, may be referenced
 instead.
 %
-control-Q: control-Q "Resume." From the ASCII DC1 or XON character (the
+control-Q: "Resume." From the ASCII DC1 or XON character (the
 pronunciation is therefore also used), used to undo a previous control-S.
 %
-let the smoke out: let the smoke out To fry hardware (see fried). See magic
+let the smoke out: To fry hardware (see fried). See magic
 smoke for a discussion of the underlying mythology.
 %
-iron: iron Hardware, especially older and larger hardware of mainframe class
+iron: Hardware, especially older and larger hardware of mainframe class
 with big metal cabinets housing relatively low-density electronics (but the
 term is also used of modern supercomputers). Often in the phrase big iron.
 Oppose silicon. See also dinosaur.
 %
-exploit: exploit [originally cracker slang] 1. A vulnerability in software
+exploit: [originally cracker slang] 1. A vulnerability in software
 that can be used for breaking security or otherwise attacking an Internet
 host over the network. The Ping O' Death is a famous exploit. 2. More
 grammatically, a program that exploits an exploit in sense 1,
 %
-bletch: bletch interj. [very common; from Yiddish/German brechen', to vomit,
+bletch: interj. [very common; from Yiddish/German brechen', to vomit,
 poss. via comic-strip exclamation blech'] Term of disgust. Often used in
 "Ugh, bletch". Compare barf.
 %
-power hit: power hit A spike or drop-out in the electricity supplying your
+power hit: A spike or drop-out in the electricity supplying your
 machine; a power glitch. These can cause crashes and even permanent damage
 to your machine(s).
 %
-IANAL: IANAL // [Usenet] Abbreviation, "I Am Not A Lawyer". Usually precedes
+IANAL: // [Usenet] Abbreviation, "I Am Not A Lawyer". Usually precedes
 legal advice.
 %
 peon: (root or wheel) privileges on a computer system. "I can't create an
@@ -1594,24 +1594,24 @@ change to a program that is thought to be trivial or insignificant right up
 to the moment it crashes the system. Usually cured' by another one- line
 fix. See also I didn't change anything!
 %
-screen: screen [Atari ST demoscene] One demoeffect or one screenful of them.
+screen: [Atari ST demoscene] One demoeffect or one screenful of them.
 Probably comes from old Sierra-style adventures or shoot-em-ups where one
 travels from one place to another one screenful at a time.
 %
 The ping command was written by Mike Muuss in 1983. He named it after the
 sound sonar makes. He wrote it in a single evening.
 %
--fu: -fu [common; generalized from kung-fu'] Combining form denoting expert
+-fu: [common; generalized from kung-fu'] Combining form denoting expert
 practice of a skill. "That's going to take some serious code-fu." First
 sighted in connection with the GIMP's remote-scripting facility, script-fu,
 in 1998.
 %
-studly: studly Impressive; powerful. Said of code and designs which exhibit
+studly: Impressive; powerful. Said of code and designs which exhibit
 both complexity and a virtuoso flair. Has connotations similar to hairy but
 is more positive in tone. Often in the emphatic most studly' or as noun-form
 studliness'. "Smail 3.0's configuration parser is most studly."
 %
-donuts: donuts obs. A collective noun for any set of memory bits. This usage
+donuts: obs. A collective noun for any set of memory bits. This usage
 is extremely archaic and may no longer be live jargon; it dates from the
 days of ferrite-core memories in which each bit was implemented by a
 doughnut-shaped magnetic flip-flop.
@@ -1622,42 +1622,42 @@ ran until 2001. The coffee pot was later sold on eBay.
 haque: [Usenet] Variant spelling of hack, used only for the noun form and
 connoting an elegant hack. that is a hack in sense 2.
 %
-codes: codes [scientific computing] Programs. This usage is common in people
+codes: [scientific computing] Programs. This usage is common in people
 who hack supercomputers and heavy-duty number-crunching, rare to unknown
 elsewhere (if you say "codes" to hackers outside scientific computing, their
 first association is likely to be "and cyphers").
 %
-feeping creature: feeping creature [from feeping creaturism] An unnecessary
+feeping creature: [from feeping creaturism] An unnecessary
 feature; a bit of chrome that, in the speaker's judgment, is the camel's
 nose for a whole horde of new features.
 %
 The World Wide Web was invented in 1989 by Tim Berners-Lee at CERN. He just
 wanted a better way to share physics papers.
 %
-walk: walk n.,vt. Traversal of a data structure, especially an array or
+walk: n.,vt. Traversal of a data structure, especially an array or
 linked-list data structure in core. See also codewalker, silly walk,
 clobber.
 %
-mangler: mangler [DEC] A manager. Compare management. Note that system
+mangler: [DEC] A manager. Compare management. Note that system
 mangler is somewhat different in connotation.
 %
-flower key: flower key [Mac users] See feature key.
+flower key: [Mac users] See feature key.
 %
 For Amazon S3, s3cmd is convenient and s4cmd is faster. Amazon's aws and the
 improved saws are essential for other AWS-related tasks.
 %
-amoeba: amoeba Humorous term for the Commodore Amiga personal computer.
+amoeba: Humorous term for the Commodore Amiga personal computer.
 %
-drop-ins: drop-ins [prob. by analogy with drop-outs] Spurious characters
+drop-ins: [prob. by analogy with drop-outs] Spurious characters
 appearing on a terminal or console as a result of line noise or a system
 malfunction of some sort. Esp. used when these are interspersed with one's
 own typed input. Compare drop-outs, sense 2.
 %
-blow up: blow up 1. [scientific computation] To become unstable. Suggests
+blow up: 1. [scientific computation] To become unstable. Suggests
 that the computation is diverging so rapidly that it will soon overflow or
 at least go nonlinear. 2. Syn. blow out.
 %
-TMTOWTDI: TMTOWTDI There's More Than One Way To Do It. This abbreviation of
+TMTOWTDI: There's More Than One Way To Do It. This abbreviation of
 the official motto of Perl is frequently used on newsgroups and mailing
 lists related to that language.
 %
@@ -1667,29 +1667,29 @@ Gosperism: hack, invention, or saying due to elder days arch- hacker R.
 William (Bill) Gosper. This notion merits its own term because there are so
 many of them. Many of the entries in HAKMEM are Gosperisms; see also life.
 %
-cube: cube 1. [short for cubicle'] A module in the open-plan offices used at
+cube: 1. [short for cubicle'] A module in the open-plan offices used at
 many programming shops. "I've got the manuals in my cube." 2. A NeXT machine
 (which resembles a matte-black cube).
 %
-grault: grault Yet another metasyntactic variable, invented by Mike Gallaher
+grault: Yet another metasyntactic variable, invented by Mike Gallaher
 and propagated by the GOSMACS documentation. See corge.
 %
-prettyprint: prettyprint (alt. pretty-print') 1. To generate pretty' human-
+prettyprint: (alt. pretty-print') 1. To generate pretty' human-
 readable output from a hairy internal representation; esp. used for the
 process of grinding (sense 1) program code, and most esp. for LISP code. 2.
 To format in some particularly slick and nontrivial way.
 %
-ques: ques 1. The question mark character (?, ASCII 0111111). 2. interj.
+ques: 1. The question mark character (?, ASCII 0111111). 2. interj.
 What? Also frequently verb-doubled as "Ques ques?" See wall.
 %
 lshw, lscpu, lspci, lsusb, dmidecode: hardware information, including CPU,
 BIOS, RAID, graphics, devices, etc.
 %
-softwarily: softwarily In a way pertaining to software. "The system is
+softwarily: In a way pertaining to software. "The system is
 softwarily unreliable." The adjective **softwary' is not used. See
 hardwarily.
 %
-page in: page in [MIT] 1. To become aware of one's surroundings again after
+page in: [MIT] 1. To become aware of one's surroundings again after
 having paged out (see page out). Usually confined to the sarcastic comment:
 "Eric pages in, film at 11!" 2. Syn. swap in'; see swap.
 %
@@ -1702,11 +1702,11 @@ rsync: sync files and folders over SSH or in local file system
 %
 Use zless, zmore, zcat, and zgrep to operate on compressed files.
 %
-frednet: frednet Used to refer to some random and uncommon protocol
+frednet: Used to refer to some random and uncommon protocol
 encountered on a network. "We're implementing bridging in our router to
 solve the frednet problem."
 %
-sysadmin: sysadmin Common contraction of system admin'; see admin.
+sysadmin: Common contraction of system admin'; see admin.
 %
 Check what OS you're on with uname or uname -a (general Unix/kernel info) or
 lsb_release -a (Linux distro info).
@@ -1717,19 +1717,19 @@ files.
 Know about cut, paste, and join to manipulate text files. Many people use
 cut but forget about join.
 %
-segment: segment To experience a segmentation fault. Confusingly, this is
+segment: To experience a segmentation fault. Confusingly, this is
 often pronounced more like the noun segment' than like mainstream v.
 segment; this is because it is actually a noun shorthand that has been
 verbed.
 %
-bogue out: bogue out To become bogus, suddenly and unexpectedly. "His talk
+bogue out: To become bogus, suddenly and unexpectedly. "His talk
 was relatively sane until somebody asked him a trick question; then he
 bogued out and did nothing but flame afterwards." See also bogosity, bogus.
 %
 Use nohup or disown if you want a background process to keep running
 forever.
 %
-salt mines: salt mines Dense quarters housing large numbers of programmers
+salt mines: Dense quarters housing large numbers of programmers
 working long hours on grungy projects, with some hope of seeing the end of
 the tunnel in N years. Noted for their absence of sunshine. Compare playpen,
 sandbox.
@@ -1738,23 +1738,23 @@ screen name: 1. This term has been common among users of IRC, MUDs, and
 commercial on-line services since the mid-1990s. Hackers recognize the term
 but don't generally use it.
 %
-warez kiddies: warez kiddies Even more derogatory way of referring to warez
+warez kiddies: Even more derogatory way of referring to warez
 d00dz; refers to the fact that most warez d00dz are around the age of
 puberty. Compare script kiddies.
 %
-KIPS: KIPS [abbreviation, by analogy with MIPS using K] Thousands (not
+KIPS: [abbreviation, by analogy with MIPS using K] Thousands (not
 1024s) of Instructions Per Second. Usage: rare.
 %
-up: up 1. Working, in order. "The down escalator is up." Oppose down. 2.
+up: 1. Working, in order. "The down escalator is up." Oppose down. 2.
 bring up': vt. To create a working version and start it. "They brought up a
 down system." 3. come up' vi. To become ready for production use.
 %
-crossload: crossload v.,n. [proposed, by analogy with upload and download]
+crossload: v.,n. [proposed, by analogy with upload and download]
 To move files between machines on a peer-to-peer network of nodes that act
 as both servers and clients for a distributed file store. Esp. appropriate
 for ananonymized networks like Gnutella and Freenet.
 %
-loose bytes: loose bytes Commonwealth hackish term for the padding bytes or
+loose bytes: Commonwealth hackish term for the padding bytes or
 shims many compilers insert between members of a record or structure to cope
 with alignment requirements imposed by the machine architecture.
 %
@@ -1763,17 +1763,17 @@ bulletin-board system. A common neophyte mistake on FidoNet is to address a
 message to sysop' in an international echo, thus sending it to hundreds of
 sysops around the world.
 %
-terminal illness: terminal illness 1. Syn. raster burn. 2. The burn-in'
+terminal illness: 1. Syn. raster burn. 2. The burn-in'
 condition your CRT tends to get if you don't have a screen saver.
 %
-machinable: machinable Machine-readable. Having the softcopy nature.
+machinable: Machine-readable. Having the softcopy nature.
 %
-bogon flux: bogon flux A measure of a supposed field of bogosity emitted by
+bogon flux: A measure of a supposed field of bogosity emitted by
 a speaker, measured by a bogometer; as a speaker starts to wander into
 increasing bogosity a listener might say "Warning, warning, bogon flux is
 rising". See quantum bogodynamics.
 %
-dead: dead 1. Non-functional; down; crashed. Especially used of hardware. 2.
+dead: 1. Non-functional; down; crashed. Especially used of hardware. 2.
 At XEROX PARC, software that is working but not undergoing continued
 development and support. 3. Useless; inaccessible. Antonym: live'. Compare
 dead code.
@@ -1783,7 +1783,7 @@ electronic computer, was unveiled on February 14, 1946. It weighed 30 tons.
 %
 You can perform many useful Windows tasks by invoking the Rundll32 command.
 %
-turist: turist Var. sp. of tourist, q.v. Also in adjectival form, turistic'.
+turist: Var. sp. of tourist, q.v. Also in adjectival form, turistic'.
 Poss. influenced by luser and Turing'.
 %
 Go to your home directory with cd. Access files relative to your home
@@ -1801,7 +1801,7 @@ postings to Usenet or other electronic fora. Often in the phrase the usual
 flamage'. Flaming' is the act itself; flamage' the content; a flame' is a
 single flaming message. See flame, also dahmum.
 %
-intro: intro [demoscene] Introductory screen of some production. 2. A short
+intro: [demoscene] Introductory screen of some production. 2. A short
 demo, usually showing just one or two screens. 3. Small, usually 64k, 40k or
 4k demo. Sizes are generally dictated by compo rules. See also dentro, demo.
 %
@@ -1812,9 +1812,9 @@ stoppage was caused by a fried transformer."
 progasm: [University of Wisconsin] The euphoria experienced upon the
 completion of a program or other computer-related project.
 %
-phreaker: phreaker One who engages in phreaking. See also blue box.
+phreaker: One who engages in phreaking. See also blue box.
 %
-macrotape: macrotape An industry-standard reel of tape. Originally, as
+macrotape: An industry-standard reel of tape. Originally, as
 opposed to a DEC microtape; nowadays, as opposed to modern QIC and DDS
 tapes. Syn. round tape.
 %
@@ -1828,41 +1828,41 @@ fashion, often requiring large amounts of computation. To trace down a data
 structure. Related to crunch and nearly synonymous with grovel, but connotes
 less pain.
 %
-boxen: boxen pl.n. [very common; by analogy with VAXen] Fanciful plural of
+boxen: pl.n. [very common; by analogy with VAXen] Fanciful plural of
 box often encountered in the phrase Unix boxen', used to describe commodity
 Unix hardware. The connotation is that any two Unix boxen are
 interchangeable.
 %
-web pointer: web pointer A World Wide Web URL. See also hotlink, which has
+web pointer: A World Wide Web URL. See also hotlink, which has
 slightly different connotations.
 %
-hardwired: hardwired 1. In software, syn. for hardcoded. 2. By extension,
+hardwired: 1. In software, syn. for hardcoded. 2. By extension,
 anything that is not modifiable, especially in the sense of customizable to
 one's particular needs or tastes.
 %
-bang on: bang on To stress-test a piece of hardware or software: "I banged
+bang on: To stress-test a piece of hardware or software: "I banged
 on the new version of the simulator all day yesterday and it didn't crash
 once. I guess it is ready for release." The term pound on is synonymous.
 %
-vanity domain: vanity domain [common; from vanity plate' as in car license
+vanity domain: [common; from vanity plate' as in car license
 plate] An Internet domain, particularly in the .com or .org top- level
 domains, apparently created for no reason other than boosting the creator's
 ego.
 %
-Programmer's Cheer: Programmer's Cheer "Shift to the left! Shift to the
+Programmer's Cheer: "Shift to the left! Shift to the
 right! Pop up, push down! Byte! Byte! Byte!" A joke so old it has hair on
 it.
 %
-blow out: blow out [prob. from mining and tunneling jargon] Of software, to
+blow out: [prob. from mining and tunneling jargon] Of software, to
 fail spectacularly; almost as serious as crash and burn. See blow past, blow
 up, die horribly.
 %
-404: 404 // [from the HTTP error "file not found on server"] Extended to
+404: // [from the HTTP error "file not found on server"] Extended to
 humans to convey that the subject has no idea or no clue - sapience not
 found. May be used reflexively; "Uh, I'm 404ing" means "I'm drawing a
 blank".
 %
-spider: spider The Web-walking part of a search engine that collects pages
+spider: The Web-walking part of a search engine that collects pages
 for indexing in the search engine's database. Also called a bot. The best-
 known spider is Scooter, the web-walker for the Alta Vista search engine.
 %
@@ -1870,28 +1870,28 @@ arg: (to a function), used so often as to have become a new word (like
 piano' from pianoforte'). "The sine function takes 1 arg, but the arc-
 tangent function can take either 1 or 2 args." Compare param, parm, var.
 %
-gen: gen n.,v. Short for generate, used frequently in both spoken and
+gen: n.,v. Short for generate, used frequently in both spoken and
 written contexts.
 %
 The original PDP-11 had 56KB of RAM. Unix was designed to run on it. Modern
 Electron apps would like a word.
 %
-silicon: silicon Hardware, esp. ICs or microprocessor-based computer systems
+silicon: Hardware, esp. ICs or microprocessor-based computer systems
 (compare iron). Contrasted with software. See also sandbender.
 %
 sandbender: [IBM] A person involved with silicon lithography and the
 physical design of chips. Compare ironmonger, polygon pusher.
 %
-sodium substrate: sodium substrate Syn salt substrate.
+sodium substrate: Syn salt substrate.
 %
-UBD: UBD [abbreviation for User Brain Damage'] An abbreviation used to close
+UBD: [abbreviation for User Brain Damage'] An abbreviation used to close
 out trouble reports obviously due to utter cluelessness on the user's part.
 Compare pilot error; oppose PBD; see also brain-damaged.
 %
 The term 'debugging' predates computers. Thomas Edison used it in 1878.
 Grace Hopper just made it famous with an actual moth.
 %
-kluge around: kluge around To avoid a bug or difficult condition by
+kluge around: To avoid a bug or difficult condition by
 inserting a kluge. Compare workaround.
 %
 TechRef: [MS-DOS] The original "IBM PC Technical Reference Manual",
@@ -1899,49 +1899,49 @@ including the BIOS listing and complete schematics for the PC. The only PC
 documentation in the original-issue package that was considered serious by
 real hackers.
 %
-xref: xref v.,n. Hackish standard abbreviation for cross- reference'.
+xref: v.,n. Hackish standard abbreviation for cross- reference'.
 %
 gag: choke, but connotes more disgust. "Hey, this is FORTRAN code. No wonder
 the C compiler gagged." See also barf.
 %
-gnarly: gnarly Both obscure and hairy (sense 1). "Yow! -- the tuned
+gnarly: Both obscure and hairy (sense 1). "Yow! -- the tuned
 assembler implementation of BitBlt is really gnarly!" From a similar but
 less specific usage in surfer slang.
 %
 shellcheck: A shell script static analysis tool. Essentially, lint for bash
 zsh.
 %
-propeller key: propeller key [Mac users] See feature key.
+propeller key: [Mac users] See feature key.
 %
-toy problem: toy problem [AI] A deliberately oversimplified case of a
+toy problem: [AI] A deliberately oversimplified case of a
 challenging problem used to investigate, prototype, or test algorithms for a
 real problem. Sometimes used pejoratively. See also gedanken, toy program.
 %
-userland: userland Anywhere outside the kernel. "That code belongs in
+userland: Anywhere outside the kernel. "That code belongs in
 userland." This term has been in common use among Linux kernel hackers since
 at leat 1997, and seems to have originated in that community.
 %
-hat: hat Common (spoken) name for the circumflex (^', ASCII 1011110)
+hat: Common (spoken) name for the circumflex (^', ASCII 1011110)
 character. See ASCII for other synonyms.
 %
-mail storm: mail storm [from broadcast storm, influenced by maelstrom'] What
+mail storm: [from broadcast storm, influenced by maelstrom'] What
 often happens when a machine with an Internet connection and active users
 re-connects after extended downtime -- a flood of incoming mail that brings
 the machine to its knees. See also hairball.
 %
-General Appearance: General Appearance Intelligent. Scruffy. Intense.
+General Appearance: Intelligent. Scruffy. Intense.
 Abstracted. Surprisingly for a sedentary profession, more hackers run to
 skinny than fat; both extremes are more common than elsewhere. Tans are
 rare.
 %
 pstree -p is a helpful display of the process tree.
 %
-spungle: spungle [Durham, UK; portmanteau, spangle + bungle] A spangle of no
+spungle: [Durham, UK; portmanteau, spangle + bungle] A spangle of no
 actual usefulness. Example: Roger the Bent Paperclip in Microsoft Word '98.
 A spungle's only virtue is that it looks pretty, unless you find creeping
 featurism ugly.
 %
-home machine: home machine 1. Syn. home box. 2. The machine that receives
+home machine: 1. Syn. home box. 2. The machine that receives
 your email. These senses might be distinct, for example, for a hacker who
 owns one computer at home, but reads email at work.
 %
@@ -1950,7 +1950,7 @@ terrestrial analog of a wormhole (sense 2), from which this term was coined.
 A gopher hole links two amateur packet relays through some non- ham radio
 medium.
 %
-salt: salt A tiny bit of near-random data inserted where too much regularity
+salt: A tiny bit of near-random data inserted where too much regularity
 would be undesirable; a data frob (sense 1). For example, the Unix crypt(3)
 man page mentions that "the salt string is used to perturb the DES algorithm
 in one of 4096 different ways."
@@ -1966,26 +1966,26 @@ or hardware.
 The mother of all demos: Douglas Engelbart demonstrated the mouse,
 hypertext, video conferencing, and collaborative editing in 1968.
 %
-flat-file: flat-file A flattened representation of some database or tree or
+flat-file: A flattened representation of some database or tree or
 network structure as a single file from which the structure could implicitly
 be rebuilt, esp. one in flat-ASCII form. See also sharchive.
 %
-buffer chuck: buffer chuck Shorter and ruder syn. for buffer overflow.
+buffer chuck: Shorter and ruder syn. for buffer overflow.
 %
 The first email was sent by Ray Tomlinson in 1971. He chose the @ symbol
 because it was the least-used character on the keyboard.
 %
-pico-: pico- pref. [SI: a quantifier meaning * 10^-12] Smaller than nano-;
+pico-: pref. [SI: a quantifier meaning * 10^-12] Smaller than nano-;
 used in the same rather loose connotative way as nano- and micro-. This
 usage is not yet common in the way nano- and micro- are, but should be
 instantly recognizable to any hacker. See also quantifiers, micro-.
 %
-DED: DED Dark-Emitting Diode (that is, a burned-out LED). Compare SED, LER,
+DED: Dark-Emitting Diode (that is, a burned-out LED). Compare SED, LER,
 write-only memory. In the early 1970s both Signetics and Texas instruments
 released DED spec sheets as AFJs (suggested uses included "as a power-off
 indicator").
 %
-bar: bar 1. [very common] The second metasyntactic variable, after foo and
+bar: 1. [very common] The second metasyntactic variable, after foo and
 before baz. "Suppose we have two functions: FOO and BAR. FOO calls BAR...."
 2. Often appended to foo to produce foobar.
 %
@@ -1996,7 +1996,7 @@ MOTOS: [acronym from the 1970 U.S. census forms via Usenet: Member Of The
 Opposite Sex] A potential or (less often) actual sex partner. See MOTAS,
 MOTSS, SO. Less common than MOTSS or MOTAS, which has largely displaced it.
 %
-D. C. Power Lab: D. C. Power Lab The former site of SAIL. Hackers thought
+D. C. Power Lab: The former site of SAIL. Hackers thought
 this was very funny because the obvious connection to electrical engineering
 was nonexistent -- the lab was named for a Donald C. Power. Compare Marginal
 Hacks.
@@ -2005,7 +2005,7 @@ Learn about file glob expansion with * (and perhaps ? and [...]) and quoting
 and the difference between double " and single ' quotes. (See more on
 variable expansion below.)
 %
-Internet Exploder: Internet Exploder [very common] Pejorative hackerism for
+Internet Exploder: [very common] Pejorative hackerism for
 Microsoft's "Internet Explorer" web browser (also "Internet Exploiter").
 Compare HP-SUX, AIDX, buglix, Macintrash, Telerat, ScumOS, sun-stools,
 Slowlaris.
@@ -2015,7 +2015,7 @@ specifically refers to the wizards of Unseen University in Terry Pratchett's
 "Discworld" serious of humorous fantasies; these books are extremely popular
 among hackers.
 %
-mockingbird: mockingbird Software that intercepts communications (especially
+mockingbird: Software that intercepts communications (especially
 login transactions) between users and hosts and provides system- like
 responses to the users while saving their responses (especially account IDs
 and passwords). A special case of Trojan horse.
@@ -2027,7 +2027,7 @@ enter). You can then return to it later via command history.
 The Apollo 11 guidance computer had 74KB of memory and ran at 0.043MHz. It
 successfully landed humans on the Moon in 1969.
 %
-screw: screw [MIT] A lose, usually in software. Especially used for user-
+screw: [MIT] A lose, usually in software. Especially used for user-
 visible misbehavior caused by a bug or misfeature. This use has become quite
 widespread outside MIT.
 %
@@ -2044,7 +2044,7 @@ In Bash scripts, subshells (written with parentheses) are convenient ways to
 group commands. A common example is to temporarily move to a different
 working directory, e.g. ```bash
 %
-insanely great: insanely great [Mac community, from Steve Jobs; also BSD
+insanely great: [Mac community, from Steve Jobs; also BSD
 Unix people via Bill Joy] Something so incredibly elegant that it is
 imaginable only to someone possessing the most puissant of hacker-natures.
 %
@@ -2055,25 +2055,25 @@ Another Compiler-Compiler). See YABA.
 stubroutine: [contraction of stub subroutine'] Tiny, often vacuous
 placeholder for a subroutine that is to be written or fleshed out later.
 %
-IWBNI: IWBNI // Abbreviation for It Would Be Nice If'. Compare WIBNI.
+IWBNI: // Abbreviation for It Would Be Nice If'. Compare WIBNI.
 %
-open switch: open switch [IBM: prob. from railroading] An unresolved
+open switch: [IBM: prob. from railroading] An unresolved
 question, issue, or problem.
 %
-rusty memory: rusty memory Mass-storage that uses iron-oxide-based magnetic
+rusty memory: Mass-storage that uses iron-oxide-based magnetic
 media (esp. tape and the pre-Winchester removable disk packs used in washing
 machines). Compare donuts.
 %
-web ring: web ring Two or more web sites connected by prominent links
+web ring: Two or more web sites connected by prominent links
 between sites sharing a common interest or theme. Usually such cliques have
 the topology of a ring, in order to make it easy for visitors to navigate
 through all of them.
 %
-superuser: superuser [Unix] Syn. root, avatar. This usage has spread to non-
+superuser: [Unix] Syn. root, avatar. This usage has spread to non-
 Unix environments; the superuser is any account with all wheel bits on. A
 more specific term than wheel.
 %
-flatten: flatten [common] To remove structural information, esp. to filter
+flatten: [common] To remove structural information, esp. to filter
 something with an implicit tree structure into a simple sequence of leaves;
 also tends to imply mapping to flat-ASCII. "This code flattens an expression
 with parentheses into an equivalent canonical form."
@@ -2082,7 +2082,7 @@ blargh: [MIT; now common] The opposite of ping, sense 5; an exclamation
 indicating that one has absorbed or is emitting a quantum of unhappiness.
 Less common than ping.
 %
-binary four: binary four [Usenet] The finger, in the sense of digitus
+binary four: [Usenet] The finger, in the sense of digitus
 impudicus'. This comes from an analogy between binary and the hand, i.e.
 1=00001=thumb, 2=00010=index finger, 3=00011=index and thumb, 4=00100.
 Considered silly. Prob. from humorous derivative of finger, sense 4.
@@ -2095,14 +2095,14 @@ for a particular task, especially a one-shot job. Connotes an extremely
 crufty and consciously temporary solution. Compare hack up, kluge up, cruft
 together.
 %
-windoid: windoid In the Macintosh world, a style of window with much less
+windoid: In the Macintosh world, a style of window with much less
 adornment (smaller or missing title bar, zoom box, etc, etc) than a standard
 window.
 %
-P.O.D.: P.O.D. [rare] Acronym for Piece Of Data' (as opposed to a code
+P.O.D.: [rare] Acronym for Piece Of Data' (as opposed to a code
 section). See also pod.
 %
-KISS Principle: KISS Principle "Keep It Simple, Stupid". A maxim often
+KISS Principle: "Keep It Simple, Stupid". A maxim often
 invoked when discussing design to fend off creeping featurism and control
 development complexity. Possibly related to the marketroid maxim on sales
 presentations, "Keep It Short and Simple".
@@ -2112,62 +2112,62 @@ unverified, possibly untrue story. This term was not originated by hackers
 (it is used in Jan Brunvand's books on urban folklore), but is much better
 recognized on Usenet and elsewhere than in mainstream English.
 %
-xor: xor , conj. Exclusive or. A xor B' means A or B, but not both'. "I want
+xor: , conj. Exclusive or. A xor B' means A or B, but not both'. "I want
 to get cherry pie xor a banana split." This derives from the technical use
 of the term as a function on truth-values that is true if exactly one of its
 two arguments is true.
 %
-mangle: mangle 1. Used similarly to mung or scribble, but more violent in
+mangle: 1. Used similarly to mung or scribble, but more violent in
 its connotations; something that is mangled has been irreversibly and
 totally trashed. 2. To produce the mangled name corresponding to a C++
 declaration.
 %
 See also lsof and fuser for open sockets and files.
 %
-eyeball search: eyeball search n.,v. To look for something in a mass of code
+eyeball search: n.,v. To look for something in a mass of code
 or data with one's own native optical sensors, as opposed to using some sort
 of pattern matching software like grep or any other automated search tool.
 Also called a vgrep; compare vdiff, desk check.
 %
-time sink: time sink [poss. by analogy with heat sink' or current sink'] A
+time sink: [poss. by analogy with heat sink' or current sink'] A
 project that consumes unbounded amounts of time.
 %
-berklix: berklix n.,adj. [contraction of Berkeley Unix'] See BSD. Not used
+berklix: n.,adj. [contraction of Berkeley Unix'] See BSD. Not used
 at Berkeley itself. May be more common among suits attempting to sound like
 cognoscenti than among hackers, who usually just say BSD'.
 %
-fum: fum [XEROX PARC] At PARC, often the third of the standard metasyntactic
+fum: [XEROX PARC] At PARC, often the third of the standard metasyntactic
 variables (after foo and bar). Competes with baz, which is more common
 outside PARC.
 %
-Fight-o-net: Fight-o-net [FidoNet] Deliberate distortion of FidoNet, often
+Fight-o-net: [FidoNet] Deliberate distortion of FidoNet, often
 applied after a flurry of flamage in a particular echo, especially the SYSOP
 echo or Fidonews (see 'Snooze).
 %
-rib site: rib site [by analogy with backbone site] A machine that has an on-
+rib site: [by analogy with backbone site] A machine that has an on-
 demand high-speed link to a backbone site and serves as a regional
 distribution point for lots of third-party traffic in email and Usenet news.
 Compare leaf site, backbone site.
 %
-go root: go root [Unix; common] To temporarily enter root mode in order to
+go root: [Unix; common] To temporarily enter root mode in order to
 perform a privileged operation. This use is deprecated in Australia, where
 v. root' is a synonym for "fuck".
 %
-flippy: flippy A single-sided floppy disk altered for double- sided use by
+flippy: A single-sided floppy disk altered for double- sided use by
 addition of a second write-notch, so called because it must be flipped over
 for the second side to be accessible. No longer common.
 %
 wedgie: [Fairchild] A bug. Prob. related to wedged.
 %
-dynner: dynner 32 bits, by analogy with nybble and byte. Usage: rare and
+dynner: 32 bits, by analogy with nybble and byte. Usage: rare and
 extremely silly. See also playte, tayste, crumb. General discussion of such
 terms is under nybble.
 %
-huff: huff To compress data using a Huffman code. Various programs that use
+huff: To compress data using a Huffman code. Various programs that use
 such methods have been called HUFF' or some variant thereof. Oppose puff.
 Compare crunch, compress.
 %
-hexit: hexit A hexadecimal digit (0-9, and A-F or a-f). Used by people who
+hexit: A hexadecimal digit (0-9, and A-F or a-f). Used by people who
 claim that there are only ten digits, dammit; sixteen-fingered human beings
 are rather rare, despite what some keyboard designs might seem to imply (see
 space-cadet keyboard).
@@ -2176,7 +2176,7 @@ Another option to get Unix look and feel under Windows is Cash. Note that
 only very few Unix commands and command-line options are available in this
 environment.
 %
-spaghetti code: spaghetti code Code with a complex and tangled control
+spaghetti code: Code with a complex and tangled control
 structure, esp. one using many GOTOs, exceptions, or other unstructured'
 branching constructs. Pejorative. The synonym kangaroo code' has been
 reported, doubtless because such code has so many jumps in it.
@@ -2194,27 +2194,27 @@ Also for binary files, strings (plus grep, etc.) lets you find bits of text.
 Package management with brew (Homebrew) and/or port (MacPorts). These can be
 used to install on macOS many of the above commands.
 %
-jaggies: jaggies The stairstep' effect observable when an edge (esp. a
+jaggies: The stairstep' effect observable when an edge (esp. a
 linear edge of very shallow or steep slope) is rendered on a pixel device
 (as opposed to a vector display).
 %
 nyetwork: [from Russian nyet' = no] A network, when it is acting flaky or is
 down. Compare notwork.
 %
-BrokenWindows: BrokenWindows Abusive hackerism for the crufty and
+BrokenWindows: Abusive hackerism for the crufty and
 elephantine X environment on Sun machines; properly called OpenWindows'.
 %
 Use Explainshell to get a helpful breakdown of what commands, options, pipes
 etc. do.
 %
-spangle: spangle [UK] The singular of bells and whistles. See also spungle.
+spangle: [UK] The singular of bells and whistles. See also spungle.
 %
-rare mode: rare mode [Unix] CBREAK mode (character-by-character with
+rare mode: [Unix] CBREAK mode (character-by-character with
 interrupts enabled). Distinguished from raw mode and cooked mode; the phrase
 "a sort of half-cooked (rare?) mode" is used in the V7/BSD manuals to
 describe the mode. Usage: rare.
 %
-sig quote: sig quote [Usenet] A maxim, quote, proverb, joke, or slogan
+sig quote: [Usenet] A maxim, quote, proverb, joke, or slogan
 embedded in one's sig block and intended to convey something of one's
 philosophical stance, pet peeves, or sense of humor. "Calm down, it's only
 ones and zeroes."
@@ -2231,7 +2231,7 @@ split by a pattern).
 %
 sysctl: view and configure Linux kernel parameters at run time
 %
-rat belt: rat belt A cable tie, esp. the sawtoothed, self-locking plastic
+rat belt: A cable tie, esp. the sawtoothed, self-locking plastic
 kind that you can remove only by cutting (as opposed to a random twist of
 wire or a twist tie or one of those humongous metal clip frobs). Small cable
 ties are mouse belts'.
@@ -2242,7 +2242,7 @@ web server performance. For more complex load testing, try siege.
 COBOL was designed in 1959. Its committee included Grace Hopper. Some COBOL
 programs from that era are still running in production today.
 %
-mundane: mundane [from SF fandom] 1. A person who is not in science fiction
+mundane: [from SF fandom] 1. A person who is not in science fiction
 fandom. 2. A person who is not in the computer industry. In this sense, most
 often an adjectival modifier as in "in my mundane life...." See also Real
 World, muggle.
@@ -2252,33 +2252,33 @@ esp. one considered as a possible sexual partner. The gay-issues newsgroup
 on Usenet is called soc.motss. See MOTOS and MOTAS, which derive from it.
 See also SO.
 %
-link rot: link rot The natural decay of web links as the sites they're
+link rot: The natural decay of web links as the sites they're
 connected to change or die. Compare bit rot.
 %
-elder days: elder days The heroic age of hackerdom (roughly, pre-1980); the
+elder days: The heroic age of hackerdom (roughly, pre-1980); the
 era of the PDP-10, TECO, ITS, and the ARPANET. This term has been rather
 consciously adopted from J. R. R. Tolkien's fantasy epic "The Lord of the
 Rings". Compare Iron Age; see also elvish and Great Worm.
 %
-bytesexual: bytesexual [rare] Said of hardware, denotes willingness to
+bytesexual: [rare] Said of hardware, denotes willingness to
 compute or pass data in either big-endian or little- endian format
 (depending, presumably, on a mode bit somewhere). See also NUXI problem.
 %
-gunch: gunch [TMRC] To push, prod, or poke at a device that has almost (but
+gunch: [TMRC] To push, prod, or poke at a device that has almost (but
 not quite) produced the desired result. Implies a threat to mung.
 %
-feature shock: feature shock [from Alvin Toffler's book title "Future
+feature shock: [from Alvin Toffler's book title "Future
 Shock"] A user's (or programmer's!) confusion when confronted with a package
 that has too many features and poor introductory material.
 %
-The Jargon Lexicon: The Jargon Lexicon = 0 =: = A =: = B =: = C =: = D =: =
+The Jargon Lexicon: = 0 =: = A =: = B =: = C =: = D =: =
 E =: = F =: = G =: = H =: = I =: = J =: = K =: = L =: = M =: = N =: = O =: =
 P =: = Q =: = R =: = S =: = T =: = U =: = V =: = W =: = X =: = Y =: = Z =:
 %
 Spotlight: Search files with mdfind and list metadata (such as photo EXIF
 info) with mdls.
 %
-meatspace: meatspace The physical world, where the meat lives - as opposed
+meatspace: The physical world, where the meat lives - as opposed
 to cyberspace. Hackers are actually more willing to use this term than
 cyberspace', because it's not speculative - we already have a running
 meatspace implementation (the universe). Compare RL.
@@ -2287,25 +2287,25 @@ For general searching through source or data files, there are several
 options more advanced or faster than grep -r, including (in rough order from
 older to newer) ack, ag ("the silver searcher"), and rg (ripgrep).
 %
-virtual beer: virtual beer Praise or thanks. Used universally in the Linux
+virtual beer: Praise or thanks. Used universally in the Linux
 community. Originally this term signified cash, after a famous incident in
 which some some Britishers who wanted to buy Linus a beer and sent him money
 to Finland to do so.
 %
-Pentagram Pro: Pentagram Pro A humorous corruption of "Pentium Pro", with a
+Pentagram Pro: A humorous corruption of "Pentium Pro", with a
 Satanic reference, implying that the chip is inherently evil. Often used
 with "666 MHz"; there is a T-shirt. See Pentium
 %
-gnubie: gnubie Written-only variant of newbie in common use on IRC channels,
+gnubie: Written-only variant of newbie in common use on IRC channels,
 which implies specifically someone who is new to the Linux free software
 world.
 %
-gripenet: gripenet [IBM] A wry (and thoroughly unofficial) name for IBM's
+gripenet: [IBM] A wry (and thoroughly unofficial) name for IBM's
 internal VNET system, deriving from its common use by IBMers to voice
 pointed criticism of IBM management that would be taboo in more formal
 channels.
 %
-stomp on: stomp on To inadvertently overwrite something important, usually
+stomp on: To inadvertently overwrite something important, usually
 automatically. "All the work I did this weekend got stomped on last night by
 the nightly server script." Compare scribble, mangle, trash, scrog, roach.
 %
@@ -2314,42 +2314,42 @@ printenv: print out environment variables (useful in debugging and scripts)
 Data Science at the Command Line: More commands and tools helpful for doing
 data science, from the book of the same name
 %
-NetBOLLIX: NetBOLLIX [from bollix: to bungle, or British bollocks'] IBM's
+NetBOLLIX: [from bollix: to bungle, or British bollocks'] IBM's
 NetBIOS, an extremely brain-damaged network protocol that, like Blue Glue,
 is used at commercial shops that don't know any better.
 %
 The first hard drive, the IBM 350, was shipped in 1956. It stored 5MB and
 was the size of two refrigerators. Rent was $3,200/month.
 %
-big iron: big iron [common] Large, expensive, ultra-fast computers. Used
+big iron: [common] Large, expensive, ultra-fast computers. Used
 generally of number-crunching supercomputers such as Crays, but can include
 more conventional big commercial IBMish mainframes. Term of approval;
 compare heavy metal, oppose dinosaur.
 %
-inflate: inflate To decompress or puff a file. Rare among Internet hackers,
+inflate: To decompress or puff a file. Rare among Internet hackers,
 used primarily by MS-DOS/Windows types.
 %
 The first version of TCP/IP was deployed on ARPANET on January 1, 1983. This
 date is considered the birthday of the Internet.
 %
-brain-dead: brain-dead [common] Brain-damaged in the extreme. It tends to
+brain-dead: [common] Brain-damaged in the extreme. It tends to
 imply terminal design failure rather than malfunction or simple stupidity.
 "This comm program doesn't know how to send a break -- how brain- dead!"
 %
-mandelbug: mandelbug [from the Mandelbrot set] A bug whose underlying causes
+mandelbug: [from the Mandelbrot set] A bug whose underlying causes
 are so complex and obscure as to make its behavior appear chaotic or even
 non-deterministic. This term implies that the speaker thinks it is a Bohr
 bug, rather than a heisenbug. See also schroedinbug.
 %
-hack on: hack on [very common] To hack; implies that the subject is some
+hack on: [very common] To hack; implies that the subject is some
 pre-existing hunk of code that one is evolving, as opposed to something one
 might hack up.
 %
-crayola books: crayola books The rainbow series of National Computer
+crayola books: The rainbow series of National Computer
 Security Center (NCSC) computer security standards (see Orange Book). Usage:
 humorous and/or disparaging.
 %
-Missed'em-five: Missed'em-five Pejorative hackerism for AT&T System V Unix,
+Missed'em-five: Pejorative hackerism for AT&T System V Unix,
 generally used by BSD partisans in a bigoted mood. (The synonym SysVile' is
 also encountered.) See software bloat, Berzerkeley.
 %
@@ -2358,9 +2358,9 @@ You're smart enough to look up more detail elsewhere once you know the idea
 or command to Google. Use apt, yum, dnf, pacman, pip or brew (as
 appropriate) to install new programs.
 %
-borken: borken (also borked') Common deliberate typo for broken'.
+borken: (also borked') Common deliberate typo for broken'.
 %
-raster blaster: raster blaster [Cambridge] Specialized hardware for bitblt
+raster blaster: [Cambridge] Specialized hardware for bitblt
 operations (a blitter). Allegedly inspired by Rasta Blasta', British slang
 for the sort of portable stereo Americans call a boom box' or ghetto
 blaster'.
@@ -2387,28 +2387,28 @@ water MIPS: software, Up:= W = water MIPS (see MIPS, sense 2) Large, water-
 cooled machines of either today's ECL-supercomputer flavor or yesterday's
 traditional mainframe type.
 %
-washing software: washing software The process of recompiling a software
+washing software: The process of recompiling a software
 distribution (used more often when the recompilation is occuring from
 scratch) to pick up and merge together all of the various changes that have
 been made to the source.
 %
-virgin: virgin Unused; pristine; in a known initial state. "Let's bring up a
+virgin: Unused; pristine; in a known initial state. "Let's bring up a
 virgin system and see if it crashes again." (Esp. useful after contracting a
 virus through SEX.) Also, by extension, buffers and the like within a
 program that have not yet been used.
 %
-channel hopping: channel hopping [common; IRC, GEnie] To rapidly switch
+channel hopping: [common; IRC, GEnie] To rapidly switch
 channels on IRC, or a GEnie chat board, just as a social butterfly might hop
 from one group to another at a party. This term may derive from the TV
 watcher's idiom, channel surfing'.
 %
-stunning: stunning Mind-bogglingly stupid. Usually used in sarcasm. "You
+stunning: Mind-bogglingly stupid. Usually used in sarcasm. "You
 want to code what in ADA? That's a ... stunning idea!"
 %
-orphan: orphan [Unix] A process whose parent has died; one inherited by
+orphan: [Unix] A process whose parent has died; one inherited by
 init(1). Compare zombie.
 %
-beanie key: beanie key [Mac users] See command key.
+beanie key: [Mac users] See command key.
 %
 In ssh, knowing how to port tunnel with -L or -D (and occasionally -R) is
 useful, e.g. to access web sites from a remote server.
@@ -2426,10 +2426,10 @@ A few other options relevant to ssh are security sensitive and should be
 enabled with care, e.g. per subnet or host or in trusted networks:
 StrictHostKeyChecking=no, ForwardAgent=yes
 %
-vaporware: vaporware Products announced far in advance of any release (which
+vaporware: Products announced far in advance of any release (which
 may or may not actually take place). See also brochureware.
 %
-guru: guru [Unix] An expert. Implies not only wizard skill but also a
+guru: [Unix] An expert. Implies not only wizard skill but also a
 history of being a knowledge resource for others. Less often, used (with a
 qualifier) for other experts on other systems, as in VMS guru'. See source
 of all good bits.
@@ -2439,23 +2439,23 @@ and even those you can't adjust in real time. Anything you can twiddle is a
 knob. "Has this PNG viewer got an alpha knob?" Software may be described as
 having "knobs and switches" or occasionally "knobs and lights".
 %
-thumb: thumb The slider on a window-system scrollbar. So called because
+thumb: The slider on a window-system scrollbar. So called because
 moving it allows you to browse through the contents of a text window in a
 way analogous to thumbing through a book.
 %
 For looking at why a disk is full, ncdu saves time over the usual commands
 like du -sh *.
 %
-fudge: fudge 1. To perform in an incomplete but marginally acceptable way,
+fudge: 1. To perform in an incomplete but marginally acceptable way,
 particularly with respect to the writing of a program. "I didn't feel like
 going through that pain and suffering, so I fudged it -- I'll fix it later."
 2. n. The resulting code.
 %
-Fortrash: Fortrash Hackerism for the FORTRAN (FORmula TRANslator) language,
+Fortrash: Hackerism for the FORTRAN (FORmula TRANslator) language,
 referring to its primitive design, gross and irregular syntax, limited
 control constructs, and slippery, exception-filled semantics.
 %
-mouse elbow: mouse elbow A tennis-elbow-like fatigue syndrome resulting from
+mouse elbow: A tennis-elbow-like fatigue syndrome resulting from
 excessive use of a WIMP environment. Similarly, mouse shoulder'; GLS reports
 that he used to get this a lot before he taught himself to be ambimoustrous.
 %
@@ -2463,14 +2463,14 @@ monkey scratch: monkey, scratch See scratch monkey.
 %
 losing: lossage. "The compiler is losing badly when I try to use templates."
 %
-byte sex: byte sex [common] The byte sex of hardware is big-endian or
+byte sex: [common] The byte sex of hardware is big-endian or
 little-endian; see those entries.
 %
-RTFAQ: RTFAQ imp. [Usenet: primarily written, by analogy with RTFM] Abbrev.
+RTFAQ: imp. [Usenet: primarily written, by analogy with RTFM] Abbrev.
 for Read the FAQ!', an exhortation that the person addressed ought to read
 the newsgroup's FAQ list before posting questions.
 %
-talker system: talker system British hackerism for software that enables
+talker system: British hackerism for software that enables
 real-time chat or talk mode.
 %
 Dijkstra wrote 'Go To Statement Considered Harmful' in 1968. It started the
@@ -2479,23 +2479,23 @@ tradition of 'X Considered Harmful' papers that continues today.
 The first 1GB hard drive was IBM's 3380, released in 1980. It was the size
 of a refrigerator and cost $40,000.
 %
-scrog: scrog [Bell Labs] To damage, trash, or corrupt a data structure. "The
+scrog: [Bell Labs] To damage, trash, or corrupt a data structure. "The
 list header got scrogged." Also reported as skrog', and ascribed to the
 comic strip "The Wizard of Id". Compare scag; possibly the two are related.
 Equivalent to scribble or mangle.
 %
-crayola: crayola A super-mini or -micro computer that provides some
+crayola: A super-mini or -micro computer that provides some
 reasonable percentage of supercomputer performance for an unreasonably low
 price. Might also be a killer micro.
 %
-acolyte: acolyte obs. [TMRC] An OSU privileged enough to submit data and
+acolyte: obs. [TMRC] An OSU privileged enough to submit data and
 programs to a member of the priesthood.
 %
 error 33: [XEROX PARC] 1. Predicating one research effort upon the success
 of another. 2. Allowing your own research effort to be placed on the
 critical path of some other project (be it a research effort or not).
 %
-node: node 1. [Internet, UUCP] A host machine on the network. 2. [MS-DOS
+node: 1. [Internet, UUCP] A host machine on the network. 2. [MS-DOS
 BBSes] A dial-in line on a BBS. Thus an MS-DOS sysop might say that his BBS
 has 4 nodes even though it has a single machine and no Internet link,
 confusing an Internet hacker no end.
@@ -2504,10 +2504,10 @@ To enable the Option key in macOS Terminal as an alt key (such as used in
 the commands above like alt-b, alt-f, etc.), open Preferences -> Profiles ->
 Keyboard and select "Use Option as Meta key".
 %
-tail recursion: tail recursion If you aren't sick of it already, see tail
+tail recursion: If you aren't sick of it already, see tail
 recursion.
 %
-roach: roach [Bell Labs] To destroy, esp. of a data structure. Hardware gets
+roach: [Bell Labs] To destroy, esp. of a data structure. Hardware gets
 toasted or fried, software gets roached.
 %
 Alternatively, if you love vi-style key-bindings, use set -o vi (and set -o
@@ -2517,11 +2517,11 @@ list-bomb: lists. This is a self- defeating tactic; it merely forces mailing
 list servers to require confirmation by return message for every
 subscription.
 %
-sysape: sysape A rather derogatory term for a computer operator; a play on
+sysape: A rather derogatory term for a computer operator; a play on
 sysop common at sites that use the banana hierarchy of problem complexity
 (see one-banana problem).
 %
-cruftsmanship: cruftsmanship [from cruft] The antithesis of craftsmanship.
+cruftsmanship: [from cruft] The antithesis of craftsmanship.
 %
 trawl: (e.g., Usenet postings, FTP archives, or the Jargon File) looking for
 something of interest.
@@ -2529,21 +2529,21 @@ something of interest.
 K: [from kilo-] A kilobyte. Used both as a spoken word and a written suffix
 (like meg and gig for megabyte and gigabyte). See quantifiers.
 %
-modulo: modulo prep. Except for. An overgeneralization of mathematical
+modulo: prep. Except for. An overgeneralization of mathematical
 terminology; one can consider saying that 4 equals 22 except for the 9s (4 =
 22 mod 9). "Well, LISP seems to work okay now, modulo that GC bug." "I feel
 fine today modulo a slight headache."
 %
 Basic network management: ip or ifconfig, dig, traceroute, route.
 %
-barfulous: barfulous (alt. barfucious', ) Said of something that would make
+barfulous: (alt. barfucious', ) Said of something that would make
 anyone barf, if only for esthetic reasons.
 %
-bump: bump Synonym for increment. Has the same meaning as C's ++ operator.
+bump: Synonym for increment. Has the same meaning as C's ++ operator.
 Used esp. of counter variables, pointers, and index dummies in for, while,
 and do-while loops.
 %
-PM: PM 1. (from preventive maintenance') To bring down a machine for
+PM: 1. (from preventive maintenance') To bring down a machine for
 inspection or test purposes. See provocative maintenance; see also scratch
 monkey. 2. n. Abbrev. for Presentation Manager', an elephantine OS/2
 graphical user interface.
@@ -2562,23 +2562,23 @@ asbestos underwear', asbestos overcoat', etc.
 %
 scrozzle: data. "The damn compiler scrozzled itself again!"
 %
-LERP: LERP vi.,n. Quasi-acronym for Linear Interpolation, used as a verb or
+LERP: vi.,n. Quasi-acronym for Linear Interpolation, used as a verb or
 noun for the operation. "Bresenham's algorithm lerps incrementally between
 the two endpoints of the line."
 %
-New Testament: New Testament [C programmers] The second edition of K&R's
+New Testament: [C programmers] The second edition of K&R's
 "The C Programming Language" (Prentice-Hall, 1988; ISBN 0-13-110362-8),
 describing ANSI Standard C. See K&R; this version is also called K&R2'.
 %
-go-faster stripes: go-faster stripes [UK] Syn. chrome. Mainstream in some
+go-faster stripes: [UK] Syn. chrome. Mainstream in some
 parts of UK.
 %
-slurp: slurp To read a large data file entirely into core before working on
+slurp: To read a large data file entirely into core before working on
 it. This may be contrasted with the strategy of reading a small piece at a
 time, processing it, and then reading the next piece. "This program slurps
 in a 1K-by-1K matrix and does an FFT." See also sponge.
 %
-STFW: STFW imp. [Usenet] Commmon abbreviation for "Search The Fucking Web",
+STFW: imp. [Usenet] Commmon abbreviation for "Search The Fucking Web",
 a suggestion that what you're asking for is a query better handled by a
 search engine than a human being. Usage is common and exactly parallel to
 both senses of RTFM.
@@ -2586,9 +2586,9 @@ both senses of RTFM.
 crack root: [very common] To defeat the security system of a Unix machine
 and gain root privileges thereby; see cracking.
 %
-light pipe: light pipe Fiber optic cable. Oppose copper.
+light pipe: Fiber optic cable. Oppose copper.
 %
-thud: thud 1. Yet another metasyntactic variable (see foo). It is reported
+thud: 1. Yet another metasyntactic variable (see foo). It is reported
 that at CMU from the mid-1970s the canonical series of these was foo', bar',
 thud', blat'. 2. Rare term for the hash character, #' (ASCII 0100011). See
 ASCII for other synonyms.
@@ -2603,29 +2603,29 @@ In Bash, redirect both standard output and standard error via: some-command
 leave an open file handle to standard input, tying it to the terminal you
 are in, it is also good practice to add < null.
 %
-FUBAR: FUBAR The Failed UniBus Address Register in a VAX. A good example of
+FUBAR: The Failed UniBus Address Register in a VAX. A good example of
 how jargon can occasionally be snuck past the suits; see foobar, and foo for
 a fuller etymology.
 %
-wheel wars: wheel wars [Stanford University] A period in larval stage during
+wheel wars: [Stanford University] A period in larval stage during
 which student hackers hassle each other by attempting to log each other out
 of the system, delete each other's files, and otherwise wreak havoc, usually
 at the expense of the lesser users.
 %
-reaper: reaper A prowler that GFRs files. A file removed in this way is said
+reaper: A prowler that GFRs files. A file removed in this way is said
 to have been reaped'.
 %
 Synchronize your configuration files (e.g. .bashrc and .bash_profile) among
 various computers with Git.
 %
-hobbit: hobbit 1. [rare] The High Order BIT of a byte; same as the meta bit
+hobbit: 1. [rare] The High Order BIT of a byte; same as the meta bit
 or high bit. 2. The non-ITS name of vad@ai.mit.edu (*Hobbit*), master of
 lasers.
 %
-param: param [common] Shorthand for parameter'. See also parm; compare arg,
+param: [common] Shorthand for parameter'. See also parm; compare arg,
 var.
 %
-OS: OS 1. [Operating System] An abbreviation heavily used in email,
+OS: 1. [Operating System] An abbreviation heavily used in email,
 occasionally in speech. 2. n. obs. On ITS, an output spy. See "OS and
 JEDGAR" in Appendix A.
 %
@@ -2634,27 +2634,27 @@ Gillions of Instructions per Second'; see gillion). In 1991, this is used of
 only a handful of highly parallel machines, but this is expected to change.
 Compare KIPS.
 %
-whitelist: whitelist The opposite of a blacklist. That is, instead of being
+whitelist: The opposite of a blacklist. That is, instead of being
 an explicit list of people who are banned, it's an explicit list of people
 who are to be admitted. Hackers use this especially of lists of email
 addresses that are explicitly enabled to get past strict anti-spam filters.
 %
-steam-powered: steam-powered Old-fashioned or underpowered; archaic. This
+steam-powered: Old-fashioned or underpowered; archaic. This
 term does not have a strong negative loading and may even be used semi-
 affectionately for something that clanks and wheezes a lot but hangs in
 there doing the job.
 %
-tip of the ice-cube: tip of the ice-cube // [IBM] The visible part of
+tip of the ice-cube: // [IBM] The visible part of
 something small and insignificant. Used as an ironic comment in situations
 where tip of the iceberg' might be appropriate if the subject were at all
 important.
 %
-yellow wire: yellow wire [IBM] Repair wires used when connectors (especially
+yellow wire: [IBM] Repair wires used when connectors (especially
 ribbon connectors) got broken due to some schlemiel pinching them, or to
 reconnect cut traces after the FE mistakenly cut one. Compare blue wire,
 purple wire, red wire.
 %
-field servoid: field servoid [play on android'] Representative of a field
+field servoid: [play on android'] Representative of a field
 service organization (see field circus). This has many of the implications
 of droid.
 %
@@ -2669,10 +2669,10 @@ naive user: luser. Tends to imply someone who is ignorant mainly owing to
 inexperience. When this is applied to someone who has experience, there is a
 definite implication of stupidity.
 %
-blow past: blow past To blow out despite a safeguard. "The server blew past
+blow past: To blow out despite a safeguard. "The server blew past
 the 5K reserve buffer."
 %
-fuel up: fuel up To eat or drink hurriedly in order to get back to hacking.
+fuel up: To eat or drink hurriedly in order to get back to hacking.
 "Food-p?" "Yeah, let's fuel up." "Time for a great-wall!" See also oriental
 food.
 %
@@ -2695,65 +2695,65 @@ most of the money they ought to have made from them.
 %
 awesome-shell: A curated list of shell tools and resources.
 %
-die horribly: die horribly The software equivalent of crash and burn, and
+die horribly: The software equivalent of crash and burn, and
 the preferred emphatic form of die. "The converter choked on an FF in its
 input and died horribly".
 %
-bixen: bixen pl.n. Users of BIX (the BIX Information eXchange, formerly the
+bixen: pl.n. Users of BIX (the BIX Information eXchange, formerly the
 Byte Information eXchange). Parallels other plurals like boxen, VAXen, oxen.
 %
-relay rape: relay rape The hijacking of a third party's unsecured mail
+relay rape: The hijacking of a third party's unsecured mail
 server to deliver spam.
 %
-Microsoft: Microsoft The new Evil Empire (the old one was IBM). The basic
+Microsoft: The new Evil Empire (the old one was IBM). The basic
 complaints are, as formerly with IBM, that (a) their system designs are
 horrible botches, (b) we can't get source to fix them, and (c) they throw
 their weight around a lot. See also Halloween Documents.
 %
-wok-on-the-wall: wok-on-the-wall A small microwave dish antenna used for
+wok-on-the-wall: A small microwave dish antenna used for
 cross-campus private network circuits, from the obvious resemblance between
 a microwave dish and the Chinese culinary utensil.
 %
-RFE: RFE 1. [techspeak] Request For Enhancement (compare RFC). 2. [from
+RFE: 1. [techspeak] Request For Enhancement (compare RFC). 2. [from
 Radio Free Europe', Bellcore and Sun] Radio Free Ethernet, a system
 (originated by Peter Langston) for broadcasting audio among Sun
 SPARCstations over the ethernet.
 %
-pistol: pistol [IBM] A tool that makes it all too easy for you to shoot
+pistol: [IBM] A tool that makes it all too easy for you to shoot
 yourself in the foot. "Unix rm * makes such a nice pistol!"
 %
-buglix: buglix [uncommon] Pejorative term referring to DEC's ULTRIX
+buglix: [uncommon] Pejorative term referring to DEC's ULTRIX
 operating system in its earlier severely buggy versions. Still used to
 describe ULTRIX, but without nearly so much venom. Compare AIDX, HP-SUX,
 Nominal Semidestructor, Telerat, sun-stools.
 %
-jock: jock 1. A programmer who is characterized by large and somewhat brute-
+jock: 1. A programmer who is characterized by large and somewhat brute-
 force programs. See brute force. 2. When modified by another noun, describes
 a specialist in some particular computing area. The compounds compiler jock'
 and systems jock' seem to be the best-established examples.
 %
-playpen: playpen [IBM] A room where programmers work. Compare salt mines.
+playpen: [IBM] A room where programmers work. Compare salt mines.
 %
 nanoacre: (about 2 mm square) of real estate on a VLSI chip. The term gets
 its giggle value from the fact that VLSI nanoacres have costs in the same
 range as real acres once one figures in design and fabrication-setup costs.
 %
-UCE: UCE [abbrev., Unsolicited Commercial Email] A widespread, more formal
+UCE: [abbrev., Unsolicited Commercial Email] A widespread, more formal
 term for email spam. Compare UBE, which may be superseding it.
 %
-kahuna: kahuna [IBM: from the Hawaiian title for a shaman] Synonym for
+kahuna: [IBM: from the Hawaiian title for a shaman] Synonym for
 wizard, guru.
 %
-zbeba: zbeba [USENET] The word moron' in rot13. Used to describe newbies who
+zbeba: [USENET] The word moron' in rot13. Used to describe newbies who
 are behaving with especial cluelessness.
 %
-kiboze: kiboze [Usenet] To grep the Usenet news for a string, especially
+kiboze: [Usenet] To grep the Usenet news for a string, especially
 with the intention of posting a follow-up. This activity was popularised by
 Kibo (see KIBO, sense 2).
 %
 column: format text fields into aligned, fixed-width columns or tables
 %
-comm mode: comm mode [ITS: from the feature supporting on- line chat; the
+comm mode: [ITS: from the feature supporting on- line chat; the
 term may spelled with one or two m's] Syn. for talk mode.
 %
 To create empty files quickly, use truncate (creates sparse file), fallocate
@@ -2761,7 +2761,7 @@ To create empty files quickly, use truncate (creates sparse file), fallocate
 filesystems, comes in xfsprogs package), mkfile (for Unix-like systems like
 Solaris, Mac OS).
 %
-OTOH: OTOH // [Usenet; very common] On The Other Hand.
+OTOH: // [Usenet; very common] On The Other Hand.
 %
 You can perform and script most Windows system administration tasks from the
 command line by learning and using wmic.
@@ -2777,11 +2777,11 @@ Antonym of heisenbug; see also mandelbug, schroedinbug.
 %
 Know how to connect to a running process with gdb and get its stack traces.
 %
-two pi: two pi quant. The number of years it takes to finish one's thesis.
+two pi: quant. The number of years it takes to finish one's thesis.
 Occurs in stories in the following form: "He started on his thesis; 2 pi
 years later..."
 %
-feature creep: feature creep [common] The result of creeping featurism, as
+feature creep: [common] The result of creeping featurism, as
 in "Emacs has a bad case of feature creep".
 %
 The QWERTY keyboard layout was designed in 1873 to prevent typewriter jams
@@ -2793,7 +2793,7 @@ in 1973, making it the first OS written in a high-level language.
 The @ symbol in email addresses almost didn't happen. Ray Tomlinson
 considered using = or ! but thought @ looked better in 1971.
 %
-stack puke: stack puke Some processor architectures are said to puke their
+stack puke: Some processor architectures are said to puke their
 guts onto the stack' to save their internal state during exception
 processing. The Motorola 68020, for example, regurgitates up to 92 bytes on
 a bus fault. On a pipelined machine, this can take a while.
@@ -2801,33 +2801,33 @@ a bus fault. On a pipelined machine, this can take a while.
 The first computer mouse was made of wood. Douglas Engelbart carved it in
 1964 at Stanford Research Institute.
 %
-win big: win big To experience serendipity. "I went shopping and won big;
+win big: To experience serendipity. "I went shopping and won big;
 there was a 2-for-1 sale." See big win.
 %
 Install additional Unix programs with the Cygwin's package manager.
 %
-payware: payware Commercial software. Oppose shareware or freeware.
+payware: Commercial software. Oppose shareware or freeware.
 %
-include war: include war Excessive multi-leveled inclusion within a
+include war: Excessive multi-leveled inclusion within a
 discussion thread, a practice that tends to annoy readers. In a forum with
 high-traffic newsgroups, such as Usenet, this can lead to flames and the
 urge to start a kill file.
 %
-amper: amper Common abbreviation for the name of the ampersand (&', ASCII
+amper: Common abbreviation for the name of the ampersand (&', ASCII
 0100110) character. See ASCII for other synonyms.
 %
-clobber: clobber To overwrite, usually unintentionally: "I walked off the
+clobber: To overwrite, usually unintentionally: "I walked off the
 end of the array and clobbered the stack." Compare mung, scribble, trash,
 and smash the stack.
 %
-Compu$erve: Compu$erve See CI$. Synonyms CompuSpend and Compu$pend are also
+Compu$erve: See CI$. Synonyms CompuSpend and Compu$pend are also
 reported.
 %
-shambolic link: shambolic link A Unix symbolic link, particularly when it
+shambolic link: A Unix symbolic link, particularly when it
 confuses you, points to nothing at all, or results in your ending up in some
 completely unexpected part of the filesystem....
 %
-sun-stools: sun-stools Unflattering hackerism for SunTools, a pre-X
+sun-stools: Unflattering hackerism for SunTools, a pre-X
 windowing environment notorious in its day for size, slowness, and
 misfeatures. X, however, is larger and (some claim) slower; see second-
 system effect.
@@ -2836,7 +2836,7 @@ cretinous: Wrong; stupid; non-functional; very poorly designed. Also used
 pejoratively of people. See dread high-bit disease for an example.
 Approximate synonyms: bletcherous, bagbiting losing, brain- damaged.
 %
-fine: fine [WPI] Good, but not good enough to be cuspy. The word fine' is
+fine: [WPI] Good, but not good enough to be cuspy. The word fine' is
 used elsewhere, of course, but without the implicit comparison to the higher
 level implied by cuspy.
 %
@@ -2848,10 +2848,10 @@ per-buck that the old stuff is starting to look a bit like a dinosaur.
 upthread: (see thread), i.e., above'. "As Joe pointed out upthread, ..." See
 also followup.
 %
-slash: slash Common name for the slant (/', ASCII 0101111) character. See
+slash: Common name for the slant (/', ASCII 0101111) character. See
 ASCII for other synonyms.
 %
-K&R: K&R [Kernighan and Ritchie] Brian Kernighan and Dennis Ritchie's book
+K&R: [Kernighan and Ritchie] Brian Kernighan and Dennis Ritchie's book
 "The C Programming Language", esp. the classic and influential first edition
 (Prentice-Hall 1978; ISBN 0-13-110163-3). Syn. White Book, Old Testament.
 See also New Testament.
@@ -2860,23 +2860,23 @@ To know current cpu/disk status, the classic tools are top (or the better
 htop), iostat, and iotop. Use iostat -mxz 15 for basic CPU and detailed per-
 partition disk stats and performance insight.
 %
-bagbiting: bagbiting Having the quality of a bagbiter. "This bagbiting
+bagbiting: Having the quality of a bagbiter. "This bagbiting
 system won't let me compute the factorial of a negative number." Compare
 losing, cretinous, bletcherous, barfucious' (under barfulous) and chomping'
 (under chomp).
 %
-despew: despew [Usenet] To automatically generate a large amount of garbage
+despew: [Usenet] To automatically generate a large amount of garbage
 to the net, esp. from an automated posting program gone wild. See ARMM.
 %
-softy: softy [IBM] Hardware hackers' term for a software expert who is
+softy: [IBM] Hardware hackers' term for a software expert who is
 largely ignorant of the mysteries of hardware.
 %
-banana label: banana label The labels often used on the sides of macrotape
+banana label: The labels often used on the sides of macrotape
 reels, so called because they are shaped roughly like blunt-ended bananas.
 This term, like macrotapes themselves, is still current but visibly headed
 for obsolescence.
 %
-heads down: heads down [Sun] Concentrating, usually so heavily and for so
+heads down: [Sun] Concentrating, usually so heavily and for so
 long that everything outside the focus area is missed. See also hack mode
 and larval stage, although this mode is hardly confined to fledgling
 hackers.
@@ -2884,13 +2884,13 @@ hackers.
 Know about tee to copy from stdin to a file and also to stdout, as in ls -al
 | tee file.txt.
 %
-RTBM: RTBM imp. [Unix] Commonwealth Hackish variant of RTFM; expands to Read
+RTBM: imp. [Unix] Commonwealth Hackish variant of RTFM; expands to Read
 The Bloody Manual'. RTBM is often the entire text of the first reply to a
 question from a newbie; the second would escalate to "RTFM".
 %
 kibozo: [Usenet] One who kibozes but is not Kibo (see KIBO, sense 2).
 %
-percent-S: percent-S [From the code in C's printf(3) library function used
+percent-S: [From the code in C's printf(3) library function used
 to insert an arbitrary string argument] An unspecified person or object. "I
 was just talking to some percent-s in administration." Compare random.
 %
@@ -2898,7 +2898,7 @@ FSF: abbrev. Common abbreviation (both spoken and written) for the name of
 the Free Software Foundation, a nonprofit educational association formed to
 support the GNU project.
 %
-stealth manager: stealth manager [Corporate DP] A manager that appears out
+stealth manager: [Corporate DP] A manager that appears out
 of nowhere, promises undeliverable software to unknown end users, and
 vanishes before the programming staff realizes what has happened. See smoke
 and mirrors.
@@ -2906,11 +2906,11 @@ and mirrors.
 Use dmesg whenever something's acting really funny (it could be hardware or
 driver issues).
 %
-nanobot: nanobot A robot of microscopic proportions, presumably built by
+nanobot: A robot of microscopic proportions, presumably built by
 means of nanotechnology. As yet, only used informally (and speculatively!).
 Also called a nanoagent'.
 %
-farkled: farkled [DeVry Institute of Technology, Atlanta] Syn. hosed. Poss.
+farkled: [DeVry Institute of Technology, Atlanta] Syn. hosed. Poss.
 owes something to Yiddish farblondjet' and/or the Farkle Family' skits on
 "Rowan and Martin's Laugh-In", a popular comedy show of the late 1960s.
 %
@@ -2920,64 +2920,64 @@ Xerox PARC invented the GUI, the mouse, Ethernet, and laser printing in the
 studlycaps: trademarks, but applied randomly and to arbitrary text rather
 than to trademarks. ThE oRigiN and SigNificaNce of thIs pRacTicE iS oBscuRe.
 %
-stale pointer bug: stale pointer bug Synonym for aliasing bug used esp.
+stale pointer bug: Synonym for aliasing bug used esp.
 among microcomputer hackers.
 %
-hirsute: hirsute Occasionally used humorously as a synonym for hairy.
+hirsute: Occasionally used humorously as a synonym for hairy.
 %
-whizzy: whizzy (alt. wizzy') [Sun] Describes a cuspy program; one that is
+whizzy: (alt. wizzy') [Sun] Describes a cuspy program; one that is
 feature-rich and well presented.
 %
 It includes both "standard" Unix commands as well as ones that require
 special package installs -- so long as they are important enough to merit
 inclusion.
 %
-shitogram: shitogram A really nasty piece of email. Compare nastygram,
+shitogram: A really nasty piece of email. Compare nastygram,
 flame.
 %
-File Attach: File Attach [FidoNet] 1. A file sent along with a mail message
+File Attach: [FidoNet] 1. A file sent along with a mail message
 from one FidoNet to another. 2. vt. Sending someone a file by using the File
 Attach option in a FidoNet mailer.
 %
-Wintel: Wintel Microsoft Windows plus Intel - the tacit alliance that
+Wintel: Microsoft Windows plus Intel - the tacit alliance that
 dominated desktop computing in the 1990s. Now (1999) possibly on the verge
 of breaking up under pressure from Linux; see Lintel.
 %
 See uptime or w to know how long the system has been running.
 %
-software bloat: software bloat The results of second-system effect or
+software bloat: The results of second-system effect or
 creeping featuritis. Commonly cited examples include ls(1), X, BSD,
 Missed'em-five, and OS/2.
 %
 Consider mosh an alternative to ssh that uses UDP, avoiding dropped
 connections and adding convenience on the road (requires server-side setup).
 %
-external memory: external memory A memo pad, palmtop computer, or written
+external memory: A memo pad, palmtop computer, or written
 notes. "Hold on while I write that to external memory". The analogy is with
 store or DRAM versus nonvolatile disk storage on computers.
 %
-leaky heap: leaky heap [Cambridge] An arena with a memory leak.
+leaky heap: [Cambridge] An arena with a memory leak.
 %
-segv: segv n.,vi. Yet another synonym for segmentation fault (actually, in
+segv: n.,vi. Yet another synonym for segmentation fault (actually, in
 this case, segmentation violation').
 %
-TINC: TINC // [Usenet] Abbreviation: "There Is No Cabal". See backbone cabal
+TINC: // [Usenet] Abbreviation: "There Is No Cabal". See backbone cabal
 and NANA, but note that this abbreviation did not enter use until long after
 the dispersal of the backbone cabal.
 %
-control-C: control-C 1. "Stop whatever you are doing." From the interrupt
+control-C: 1. "Stop whatever you are doing." From the interrupt
 character used on many operating systems to abort a running program.
 Considered silly. 2. interj. Among BSD Unix hackers, the canonical humorous
 response to "Give me a break!"
 %
 netrock: [IBM] A flame; used esp. on VNET, IBM's internal corporate network.
 %
-u-: u- pref. Written shorthand for micro-; techspeak when applied to metric
+u-: pref. Written shorthand for micro-; techspeak when applied to metric
 units, jargon when used otherwise. Derived from the Greek letter "mu", the
 first letter of "micro" (and which letter looks a lot like the English
 letter "u").
 %
-fall over: fall over [IBM] Yet another synonym for crash or lose. Fall over
+fall over: [IBM] Yet another synonym for crash or lose. Fall over
 hard' equates to crash and burn.
 %
 Hackers (the movie): humor, Up:= H = Hackers (the movie) A notable bomb from
@@ -2988,12 +2988,12 @@ snack food are probably a tough sell in Hollywood.
 PFY: [Usenet; common] Abbreviation for Pimply-Faced Youth'. A BOFH in
 training, esp. one apprenticed to an elder BOFH aged in evil.
 %
-write-only code: write-only code [a play on read-only memory'] Code so
+write-only code: [a play on read-only memory'] Code so
 arcane, complex, or ill-structured that it cannot be modified or even
 comprehended by anyone but its author, and possibly not even by him/her. A
 Bad Thing.
 %
-lexer: lexer Common hacker shorthand for lexical analyzer', the input-
+lexer: Common hacker shorthand for lexical analyzer', the input-
 tokenizing stage in the parser for a language (the part that breaks it into
 word-like pieces). "Some C lexers get confused by the old-style compound ops
 like =-."
@@ -3006,17 +3006,17 @@ For running a command as another user, use sudo. Defaults to running as
 root; use -u to specify another user. Use -i to login as that user (you will
 be asked for _your_ password).
 %
-earthquake: earthquake [IBM] The ultimate real-world shock test for computer
+earthquake: [IBM] The ultimate real-world shock test for computer
 hardware. Hackish sources at IBM deny the rumor that the Bay Area quake of
 1989 was initiated by the company to test quality-assurance procedures at
 its California plants.
 %
-frag: frag n.,v. [from Vietnam-era U.S. military slang via the games Doom
+frag: n.,v. [from Vietnam-era U.S. military slang via the games Doom
 and Quake] 1. To kill another player's avatar in a multiuser game. "I hold
 the office Quake record with 40 frags." 2. To completely ruin something.
 "Forget that power supply, the lightning strike fragged it. See also gib.
 %
-page out: page out [MIT] 1. To become unaware of one's surroundings
+page out: [MIT] 1. To become unaware of one's surroundings
 temporarily, due to daydreaming or preoccupation. "Can you repeat that? I
 paged out for a minute." See page in. Compare glitch, thinko. 2. Syn. swap
 out'; see swap.
