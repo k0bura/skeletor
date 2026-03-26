@@ -8,10 +8,28 @@ date: 2024-07-12
 
 GRiDCASE 1520. Rugged 286 from 1988, magnesium alloy case, red gas plasma display. Designed for military and field use -- built to survive things that would kill lesser hardware.
 
-Built mine from parts across three separate 1520 units. First mainboard refused to see the CF adapter. Second had a Dallas CMOS/RTC replacement that developed write errors. Third -- early revision with a separate RTC battery -- was the one that worked. Case from a dual-floppy unit in great condition, plasma screen from another donor. Frankenstein's laptop, best organs of its fallen siblings.
+Built mine from parts across three separate 1520 units. Frankenstein's laptop, best organs of its fallen siblings.
 
 ![RAM SIMMs](../../assets/images/gridcase-1520/overview/01-memory.jpg)
 ![Ribbon cables inside the chassis](../../assets/images/gridcase-1520/overview/02-ribbon-cables.jpg)
+
+## The Three Donors
+
+Each 1520 turned out to be a different revision. Different motherboards, different enclosures, different storage backplanes. GRiD made several configs of this machine and the parts don't always cross over cleanly.
+
+
+| | Unit 1 | Unit 2 | Unit 3 |
+|---|---|---|---|
+| **Motherboard** | Late revision -- Dallas DS1287A potted RTC | Late revision -- Dallas RTC replaced (aftermarket) | Early revision -- Motorola MC146818AP RTC |
+| **RTC** | Dead (sealed battery in potted module) | DS12887 replacement developed write errors (bad solder job) | Working -- separate 3.6V lithium battery in tube under keyboard |
+| **Storage Backplane** | Dual floppy (ID 20h, PN 104194-00) | Dual floppy (ID 20h) | FDD + IDE HDD (ID 90h, PN 104942-00) |
+| **Enclosure** | Dual floppy config | Dual floppy config (best condition) | HDD config |
+| **IDE Support** | No (dual floppy backplane) | Working | Working |
+| **Used For** | Plasma screen donor | Case donor | Motherboard + storage backplane donor |
+
+Each backplane has an ID readable from I/O port 6F8h (high nibble). The dual floppy backplane (ID 20h) uses a 74HC244 driver and 74HC273 flip-flop. The IDE backplanes carry a pair of 74HC245 bidirectional buffers for data plus a GAL for address decoding. Both connect to the mainboard via two 60-pin connectors carrying a full ISA bus plus floppy lines and GRiD-specific signals.
+
+The final build uses the early revision motherboard (unit 3) with its FDD + IDE HDD backplane, inside the dual floppy enclosure (unit 2). The dual floppy case has an open bay where the second floppy drive would sit -- perfect for exposing the CF adapter slot for easy card swaps. HDD enclosure would have buried it behind a blank panel.
 
 ## Machine Specifications
 
@@ -22,7 +40,7 @@ Built mine from parts across three separate 1520 units. First mainboard refused 
 | **Hard Drive** | 20 MB 2.5" | StarTech 35BAYCF2IDE CF adapter + 32 MB CF card |
 | **Display** | CGA red gas plasma | Replacement plasma panel (donor 1520) |
 | **Floppy** | 3.5" 720K | Gotek USB floppy emulator |
-| **RTC** | Dallas CMOS (dead) | New RTC battery (early revision board) |
+| **RTC** | Dallas DS1287A (dead) | MC146818AP + 3.6V lithium (early revision board) |
 | **BIOS** | GRiD/Phoenix 10/25/89 | Patched ROM via Dagwood's RomBuster |
 | **Backplane** | Dual floppy | HDD + Floppy backplane |
 | **Modem** | -- | WiModem232 Pro |
@@ -34,7 +52,7 @@ Built mine from parts across three separate 1520 units. First mainboard refused 
 
 ### 1. RTC Replacement
 
-Dallas CMOS/RTC module has a sealed battery that dies after ~10 years. Potted in epoxy alongside the oscillator and SRAM. Battery dies, machine loses BIOS settings every power cycle. My second board had a replaced Dallas chip that developed write errors. Found an early revision mainboard with a separate RTC battery. No potted module, no sealed fate.
+Knew going in the RTC would need replacing -- the Dallas DS1287A potted module seals the battery inside, and after 35+ years they're all dead. Was hoping to find an early revision board with a separate battery socket, but my first board had the late revision Dallas. Tried desoldering it and putting in a DS12887 replacement -- messed up the soldering. Board developed write errors. Had to hunt for another 1520 and either try the Dallas swap again or get lucky with an early revision. Third unit was the lucky one -- Motorola MC146818AP with a plain 3.6V lithium battery in a tube under the keyboard. Pull the old battery, drop in a new one, done. No potted module, no sealed fate.
 
 **[Full RTC replacement documentation →](/projects/gridcase-1520-restoration/rtc/)**
 
