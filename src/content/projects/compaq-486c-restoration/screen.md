@@ -8,9 +8,9 @@ date: 2024-10-18
 
 Original 10.4" TFT (Sharp LQ10D016) was dead on arrival. Electrolyte leakage from aging caps corroded the ribbon cables to the driver ICs. Extremely common with these machines. No OEM replacement exists, Sharp won't release the datasheet. Had to find a modern 10.4" 640×480 TFT and make it work.
 
-## Original Display -- Sharp LQ10D016
+## Original Display: Sharp LQ10D016
 
-No official datasheet for the LQ10D016. The pinout was reverse-engineered by *Beckenrandschwimmer* on [DOSReloaded](https://dosreloaded.de/forum/thread/7354-compaq-portable-486c-66/?postID=254850#post254850) -- probed the video card output with an oscilloscope and test patterns to map every signal. This project wouldn't have happened without that work. Closest available datasheet is the **Sharp LQ10D011** -- same 3-bit-per-channel color architecture, same horizontal display start at clock 144, identical timing. The LQ10D011 uses a 22-pin interface (CN1) vs the Compaq's custom 30-pin ribbon, but the signals and timing match. Between the LQ10D011 datasheet and *Beckenrandschwimmer's* scope work, I had a complete picture. See [LQ10D011 Datasheet (PDF)](/docs/compaq-486c/LQ10D011_Datasheet.pdf).
+No official datasheet for the LQ10D016. The pinout was reverse-engineered by *Beckenrandschwimmer* on [DOSReloaded](https://dosreloaded.de/forum/thread/7354-compaq-portable-486c-66/?postID=254850#post254850). Probed the video card output with an oscilloscope and test patterns to map every signal. This project wouldn't have happened without that work. Closest available datasheet is the **Sharp LQ10D011**, same 3-bit-per-channel color architecture, same horizontal display start at clock 144, identical timing. The LQ10D011 uses a 22-pin interface (CN1) vs the Compaq's custom 30-pin ribbon, but the signals and timing match. Between the LQ10D011 datasheet and *Beckenrandschwimmer's* scope work, I had a complete picture. See [LQ10D011 Datasheet (PDF)](/docs/compaq-486c/LQ10D011_Datasheet.pdf).
 
 Key characteristics of the original display:
 
@@ -26,11 +26,11 @@ Key characteristics of the original display:
 | Video modes | 480 lines (60 Hz), 400 lines (70 Hz), 350 lines (70 Hz) |
 | Pixel clock | 25.175 MHz |
 
-## My Replacement -- Sharp LQ104V1DG51
+## My Replacement: Sharp LQ104V1DG51
 
 After a lot of searching and trial and error, I went with a Sharp **LQ104V1DG51**. See [LQ104V1DG51 Datasheet (PDF)](/docs/compaq-486c/LQ104V1DG51_Datasheet.pdf). Originally I wanted a panel with a fixed horizontal display start at clock 144 matching the Compaq's video card timing. That would have avoided the delay circuit entirely. No such panel exists, or if it does, it doesn't support 400-line and 350-line DOS modes.
 
-The LQ104V1DG51 was the best compromise. Natively supports 480-line, 400-line, and 350-line modes -- mode selection is via H-Sync/V-Sync polarity, which is exactly how the Compaq signals it. All three DOS modes work without extra circuitry. Trade-off: I need the BLANK-to-DE delay circuit for horizontal alignment.
+The LQ104V1DG51 was the best compromise. Natively supports 480-line, 400-line, and 350-line modes. Mode selection is via H-Sync/V-Sync polarity, which is exactly how the Compaq signals it. All three DOS modes work without extra circuitry. Trade-off: I need the BLANK-to-DE delay circuit for horizontal alignment.
 
 | Mode | H-Sync | V-Sync |
 |------|--------|--------|
@@ -54,12 +54,12 @@ The LQ104V1DG51 was the best compromise. Natively supports 480-line, 400-line, a
 
 Problems I had to solve:
 
-1. **Proprietary 30-pin connector** -- No documentation. Pinout had to be reverse-engineered. New display uses standard 31-pin, so I needed an adapter cable.
-2. **40-pixel horizontal shift** -- New display starts drawing 40 clocks early, image shifts left.
-3. **No Data Enable signal** -- Video card doesn't output DE, new display requires it.
-4. **Color depth mismatch** -- Video card outputs 3 bits per color, new display expects 6-8 bits.
-5. **Backlight incompatibility** -- Completely different inverter requirements.
-6. **70 Hz DOS modes** -- Most new displays can't handle 400-line/70 Hz and 350-line/70 Hz. Image wraps at the bottom. The panel I found supports it.
+1. **Proprietary 30-pin connector.** No documentation. Pinout had to be reverse-engineered. New display uses standard 31-pin, so I needed an adapter cable.
+2. **40-pixel horizontal shift.** New display starts drawing 40 clocks early, image shifts left.
+3. **No Data Enable signal.** Video card doesn't output DE, new display requires it.
+4. **Color depth mismatch.** Video card outputs 3 bits per color, new display expects 6-8 bits.
+5. **Backlight incompatibility.** Completely different inverter requirements.
+6. **70 Hz DOS modes.** Most new displays can't handle 400-line/70 Hz and 350-line/70 Hz. Image wraps at the bottom. The panel I found supports it.
 
 ## Pin Mapping
 
@@ -68,7 +68,7 @@ Full pin-by-pin mapping is in [Compaq Display Pinout Mapping (PDF)](/docs/compaq
 Key wiring notes:
 
 - Original **3 color bits per channel** (RED LSB/RED/RED MSB) map to the **upper 3 bits** of the new 6-bit channels (R3-R5, G3-G5, B3-B5). Lower bits (R0-R2, G0-G2, B0-B2) tied to **GND**.
-- **Pin 28** on the old connector was unused -- lucky. That's where I route the generated Data Enable signal.
+- **Pin 28** on the old connector was unused. Lucky. That's where I route the generated Data Enable signal.
 - **H-Sync** (old pin 4) and **V-Sync** (old pin 6) connect straight through.
 - **Dot Clock** (old pin 2, 25 MHz) to **DCLK** (new pin 2).
 - Power: old pin 7/8 (+5V) to new pin 28/29 (VCC). Old pin 30 (+12V) not needed.
@@ -87,15 +87,19 @@ New display needs a **Data Enable (DE)** signal and starts drawing at clock 104 
 
 ### The Problem
 
-The Compaq's Cirrus Logic video controller outputs H-Sync, V-Sync, and a BLANK signal from the RAMDAC. Video card uses a **Brooktree Bt47x series RAMDAC** (Bt471/476/478 family) -- BLANK* is at **pin 7** on the 44-pin PLCC package. TTL-compatible, goes low during blanking (see Tables 4-6 in the datasheet). See [BT471 RAMDAC Datasheet (PDF)](/docs/compaq-486c/BT471_RAMDAC_Datasheet.pdf).
+The Compaq's Cirrus Logic video controller outputs H-Sync, V-Sync, and a BLANK signal from the RAMDAC. Video card uses a **Brooktree Bt47x series RAMDAC** (Bt471/476/478 family). BLANK* is at **pin 7** on the 44-pin PLCC package. TTL-compatible, active-low. See [BT471 RAMDAC Datasheet (PDF)](/docs/compaq-486c/BT471_RAMDAC_Datasheet.pdf).
 
-Original display used H-Sync and V-Sync directly for pixel positioning, fixed start at clock 144 after H-Sync. Modern displays don't do that -- they want a DE signal that goes high during active display. My new display expects pixels at clock 104. Compaq sends them at 144. Need to delay DE by exactly 40 clocks (~1.58 µs at 25.175 MHz) to line things up.
+![Bt471 RAMDAC video output waveform and BLANK* truth table (Table 4 from datasheet)](../../../assets/images/compaq-486c/screen-replacement/12-bt471-blank-truth-table.png)
+
+BLANK* = 1 during active display (pixel data visible), BLANK* = 0 during blanking intervals and sync. That's the signal we need. Invert and delay it to get Data Enable.
+
+Original display used H-Sync and V-Sync directly for pixel positioning, fixed start at clock 144 after H-Sync. Modern displays want a DE signal that goes high during active display instead. My new display expects pixels at clock 104. Compaq sends them at 144. Need to delay DE by exactly 40 clocks (~1.58 µs at 25.175 MHz) to line things up.
 
 ![DOS boot showing the horizontal shift caused by the H-Sync mismatch](../../../assets/images/compaq-486c/screen-replacement/02-dos-boot-test.jpg)
 
 ### RC Delay Approach
 
-Simple RC delay network between two inverter stages. BLANK* from the RAMDAC is active-low during blanking -- when high, display is in the active region (Tables 4-6 in the Bt471 datasheet). Invert it, delay through the RC network, invert again. Out comes a properly timed DE signal.
+Simple RC delay network between two inverter stages. BLANK* from the RAMDAC is active-low during blanking; when high, display is in the active region (see truth table above). Invert it, delay through the RC network, invert again. Out comes a properly timed DE signal.
 
 ![RC delay schematic](../../../assets/images/compaq-486c/screen-replacement/08-rc-delay-schematic.png)
 
@@ -103,11 +107,15 @@ Delay is set by the RC time constant: **τ = R × C**. 10 kΩ trimmer pot and 22
 
 ### 74AS02 NOR Gate Implementation
 
-**SN74AS02N** -- quad 2-input NOR gate. Tie both inputs together and a NOR gate acts as an inverter. I use two of the four gates as the inverter stages. Other two are unused (inputs tied to GND per standard practice).
+**SN74AS02N**, quad 2-input NOR gate. Tie both inputs together and a NOR gate acts as an inverter. I use two of the four gates as the inverter stages. Other two are unused (inputs tied to GND per standard practice).
 
-![74AS02 wiring diagram -- top/bottom pin views and logic diagram](../../../assets/images/compaq-486c/screen-replacement/09-74as02-wiring-diagram.png)
+![74AS02 wiring diagram, top/bottom pin views and logic diagram](../../../assets/images/compaq-486c/screen-replacement/09-74as02-wiring-diagram.png)
 
-Physical wiring on the video card. The 74AS02 is soldered dead-bug style (upside down) directly onto the PCB. Key connections:
+Physical wiring on the video card. The 74AS02 is soldered dead-bug style (upside down) directly onto the PCB.
+
+![Bt471/478 44-pin PLCC pinout, BLANK* is pin 7](../../../assets/images/compaq-486c/screen-replacement/13-bt471-plcc-pinout.png)
+
+Key connections:
 
 ![Close-up of 74AS02 circuit on the video card](../../../assets/images/compaq-486c/screen-replacement/10-circuit-closeup.jpg)
 ![Video card with 74AS02 and BLANK tap wires installed](../../../assets/images/compaq-486c/screen-replacement/06-video-card-modifications.jpg)
@@ -128,12 +136,12 @@ Went with "Advanced Schottky" (AS) for the fast propagation delay (~1.5 ns). Kee
 |------|-------|-------|
 | IC | SN74AS02N | Quad 2-input NOR gate, two gates used as inverters |
 | C1 | 22 pF | Timing capacitor (150 pF also works but gives coarser adjustment) |
-| R1 | Bourns 3006P-1-222LF (2.2 kΩ) | Precision multi-turn trimmer pot -- fine-tunes the delay to align the image horizontally ([Mouser](https://www.mouser.com/ProductDetail/Bourns/3006P-1-222LF?qs=RwhcuQjtsMp2J7D9glJLaw%3D%3D)) |
+| R1 | Bourns 3006P-1-222LF (2.2 kΩ) | Precision multi-turn trimmer pot, fine-tunes the delay to align the image horizontally ([Mouser](https://www.mouser.com/ProductDetail/Bourns/3006P-1-222LF?qs=RwhcuQjtsMp2J7D9glJLaw%3D%3D)) |
 | C_bypass | 220 nF ceramic | Decoupling cap directly across IC VCC/GND pins |
 
 ### Calibration
 
-1. Boot the machine to a known pattern (a DOS text prompt works fine -- the left edge of the `C:\>` cursor is a clean vertical reference)
+1. Boot the machine to a known pattern (a DOS text prompt works fine, the left edge of the `C:\>` cursor is a clean vertical reference)
 2. Adjust the trimmer slowly until the image is centered in the display with no black bar on either side
 3. The delay is approximately 1.58 µs for the 40-pixel offset at 25.175 MHz
 
@@ -168,7 +176,7 @@ Original HCFT inverter won't work with the CCFL tubes in the new display. Wired 
 
 **TODO:** Track down the exact inverter model number and datasheet, and take photos of the installed inverter board.
 
-*Note: The DOSReloaded build used a CCFL Driver 104PW201, which conveniently accepts a 10kΩ pot -- matching the original. That approach gives front-panel brightness control out of the box.*
+*Note: The DOSReloaded build used a CCFL Driver 104PW201, which conveniently accepts a 10kΩ pot matching the original. That approach gives front-panel brightness control out of the box.*
 
 ## Physical Mounting
 
@@ -178,14 +186,14 @@ LQ104V1DG51 is much slimmer than the original because modern CCFL vs bulky heate
 
 ## Results
 
-![VGA graphics mode test -- 640×480, 16 colors](../../../assets/images/compaq-486c/screen-replacement/03-graphics-mode-test.jpg)
+![VGA graphics mode test, 640×480, 16 colors](../../../assets/images/compaq-486c/screen-replacement/03-graphics-mode-test.jpg)
 ![DOOM running on the restored Compaq](../../../assets/images/compaq-486c/screen-replacement/05-doom-running.jpg)
 
 *It's not a vintage computing project until you run DOOM on it. I don't make the rules - the retro community bylaws are very clear on this. No DOOM screenshot, no credibility.*
 
 ## Resources
 
-- [DOSReloaded Forum Thread (German)](https://dosreloaded.de/forum/thread/7354-compaq-portable-486c-66/?postID=254850#post254850) -- *Beckenrandschwimmer's* original write-up with oscilloscope measurements and circuit diagrams
-- [VCFed Forum Thread](https://forum.vcfed.org/index.php?threads/compaq-portable-486c-restore-and-upgrade.73098/) -- My restoration thread with discussion and community Q&A
-- [40-pin to 31-pin TTL cable (eBay)](https://www.ebay.com/itm/173579595077?var=472260346154) -- Adapter cable used for wiring
-- [Dual CCFL Inverter Board (eBay)](https://www.ebay.com/itm/405140078781?var=675230324995) -- Backlight inverter used
+- [DOSReloaded Forum Thread (German)](https://dosreloaded.de/forum/thread/7354-compaq-portable-486c-66/?postID=254850#post254850): *Beckenrandschwimmer's* original write-up with oscilloscope measurements and circuit diagrams
+- [VCFed Forum Thread](https://forum.vcfed.org/index.php?threads/compaq-portable-486c-restore-and-upgrade.73098/): My restoration thread with discussion and community Q&A
+- [40-pin to 31-pin TTL cable (eBay)](https://www.ebay.com/itm/173579595077?var=472260346154): Adapter cable used for wiring
+- [Dual CCFL Inverter Board (eBay)](https://www.ebay.com/itm/405140078781?var=675230324995): Backlight inverter used

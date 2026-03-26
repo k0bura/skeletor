@@ -19,9 +19,9 @@ Ongoing restoration of my Compaq Portable 486c. Luggable 486-era PC with a built
 | **Display** | Sharp LQ10D016 10.4" TFT (640×480) | Sharp LQ104V1DG51 10.4" TFT (640×480) |
 | **Audio** | None | Sound Blaster AWE32 CT3900 (EISA slot 1) |
 | **Expansion** | 2× EISA slots | SCM ISAC2PR10 PCMCIA adapter (EISA slot 2) |
-| **PCMCIA** | -- | Cisco Aironet 350 (WiFi) + SanDisk CF adapter |
-| **Floppy** | 3.5" floppy drive | -- |
-| **Architecture** | Small backplane with CPU card + RAM | -- |
+| **PCMCIA** | - | Cisco Aironet 350 (WiFi) + SanDisk CF adapter |
+| **Floppy** | 3.5" floppy drive | - |
+| **Architecture** | Small backplane with CPU card + RAM | - |
 
 ## Restoration Log
 
@@ -33,13 +33,13 @@ PSU worked but stank like leaking caps. Without stable power, nothing else matte
 
 ### 2. Screen Replacement
 
-Original Sharp LQ10D016 was dead on arrival -- leaking capacitors destroyed the ribbon cables. Very common with these. Found a Sharp LQ104V1DG51 replacement, built a custom pin adapter cable, wired up a BLANK-to-Data-Enable delay circuit on the video card, and swapped in a modern CCFL inverter for the backlight.
+Original Sharp LQ10D016 was dead on arrival. Leaking capacitors destroyed the ribbon cables. Very common with these. Found a Sharp LQ104V1DG51 replacement, built a custom pin adapter cable, wired up a BLANK-to-Data-Enable delay circuit on the video card, and swapped in a modern CCFL inverter for the backlight.
 
 **[Full screen replacement documentation →](/projects/compaq-486c-restoration/screen/)**
 
 ### 3. Keyboard Restoration
 
-Keycaps were yellowed from UV-degraded ABS. Retrobrighted them using the heat method -- SalonCare 40 Volume Creme Developer (12% hydrogen peroxide) on the stove at low heat. Heat replaces UV as the catalyst and you get more even results since everything is submerged. Technique from [The 8-Bit Guy](https://www.youtube.com/@The8BitGuy).
+Keycaps were yellowed from UV-degraded ABS. Retrobrighted them using the heat method. SalonCare 40 Volume Creme Developer (12% hydrogen peroxide) on the stove at low heat. Heat replaces UV as the catalyst and you get more even results since everything is submerged. Technique from [The 8-Bit Guy](https://www.youtube.com/@The8BitGuy).
 
 Keyboard cable is proprietary and gets brittle with age. Mine was damaged but still usable after taping it up. Planning a custom coiled replacement at some point.
 
@@ -60,7 +60,7 @@ But until that drive actually dies, I refuse to fix what isn't broken. I will no
 
 ### Processor Upgrade to AMD Am5x86-P75
 
-Swapped the IBM Blue Lightning DX2-66 for an **AMD Am5x86-P75** (AMD-X5-133ADZ). Drop-in Socket 3 upgrade, Pentium-75 equivalent performance at 133 MHz. Went with the ADZ variant for its 85°C max case temp -- only a passive heatsink fits in this case. No clock multiplier jumper on the Compaq, so I had to manually ground pin R17 (CLKMUL) on the CPU to get the 4x multiplier working.
+Swapped the IBM Blue Lightning DX2-66 for an **AMD Am5x86-P75** (AMD-X5-133ADZ). Drop-in Socket 3 upgrade, Pentium-75 equivalent performance at 133 MHz. Went with the ADZ variant for its 85°C max case temp; only a passive heatsink fits in this case. No clock multiplier jumper on the Compaq, so I had to manually ground pin R17 (CLKMUL) on the CPU to get the 4x multiplier working.
 
 ![CHKCPU showing AMD Am5x86 at 134 MHz](../../assets/images/compaq-486c/cpu-upgrade/05-chkcpu.jpg)
 
@@ -72,9 +72,9 @@ Two EISA card slots. Not a lot of real estate, so every slot counts.
 
 #### Sound Blaster AWE32 IDE/MKP CSP (CT3900)
 
-No onboard audio, so one slot goes to a **Creative Sound Blaster AWE32 (CT3900)**. Full Sound Blaster and AdLib compatibility, OPL3 FM synthesis, EMU8000 wavetable with 512 KB sample RAM. Went with the CT3900 specifically because it's not Plug and Play -- in 1994, "Plug and Play" mostly meant "Plug and Pray." Jumpers, works at boot, no drama.
+No onboard audio, so one slot goes to a **Creative Sound Blaster AWE32 (CT3900)**. Full Sound Blaster and AdLib compatibility, OPL3 FM synthesis, EMU8000 wavetable with 512 KB sample RAM. Went with the CT3900 specifically because it's not Plug and Play. In 1994, "Plug and Play" mostly meant "Plug and Pray." Jumpers, works at boot, no drama.
 
-![MSD system info -- multimedia](../../assets/images/compaq-486c/overview/07-sysinfo-multimedia.jpg)
+![MSD system info, multimedia](../../assets/images/compaq-486c/overview/07-sysinfo-multimedia.jpg)
 
 **[Full Sound Blaster documentation →](/projects/compaq-486c-restoration/soundblaster/)**
 
@@ -84,21 +84,21 @@ PCMCIA was designed for laptops, but nobody said a 25-pound luggable couldn't cr
 
 Currently running:
 
-- **Cisco Aironet 350 (AIR-PCM350)** -- 802.11b WiFi
-- **SanDisk CF adapter** -- CompactFlash-to-PCMCIA, hot-swaps in DOS and Windows 3.1, doubles as easy file transfer
+- **Cisco Aironet 350 (AIR-PCM350)**, 802.11b WiFi
+- **SanDisk CF adapter**, CompactFlash-to-PCMCIA, hot-swaps in DOS and Windows 3.1, doubles as easy file transfer
 
 Previously had a Xircom RealPort Ethernet 10/100 (RE-100) but it hogged both slots. Greedy.
 
 **[Full PCMCIA adapter documentation →](/projects/compaq-486c-restoration/pcmcia/)**
 
 ![Wolfenstein 3D running](../../assets/images/compaq-486c/overview/09-wolfenstein3d.jpg)
-![MSD system info -- memory](../../assets/images/compaq-486c/overview/08-sysinfo-memory.jpg)
+![MSD system info, memory](../../assets/images/compaq-486c/overview/08-sysinfo-memory.jpg)
 
 ### ESP32 WiFi Modem (Enhanced Options Slot)
 
-Building a custom ESP32-based WiFi modem card for the proprietary 50-pin Enhanced Options Slot. Emulates a Hayes-compatible modem over WiFi -- no PCMCIA slot or external serial cable needed.
+Building a custom ESP32-based WiFi modem card for the proprietary 50-pin Enhanced Options Slot. Emulates a Hayes-compatible modem over WiFi. No PCMCIA slot or external serial cable needed.
 
-**[Full WiFi modem project -->](/projects/compaq-wifimodem/)**
+**[Full WiFi modem project →](/projects/compaq-wifimodem/)**
 
 ---
 
@@ -113,7 +113,7 @@ Building a custom ESP32-based WiFi modem card for the proprietary 50-pin Enhance
 
 ## References
 
-- [VCFed Forum Thread](https://forum.vcfed.org/index.php?threads/compaq-portable-486c-restore-and-upgrade.73098/) -- My restoration thread with discussion and community Q&A
-- [DOSReloaded Forum Thread (German)](https://dosreloaded.de/forum/thread/7354-compaq-portable-486c-66/?postID=254850#post254850) -- Detailed write-up by *Beckenrandschwimmer* covering the display replacement with oscilloscope measurements and circuit design
-- [Compaq Portable 486 Pictures & Firmware (Bitsavers)](http://bitsavers.org/pdf/compaq/Compaq_Portable_486/pictures/) -- Reference photos and firmware dumps
-- [Source Repository](https://github.com/k0bura/compaq-portable-486c-restoration) -- Full documentation with datasheets and additional resources
+- [VCFed Forum Thread](https://forum.vcfed.org/index.php?threads/compaq-portable-486c-restore-and-upgrade.73098/): My restoration thread with discussion and community Q&A
+- [DOSReloaded Forum Thread (German)](https://dosreloaded.de/forum/thread/7354-compaq-portable-486c-66/?postID=254850#post254850): Detailed write-up by *Beckenrandschwimmer* covering the display replacement with oscilloscope measurements and circuit design
+- [Compaq Portable 486 Pictures & Firmware (Bitsavers)](http://bitsavers.org/pdf/compaq/Compaq_Portable_486/pictures/): Reference photos and firmware dumps
+- [Source Repository](https://github.com/k0bura/compaq-portable-486c-restoration): Full documentation with datasheets and additional resources

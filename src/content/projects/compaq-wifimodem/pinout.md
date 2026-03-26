@@ -68,7 +68,7 @@ date: 2025-02-16
 
 ## ESP32 Wiring Map
 
-Only the low byte of the data bus is used -- a UART only needs 8 bits.
+Only the low byte of the data bus is used. A UART only needs 8 bits.
 
 | Signal | Pin | Dir | GPIOs | Notes |
 |--------|-----|-----|-------|-------|
@@ -84,6 +84,6 @@ Only the low byte of the data bus is used -- a UART only needs 8 bits.
 | SLOT-IOEN | 49 | In | 1 | Slot I/O enable |
 | RST | 17 | In | 1 | System reset |
 | IRQ | 13 | Out | 1 | To system PIC |
-| GND | 1, 26, 27 | -- | -- | Common ground |
+| GND | 1, 26, 27 | - | - | Common ground |
 
 Total: ~24 GPIOs. All 5V inputs need level shifting to 3.3V.

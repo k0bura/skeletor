@@ -18,7 +18,7 @@ They pulled the board, replaced all electrolytic capacitors, the bridge rectifie
 
 Got the board back, tested with a multimeter before reconnecting to the motherboard.
 
-**12V rail** -- 12.11V. **5V rail** -- 5.085V. Both well within spec. Rock stable.
+**12V rail**, 12.11V. **5V rail**, 5.085V. Both well within spec. Rock stable.
 
 ![Multimeter reading 12.11V on the 12V rail](../../../assets/images/compaq-486c/psu-rebuild/02-12v-rail-test.jpg)
 ![Multimeter reading 5.085V on the 5V rail](../../../assets/images/compaq-486c/psu-rebuild/03-5v-rail-test.jpg)

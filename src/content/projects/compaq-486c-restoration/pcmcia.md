@@ -6,7 +6,7 @@ date: 2024-10-18
 
 ## Overview
 
-SCM ISAC2PR10 (FCC ID: MBPSCM-SBI-C2P, also sold as the SCM SwapBox SBI-C2P). 16-bit ISA card, adds two PCMCIA slots. Threw one in my Compaq to get access to the whole ecosystem of 1990s PC Cards -- WiFi, flash storage, modems, SCSI, you name it. Nobody said a 25-pound luggable couldn't crash the laptop party.
+SCM ISAC2PR10 (FCC ID: MBPSCM-SBI-C2P, also sold as the SCM SwapBox SBI-C2P). 16-bit ISA card, adds two PCMCIA slots. Threw one in my Compaq to get access to the whole ecosystem of 1990s PC Cards. WiFi, flash storage, modems, SCSI, you name it. Nobody said a 25-pound luggable couldn't crash the laptop party.
 
 ## Card Specifications
 
@@ -30,9 +30,9 @@ SCM ISAC2PR10 (FCC ID: MBPSCM-SBI-C2P, also sold as the SCM SwapBox SBI-C2P). 16
 
 ## 16-Bit PCMCIA vs 32-Bit CardBus
 
-Uses **PCMCIA Release 2.x** with a **16-bit data bus** (Vadem VG-469, Intel 82365SL-compatible). Not 32-bit CardBus (PCMCIA 5.0) -- that's PCI-based, up to 132 MB/s. 16-bit tops out at ~20 MB/s.
+Uses **PCMCIA Release 2.x** with a **16-bit data bus** (Vadem VG-469, Intel 82365SL-compatible). Not 32-bit CardBus (PCMCIA 5.0), which is PCI-based, up to 132 MB/s. 16-bit tops out at ~20 MB/s.
 
-Plenty for what I'm doing. WiFi, CF storage, network cards, modems -- all fine. Bandwidth only matters for 32-bit CardBus devices, and those physically won't fit anyway (different keying notch).
+Plenty for what I'm doing. WiFi, CF storage, network cards, modems, all fine. Bandwidth only matters for 32-bit CardBus devices, and those physically won't fit anyway (different keying notch).
 
 ## Installation
 
@@ -40,7 +40,7 @@ Just install it into the ISA slot!
 
 ## Driver Setup
 
-DOS was tricky because there were different CardSoft releases supporting different hardware. I went through a few dead ends before I finally got this working: [SystemSoft CardSoft Version 3.1](https://archive.org/details/cardsoft-v-3-1) -- hot swapping and everything!
+DOS was tricky because there were different CardSoft releases supporting different hardware. I went through a few dead ends before I finally got this working: [SystemSoft CardSoft Version 3.1](https://archive.org/details/cardsoft-v-3-1). Hot swapping and everything!
 
 Windows 3.1: [SystemSoft CardSoft v3.1 & CardView for Windows 3.1](https://archive.org/details/simpletechnology_pcmcia21cardsocket_systemsoftcardsoftv31_cardview)
 

@@ -7,17 +7,17 @@ date: 2025-02-16
 ![Enhanced Options Slot on the Compaq system I/O board](../../assets/images/compaq-wifimodem/01-options-slot.jpg)
 ![Prototype board seated in the options slot](../../assets/images/compaq-wifimodem/02-prototype-board.jpg)
 
-Emulate a Hayes-compatible modem using an ESP32 dev board plugged into the Compaq Portable 486c's 50-pin Enhanced Options Slot, bridging AT commands to WiFi/TCP connections. No PCMCIA slot required, no external serial cable -- just a custom card that slides in from the rear and gives this 1994 luggable a modern internal modem over WiFi. Useful for none other than original DOS terminal software dialing into BBSes.
+Emulate a Hayes-compatible modem using an ESP32 dev board plugged into the Compaq Portable 486c's 50-pin Enhanced Options Slot, bridging AT commands to WiFi/TCP connections. No PCMCIA slot required, no external serial cable. Just a custom card that slides in from the rear and gives this 1994 luggable a modern internal modem over WiFi. Useful for none other than original DOS terminal software dialing into BBSes.
 
 ## Status
 
-Phase 0 -- figuring out the physical connection. The 50-pin connector is 50mil pitch, way too small for a standard breadboard. Desoldered an original connector from a modem board -- lucky they have two. Got a 50mil pitch prototype board and wiring it up manually. Other option is to design a custom breakout PCB that routes the signals out to standard 100mil headers for breadboard work. That might end up being the move if hand-wiring gets too painful.
+Phase 0, figuring out the physical connection. The 50-pin connector is 50mil pitch, way too small for a standard breadboard. Desoldered an original connector from a modem board (lucky they have two). Got a 50mil pitch prototype board and wiring it up manually. Other option is to design a custom breakout PCB that routes the signals out to standard 100mil headers for breadboard work. That might end up being the move if hand-wiring gets too painful.
 
 ## The Enhanced Options Slot
 
 The Compaq Portable 486c has a proprietary 50-pin expansion connector on the system I/O board, separate from the two full-sized EISA slots. Designed for an internal modem or second serial port. Cards slide in from the rear and engage the connector. It's essentially a simplified ISA-like bus with 16-bit data, 10 address lines, IRQ, DMA, and +5V power.
 
-**[Full options slot documentation -->](/projects/compaq-wifimodem/options-slot/)**
+**[Full options slot documentation →](/projects/compaq-wifimodem/options-slot/)**
 
 ## Bus Summary
 
@@ -25,15 +25,15 @@ The Compaq Portable 486c has a proprietary 50-pin expansion connector on the sys
 |------|---------|
 | Data bus | 8 bits needed (D0-D7, pins 2-9). 16-bit exists but a UART only needs 8. |
 | Address lines | A0-A2 (pins 19-20, 37) for 8 UART registers. Higher bits (XA08 + Add4-9) for base address decode. |
-| Control | IOR (pin 12), IOW (pin 11) -- active low, standard ISA timing |
+| Control | IOR (pin 12), IOW (pin 11), active low, standard ISA timing |
 | Chip select | Select (pin 10) + SLOT-IOEN (pin 49) |
-| Power | +5V only (pins 15, 16). ESP32 is 3.3V -- level shifters required. |
+| Power | +5V only (pins 15, 16). ESP32 is 3.3V, level shifters required. |
 | IRQ | Pin 13, directly to system PIC |
 | Reset | Pin 17 |
 
 ISA I/O cycles are ~1us. ESP32 at 240MHz = ~240 CPU cycles per bus cycle. Tight but workable with direct GPIO register access (not digitalRead).
 
-**[Full pinout and ESP32 wiring reference -->](/projects/compaq-wifimodem/pinout/)**
+**[Full pinout and ESP32 wiring reference →](/projects/compaq-wifimodem/pinout/)**
 
 ## The Plan
 
@@ -78,9 +78,9 @@ See **[pinout and ESP32 wiring reference](/projects/compaq-wifimodem/pinout/)** 
 
 #### Success Criteria
 
-- `DEBUG` reads back `55` -- bus timing feasible, proceed to Phase 1
-- Reads back `FF` -- ESP32 too slow, level-shifting issue, or wiring problem
-- System hangs on boot -- Select/IOEN decode wrong, bus contention
+- `DEBUG` reads back `55`. Bus timing feasible, proceed to Phase 1.
+- Reads back `FF`. ESP32 too slow, level-shifting issue, or wiring problem.
+- System hangs on boot. Select/IOEN decode wrong, bus contention.
 
 ### Phase 1: 16550 UART Register Emulation
 
@@ -93,8 +93,8 @@ DOS and terminal software detect a working COM port. Emulate all 8 standard 1655
 | 2 | IIR (Interrupt ID) | FCR (FIFO Control) |
 | 3 | LCR (Line Control) | LCR |
 | 4 | MCR (Modem Control) | MCR |
-| 5 | LSR (Line Status) | -- |
-| 6 | MSR (Modem Status) | -- |
+| 5 | LSR (Line Status) | - |
+| 6 | MSR (Modem Status) | - |
 | 7 | SCR (Scratch) | SCR |
 
 Key behaviors:
@@ -136,11 +136,11 @@ Proper interrupt-driven receive for better throughput.
 
 ## Key Risks
 
-1. **Level shifting speed** -- 74LVC245 preferred over TXS0108E for reliability at ISA speeds
-2. **ESP32 interrupt latency** -- FreeRTOS jitter; run ISA handler on dedicated core with interrupts disabled
-3. **Bus contention** -- Data bus MUST be high-Z except during IOR cycles targeting our address
-4. **Address decoding** -- Need to confirm what Select/SLOT-IOEN pre-decode vs. what we must decode
-5. **ESP32 5V tolerance** -- Most ESP32 GPIOs are NOT 5V tolerant; level shift ALL inputs
+1. **Level shifting speed.** 74LVC245 preferred over TXS0108E for reliability at ISA speeds.
+2. **ESP32 interrupt latency.** FreeRTOS jitter; run ISA handler on dedicated core with interrupts disabled.
+3. **Bus contention.** Data bus MUST be high-Z except during IOR cycles targeting our address.
+4. **Address decoding.** Need to confirm what Select/SLOT-IOEN pre-decode vs. what we must decode.
+5. **ESP32 5V tolerance.** Most ESP32 GPIOs are NOT 5V tolerant; level shift ALL inputs.
 
 ## Shopping List (Phase 0)
 
@@ -161,5 +161,5 @@ Proper interrupt-driven receive for better throughput.
 
 ## References
 
-- [Source Repository](https://github.com/k0bura/compaq-wifimodem) -- Project code, schematics, and reference docs
-- [Compaq Portable 486c Restoration](/projects/compaq-486c-restoration/) -- The machine this card is being built for
+- [Source Repository](https://github.com/k0bura/compaq-wifimodem): Project code, schematics, and reference docs
+- [Compaq Portable 486c Restoration](/projects/compaq-486c-restoration/): The machine this card is being built for
