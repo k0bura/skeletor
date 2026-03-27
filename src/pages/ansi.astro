@@ -1,0 +1,323 @@
+---
+import Base from '../layouts/Base.astro';
+
+const packs = [
+  {
+    name: "ACiD Productions",
+    slug: "acdu0196",
+    year: 1996,
+    files: [
+      { file: "KH-SUPER.ANS", title: "Superunknown", artist: "Killa Hertz" }
+    ]
+  },
+  {
+    name: "iCE",
+    slug: "ice9604a",
+    year: 1996,
+    files: [
+      { file: "RI-HELL.ICE", title: "Hellbound", artist: "Rai" }
+    ]
+  },
+  {
+    name: "Remorse",
+    slug: "rmrs-20",
+    year: 1998,
+    files: [
+      { file: "ESS!20P4.ANS", title: "The Legend", artist: "Essence" }
+    ]
+  },
+  {
+    name: "Blocktronics",
+    slug: "blocktronics_acid_trip",
+    year: 2013,
+    files: [
+      { file: "ungenannt_worldscollide.ANS", title: "Worlds Collide", artist: "Ungenannt" }
+    ]
+  },
+  {
+    name: "FiRE",
+    slug: "fire-34",
+    year: 2021,
+    files: [
+      { file: "US-DOUBT.ANS", title: "Doubt", artist: "Nail + Filth" }
+    ]
+  }
+];
+
+function truncFile(name: string, max: number): string {
+  if (name.length <= max) return name;
+  const dot = name.lastIndexOf('.');
+  const ext = dot >= 0 ? name.substring(dot) : '';
+  const base = dot >= 0 ? name.substring(0, dot) : name;
+  const truncLen = max - ext.length - 1;
+  return base.substring(0, truncLen) + '\u2026' + ext;
+}
+
+const allFiles = packs.flatMap(pack =>
+  pack.files.map(f => ({
+    ...f,
+    group: pack.name,
+    year: pack.year,
+    slug: pack.slug,
+    url: `/ansi/${pack.slug}/${f.file}`,
+    display: truncFile(f.file, 25)
+  }))
+).sort((a, b) => a.year - b.year);
+---
+
+<Base title="ANSI Art - sych0net" description="ANSI art gallery rendered with AnsiLove.js">
+  <div class="section-header">
+    <pre>{`
+▒▒▒ ANSI ART ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒`}</pre>
+  </div>
+
+  <p>Classic ANSI art from the BBS scene. Rendered in-browser with <a href="https://github.com/ansilove/ansilove.js">AnsiLove.js</a>. Click a file to view.</p>
+
+  <pre class="file-header">Year  Filename                  Artist              Group</pre>
+  <pre class="file-divider">─────────────────────────────────────────────────────────────────────────────</pre>
+  {allFiles.map(f => (
+    <pre class="file-entry"><span class="file-year">{f.year}</span>  <a href="#" class="ansi-link" data-url={f.url} data-title={f.title} data-artist={f.artist} data-group={f.group} data-year={f.year} data-pack={f.slug} data-file={f.file}>{f.display.padEnd(25)}</a>{f.artist.padEnd(20)}{f.group}</pre>
+  ))}
+  <pre class="file-divider">─────────────────────────────────────────────────────────────────────────────</pre>
+  <pre class="file-footer">{allFiles.length} file(s)</pre>
+
+  <div id="ansi-overlay" class="ansi-overlay">
+    <div class="ansi-overlay-inner">
+      <div id="ansi-canvas-container" class="ansi-canvas-container"></div>
+      <div class="ansi-overlay-footer">
+        <span id="ansi-sauce" class="ansi-sauce"></span>
+        <a href="#" id="ansi-viewer-close" class="ansi-viewer-close">[ESC] CLOSE</a>
+      </div>
+    </div>
+  </div>
+
+  <p><a href="/">&larr; back to main [ESC]</a></p>
+</Base>
+
+<script is:inline src="/ansilove.js"></script>
+<script is:inline>
+(function() {
+  var overlay = document.getElementById('ansi-overlay');
+  var container = document.getElementById('ansi-canvas-container');
+  var sauceEl = document.getElementById('ansi-sauce');
+  var closeBtn = document.getElementById('ansi-viewer-close');
+
+  function formatSauceDate(d) {
+    if (!d || d.length !== 8) return d || 'Unknown';
+    return d.substring(0, 4) + '-' + d.substring(4, 6) + '-' + d.substring(6, 8);
+  }
+
+  function showViewer(url, meta) {
+    container.innerHTML = '<pre class="ansi-loading">Rendering...</pre>';
+    sauceEl.textContent = '';
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    var opts = { icecolors: 1, "2x": 1 };
+    var ext = url.split('.').pop().toLowerCase();
+    if (ext === 'ice') {
+      opts.filetype = 'ans';
+      opts.icecolors = 1;
+    }
+
+    AnsiLove.render(url, function(canvas, sauce) {
+      container.innerHTML = '';
+      canvas.style.imageRendering = 'pixelated';
+      container.appendChild(canvas);
+
+      var title = (sauce && sauce.title && sauce.title.trim()) ? sauce.title.trim() : meta.title;
+      var artist = (sauce && sauce.author && sauce.author.trim()) ? sauce.author.trim() : meta.artist;
+      var group = (sauce && sauce.group && sauce.group.trim()) ? sauce.group.trim() : meta.group;
+      var date = (sauce && sauce.date) ? formatSauceDate(sauce.date) : meta.year;
+
+      var parts = ['"' + title + '"', artist, group, date, meta.file];
+      if (sauce && sauce.tInfo1 && sauce.tInfo2) {
+        parts.push(sauce.tInfo1 + 'x' + sauce.tInfo2);
+      }
+      sauceEl.textContent = parts.join(' \u00b7 ');
+    }, opts, function(err) {
+      container.innerHTML = '<pre class="ansi-error">Failed to render: ' + err + '</pre>';
+    });
+  }
+
+  function hideViewer() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    container.innerHTML = '';
+    sauceEl.textContent = '';
+  }
+
+  document.querySelectorAll('.ansi-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var ds = this.dataset;
+      showViewer(ds.url, {
+        title: ds.title,
+        artist: ds.artist,
+        group: ds.group,
+        year: ds.year,
+        pack: ds.pack,
+        file: ds.file
+      });
+    });
+  });
+
+  closeBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    hideViewer();
+  });
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay || e.target.classList.contains('ansi-overlay-inner')) {
+      hideViewer();
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      e.preventDefault();
+      hideViewer();
+    }
+  });
+})();
+</script>
+
+<style>
+  .section-header pre {
+    color: #ffcc00;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 0 0.5rem 0;
+    overflow: hidden;
+  }
+
+  .file-header {
+    color: #ffcc00;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .file-divider {
+    color: #332b00;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .file-year {
+    color: #665200;
+  }
+
+  .file-entry {
+    color: #c0c0c0;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .file-entry a.ansi-link {
+    text-decoration: none;
+    padding-right: 1ch;
+  }
+
+  .file-entry a.ansi-link:hover {
+    text-decoration: none;
+  }
+
+  .file-footer {
+    color: #665200;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 0 1rem 0;
+  }
+
+  .ansi-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .ansi-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ansi-overlay-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .ansi-canvas-container {
+    overflow: auto;
+    max-height: calc(100vh - 5rem);
+    text-align: center;
+  }
+
+  .ansi-canvas-container canvas {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ansi-overlay-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0.75rem 0 0 0;
+    margin-top: 0.5rem;
+    border-top: 1px solid #332b00;
+  }
+
+  .ansi-sauce {
+    color: #665200;
+    font-size: 0.8rem;
+  }
+
+  .ansi-viewer-close {
+    color: #cc9900;
+    font-size: 0.85rem;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+
+  .ansi-viewer-close:hover {
+    color: #ffcc00;
+  }
+
+  .ansi-loading {
+    color: #665200;
+    background: none !important;
+    border: none !important;
+    padding: 2rem !important;
+    text-align: center;
+  }
+
+  .ansi-error {
+    color: #ff4444;
+    background: none !important;
+    border: none !important;
+    padding: 2rem !important;
+    text-align: center;
+  }
+</style>
